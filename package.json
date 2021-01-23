@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "autoprefixer": "^9.5.1",
+    "autoprefixer": "^10.0.2",
     "next": "10.0.5",
     "postcss": "^8.2.4",
     "react": "17.0.1",
