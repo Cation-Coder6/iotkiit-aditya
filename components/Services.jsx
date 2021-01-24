@@ -7,7 +7,7 @@ const Services = () => {
       />
       <div className="container mx-auto px-6 py-32 relative">
         <h3 className="flex flex-col items-center text-4xl text-secondary font-bold">
-          Services we offer <span className="bg-primary h-1 w-20 block mt-4" />
+          Services we offer <span className="bg-primary-default h-1 w-20 block mt-4" />
         </h3>
         <div className="flex flex-col md:flex-row items-center mb-24 md:mb-16 xl:mb-8 mt-16 md:mt-0 lg:mt-0">
           <img src="/images/service1.svg" className="md:w-1/3" />

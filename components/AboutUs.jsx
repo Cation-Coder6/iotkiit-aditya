@@ -11,7 +11,7 @@ const AboutUs = () => {
           </div>
           <div className="md:w-1/2">
             <h3 className="flex flex-col text-4xl text-secondary font-bold mb-6">
-              About us <span className="bg-primary h-1 w-20 block mt-4" />
+              About us <span className="bg-primary-default h-1 w-20 block mt-4" />
             </h3>
             <p className="text-lg text-secondary-700 mb-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam

@@ -33,10 +33,10 @@ const Testimonials = () => {
         </div>
       </div>
       <div id="contact" className="container mx-auto px-6 py-24">
-        <h3 className="flex flex-col items-center text-4xl text-secondary font-bold mb-12">I need more info! <span className="bg-primary h-1 w-20 block mt-4" /></h3>
+        <h3 className="flex flex-col items-center text-4xl text-secondary font-bold mb-12">I need more info! <span className="bg-primary-default h-1 w-20 block mt-4" /></h3>
         <div className="flex shadow-lg md:w-2/3 lg:w-1/2 xl:w-2/5 p-1 rounded-full overflow-hidden mx-auto bg-white">
           <input type="text" placeholder="Insert your mail" className="h-16 text-secondary-700 w-64 flex-1 px-8 text-lg focus:outline-none" />
-          <button className="bg-primary w-32 uppercase font-bold text-secondary rounded-full">Send</button>
+          <button className="bg-primary-default w-32 uppercase font-bold text-secondary rounded-full">Send</button>
         </div>
       </div>
     </div>
