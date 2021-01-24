@@ -3,13 +3,13 @@ import WebDevAnimation from "./animations/WebDevAnimation";
 
 const Services = () => {
   return (
-    <div id="services" className="relative pl-12 pr-12">
+    <div id="services" className="relative lg:px-32 md:px-32 px-4 ">
       <img
         src="/images/circle.svg"
         className="absolute top-0 right-0 mt-64 hidden md:block"
       />
-      <div className="container mx-auto px-6 py-32 relative">
-        <h3 className="flex flex-col items-center text-4xl text-secondary font-bold">
+      <div className="container mx-auto px-6 pt-32 sm:pt-24 relative">
+        <h3 className="flex flex-col items-center text-4xl pb-8 text-secondary font-bold">
           Services we offer <span className="bg-primary-default h-1 w-20 block mt-4" />
         </h3>
         <div className="flex flex-col md:flex-row items-center mb-24 md:mb-16 xl:mb-8 mt-16 md:mt-0 lg:mt-0">

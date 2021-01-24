@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import MapFooter from "../components/MapsFooter";
 import Process from "../components/Process";
 import Services from "../components/Services";
-import Testimonials from "../components/Testimonials";
+import Showcase from "../components/Showcase";
 
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
       <Process />
       <AboutUs />
       <Services />
-      <Testimonials />
+      <Showcase />
       <MapFooter />
     </div>
 

@@ -5,7 +5,7 @@ const Process = () => {
         src="/images/circle2.svg"
         className="hidden sm:block absolute top-0 left-0 -mx-32"
       />
-      <div className="container mx-auto px-6 pt-6 pb-12 relative">
+      <div className="container mx-auto px-6 pt-0 pb-8 relative">
         <h3 className="flex flex-col items-center text-4xl text-secondary font-bold mb-5">
           Our Process  <span className="bg-primary-default h-1 w-20 block mt-4" />
         </h3>
