@@ -11,8 +11,8 @@ const Services = () => {
         </h3>
         <div className="flex flex-col md:flex-row items-center mb-24 md:mb-16 xl:mb-8 mt-16 md:mt-0 lg:mt-0">
           <img src="/images/service1.svg" className="md:w-1/3" />
-          <div className="md:ml-16 xl:ml-32">
-            <h4 className="text-2xl md:text-3xl font-bold text-secondary-800 mb-4">
+          <div className="md:ml-16 xl:ml-32 ">
+            <h4 className="text-2xl md:text-3xl font-bold text-secondary-800 mb-4 py-2">
               Social Media Marketing
             </h4>
             <p className="text-secondary-700 text-lg mb-4">
@@ -29,7 +29,7 @@ const Services = () => {
         </div>
         <div className="flex flex-col-reverse md:flex-row items-center mb-24 md:mb-16 xl:mb-8">
           <div className="md:mr-16 xl:mr-32">
-            <h4 className="text-2xl md:text-3xl font-bold text-secondary-800 mb-4">
+            <h4 className="text-2xl md:text-3xl font-bold text-secondary-800 mb-4 py-2">
               Search Engine Optimization
             </h4>
             <p className="text-secondary-700 text-lg mb-4">
@@ -48,7 +48,7 @@ const Services = () => {
         <div className="flex flex-col md:flex-row items-center">
           <img src="/images/service3.svg" className="md:w-1/3" />
           <div className="md:ml-16 xl:ml-32">
-            <h4 className="text-2xl md:text-3xl font-bold text-secondary-800 mb-4">
+            <h4 className="text-2xl md:text-3xl font-bold text-secondary-800 mb-4 py-2">
               Increase your followers
             </h4>
             <p className="text-secondary-700 text-lg mb-4">
