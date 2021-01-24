@@ -1,22 +1,26 @@
 const Hero = () => {
   return (
-    <div className="relative overflow-hidden px-6 pb-0">
+    <div className="relative overflow-hidden px-0 pb-0 ">
       <img src="/images/wave.svg" className="absolute top-0 left-2/5" />
-      <div className="container mx-auto relative px-12">
-        <div className="flex flex-col md:flex-row items-center pt-32 pb-16 md:pb-0 ">
+      <div className="container mx-auto relative px-6 lg:px-12">
+        <div className="flex flex-col md:flex-row items-center pt-32 lg:pl-12 md:px-12 px-12 pb-16 md:pb-0 ">
           <div className="md:w-1/2 lg:w-1/3 mb-4 sm:mb-16 md:mb-0">
-            <h2 className="text-xl font-bold text-secondary-600 uppercase mb-2">
-              Lorem ipsum dolor
-            </h2>
-            <h1 className="text-4xl md:text-5xl font-bold text-secondary leading-tight mb-6 md:mb-10">
-              IOT LAB, KIIT
+
+            <h1 className="text-6xl md:text-8xl font-bold text-secondary leading-tight mb-4 md:mb-4">
+              <span class="flex h-7 w-7 sm:m-0.5 -m-1.5">
+                <span class="animate-ping inline-flex h-full w-full rounded-full bg-primary-default opacity-75"></span>
+                <span class=" absolute inline-flex rounded-full h-7 w-7 bg-primary-default"></span>
+              </span>IOT LAB, KIIT
             </h1>
-            <button
+            <h2 className="text-2xl font-bold text-secondary-600 uppercase mb-12 ml-1">
+              A Centre Of Excellence
+            </h2>
+            {/* <button
               href="#"
               className="bg-primary-default px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl text-secondary font-bold uppercase rounded bg-primary-default-400 hover:bg-primary-default-400 focus:outline-none"
             >
               More info
-            </button>
+            </button> */}
           </div>
           <div className="mt-16 sm:mt-0 flex-1 flex justify-end">
             <img src="/images/hero.svg" />

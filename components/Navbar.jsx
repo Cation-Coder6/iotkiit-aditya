@@ -51,13 +51,13 @@ const Navbar = () => {
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex-shrink-0 flex items-center">
               <img
-                className="block lg:hidden h-8 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                className="block lg:hidden h-10 w-auto"
+                src="https://iotkiit.in/images/logo_small.png"
                 alt="Workflow"
               />
               <img
-                className="hidden lg:block h-8 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
+                className="hidden lg:block h-10 w-auto"
+                src="https://iotkiit.in/images/logo_small.png"
                 alt="Workflow"
               />
             </div>
@@ -86,6 +86,12 @@ const Navbar = () => {
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Events
+                </a>
+                <a
+                  href="/contact"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Contact
                 </a>
               </div>
             </div>
@@ -120,6 +126,12 @@ const Navbar = () => {
             >
               Events
             </a>
+            <a
+              href="/contact"
+              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >
+              Contact
+                </a>
           </div>
         </div>
       </Transition>

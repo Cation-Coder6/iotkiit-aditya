@@ -14,31 +14,35 @@ const Process = () => {
           <div className="flex flex-col items-center md:px-6 py-4 lg:px-12">
             <span className="text-6xl text-primary-default mb-4">1</span>
             <h4 className="font-semibold text-2xl text-secondary mb-2">
-              Analysis
+              What do we do?
             </h4>
             <p className=" lg:w-full md:w-full sm:w-1/2 px-1 text-center text-secondary-700 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              imperdiet est
+              Nature’s full of mysteries.
+              We try to find the real-world problem statements and work
+              passively to find their solution
             </p>
           </div>
           <div className="flex flex-col items-center md:px-6 py-4 lg:px-12">
             <span className="text-6xl text-primary-default mb-4">2</span>
             <h4 className="font-semibold text-2xl text-secondary mb-2">
-              Execution
+              How are we different?
             </h4>
             <p className="lg:w-full md:w-full sm:w-1/2 px-1 text-center text-secondary-700 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              imperdiet est
+              Extensive research and on-field
+              analysis is the key factor of our success.
+              Of course, we have other
+              secret ingredients as well!
             </p>
           </div>
           <div className="flex flex-col items-center md:px-6 py-4 lg:px-12">
             <span className="text-6xl text-primary-default mb-4">3</span>
             <h4 className="font-semibold text-2xl text-secondary mb-2">
-              Success
+              How do we do it?
             </h4>
             <p className="lg:w-full md:w-full sm:w-1/2 px-1 text-center text-secondary-700 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              imperdiet est
+              Well, everyone is blessed with unique skills.
+              We figure out the capability
+              of each individual and make it work progressively.
             </p>
           </div>
         </div>

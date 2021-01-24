@@ -1,13 +1,13 @@
 const Header = () =>{
   return(
 <div>
-  <div className="bg-indigo-900 md:overflow-hidden">
-    <div className="px-4 py-20 md:py-4">
+  <div className="bg-indigo-900 md:overflow-hidden py-0">
+    <div className="px-4 py-20 md:pt-0">
       <div className="md:max-w-6xl md:mx-auto">
         <div className="md:flex md:flex-wrap">
           <div className="md:w-1/2 text-center md:text-left md:pt-16">
             <h1 className="font-bold text-white text-2xl md:text-5xl leading-tight mb-4">
-              Simple payment platform for any service
+              Events
             </h1>
             <p className="text-indigo-200 md:text-xl md:pr-48">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
@@ -293,7 +293,7 @@ const Header = () =>{
         </div>
       </div>
     </div>
-    <svg className="fill-current text-white hidden md:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <svg className="fill-current text-white hidden md:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
       <path fillOpacity={1} d="M0,224L1440,32L1440,320L0,320Z" />
     </svg>
   </div>

@@ -14,9 +14,10 @@ const AboutUs = () => {
               About us <span className="bg-primary-default h-1 w-20 block mt-4" />
             </h3>
             <p className="text-lg text-secondary-700 mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              imperdiet est tellus, et consequat sem sodales id. Quisque
-              molestie et mauris efficitur lacinia.
+              A group of dedicated students and
+              faculties who are keenly focused on
+              working towards the betterment of
+              society through technology.
             </p>
             <p className="text-lg text-secondary-700">
               Aliquam eget semper mi. Mauris magna risus, viverra in nulla id,
