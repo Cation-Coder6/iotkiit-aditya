@@ -17,8 +17,8 @@ const CheckIcon = () => {
 
 const EventCard = (props) => {
   return (
-    <div className="lg:w-3/12 md:w-3/12 w-1/2 h-1/2 shadow-lg rounded-xl">
-      <div className="text-center pricing-header">
+    <div className="lg:w-3/12 md:w-3/12 min-w-max sm:w-full h-1/2 shadow-lg rounded-xl">
+      <div className="text-center pricing-header p-5">
         <div className="flex items-center flex-col">
           <div className="divide-y-2 w-32 divide-green-500">
             <div className="font-extrabold text-3xl ">Date</div>
