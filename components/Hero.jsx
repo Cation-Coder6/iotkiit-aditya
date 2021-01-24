@@ -7,10 +7,12 @@ const Hero = () => {
           <div className="md:w-1/2 lg:w-1/3 mb-4 sm:mb-16 md:mb-0">
 
             <h1 className="text-6xl md:text-8xl font-bold text-secondary leading-tight mb-4 md:mb-4">
-              <span class="flex h-7 w-7 sm:m-0.5 -m-1.5">
-                <span class="animate-ping inline-flex h-full w-full rounded-full bg-primary-default opacity-75"></span>
-                <span class=" absolute inline-flex rounded-full h-7 w-7 bg-primary-default"></span>
-              </span>IOT LAB, KIIT
+              <div>
+                <span className="flex h-7 w-7 sm:m-0.5 -m-1.5">
+                  <span className="animate-ping inline-flex h-full w-full rounded-full bg-primary-default opacity-75" />
+                  <span className=" absolute inline-flex rounded-full h-7 w-7 bg-primary-default" />
+                </span>IOT LAB, KIIT
+              </div>
             </h1>
             <h2 className="text-2xl font-bold text-secondary-600 uppercase mb-12 ml-1">
               A Centre Of Excellence
