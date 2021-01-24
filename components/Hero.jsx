@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="relative overflow-hidden px-6 pb-6">
+    <div className="relative overflow-hidden px-6 pb-0">
       <img src="/images/wave.svg" className="absolute top-0 left-2/5" />
       <div className="container mx-auto relative px-12">
         <div className="flex flex-col md:flex-row items-center pt-32 pb-16 md:pb-0 ">

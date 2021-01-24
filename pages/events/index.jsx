@@ -5,6 +5,7 @@ import {
 } from "../../components/BottomCards";
 import EventAim from "../../components/EventAim";
 import EventCard from "../../components/EventCard";
+import Header from "../../components/Header";
 
 const RightArrow = () => {
   return (
@@ -36,6 +37,7 @@ const EventListItem = ({ point, ...rest }) => {
 const Events = () => {
   return (
     <main>
+      <Header />
       <EventAim />
       <section>
         <div class="container max-w-full mx-auto py-12 px-6">
