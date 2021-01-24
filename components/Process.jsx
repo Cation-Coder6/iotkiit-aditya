@@ -11,7 +11,7 @@ const Process = () => {
         </h3>
         <div className="flex flex-col md:flex-row xl:px-32 py-5">
           {/* TODO() make this a component */}
-          <div className="flex flex-col items-center md:px-6 lg:px-12">
+          <div className="flex flex-col items-center md:px-6 py-4 lg:px-12">
             <span className="text-6xl text-primary-default mb-4">1</span>
             <h4 className="font-semibold text-2xl text-secondary mb-2">
               Analysis
@@ -21,7 +21,7 @@ const Process = () => {
               imperdiet est
             </p>
           </div>
-          <div className="flex flex-col items-center md:px-6 lg:px-12">
+          <div className="flex flex-col items-center md:px-6 py-4 lg:px-12">
             <span className="text-6xl text-primary-default mb-4">2</span>
             <h4 className="font-semibold text-2xl text-secondary mb-2">
               Execution
@@ -31,7 +31,7 @@ const Process = () => {
               imperdiet est
             </p>
           </div>
-          <div className="flex flex-col items-center md:px-6 lg:px-12">
+          <div className="flex flex-col items-center md:px-6 py-4 lg:px-12">
             <span className="text-6xl text-primary-default mb-4">3</span>
             <h4 className="font-semibold text-2xl text-secondary mb-2">
               Success

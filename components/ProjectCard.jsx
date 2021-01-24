@@ -1,8 +1,8 @@
 const ProjectCard = () => {
   return (
-    <div className="max-w-sm w-full sm:w-1/2 lg:w-1/3 py-6 px-3">
+    <div className="max-w-sm w-full sm:w-1/2 md:w-1/2 lg:w-1/4 py-6 px-3">
       <div className="bg-white shadow-xl rounded-lg overflow-hidden">
-        <div className="bg-cover bg-center h-56 p-4" style={{ backgroundImage: 'url(https://chaibarbbsr.com/assets/img/main_bg.jpg)' }}>
+        <div className="bg-cover bg-center h-44 p-4" style={{ backgroundImage: 'url(https://chaibarbbsr.com/assets/img/main_bg.jpg)' }}>
         </div>
         <div className="p-4">
           <p className="uppercase tracking-wide text-sm font-bold text-gray-700">Portfolio • Website</p>
