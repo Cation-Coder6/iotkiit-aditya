@@ -291,7 +291,7 @@ const EventHeader = () => {
                     <div className="w-2 h-2 rounded-full bg-green-800 mx-auto absolute bottom-0 right-0 mr-2 -mb-2 z-10 border-2 border-white" />
                   </div>
                   <div className="text-gray-800 text-center text-sm">
-                    Modern<br />Framework
+                    Modern<br />Frameworks
                   </div>
                 </div>
               </div>

@@ -30,7 +30,7 @@ const Events = () => {
   return (
     <main>
       <EventHeader />
-        <div class="container max-w-full mx-auto lg:py-0 md:py-0 pt-80 mt-4 sm:mt-0 px-6 ">
+        <div class="container max-w-full mx-auto lg:py-0 md:py-0 pt-80 mt-4 sm:mt-2 px-6 ">
           <h1 class="text-center text-4xl text-black font-medium leading-snug uppercase tracking-wider">
             Our Flagship Events
           </h1>
@@ -48,7 +48,7 @@ const Events = () => {
                 </div>
                 <div class="bg-white text-black rounded-lg shadow-lg overflow-hidden">
                   <div class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
-                    <h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
+                    <h1 class=" text-2xl font-medium uppercase p-3 pb-0 text-center tracking-wide">
                       HacktoberFest '20
                     </h1>
                     <h2 class="text-sm text-gray-500 text-center pb-6">October '20</h2>
@@ -71,7 +71,7 @@ const Events = () => {
                   <img class="w-26 h-24 inline-block" src="https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png" />
                 </div>
                 <div class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
-                  <h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
+                  <h1 class="text-2xl font-medium uppercase p-3 pb-0 text-center tracking-wide">
                     AWS CLOUD Training
                   </h1>
                   <h2 class="text-sm text-gray-500 text-center pb-6">
@@ -79,7 +79,7 @@ const Events = () => {
                   </h2>
                   An Online course on “AWS Cloud” with hands-on learning experience in the field of cloud computing.
                 </div>
-                <div class="flex sm:pl-12 pl-10 justify-start sm:justify-start mt-3">
+                <div class="flex lg:pl-12 md:pl-2 sm:pl-12 pl-12 justify-start sm:justify-start mt-3">
                   <ul>
                     <EventListItemCenter point={"AWS Certified Trainer"} />
                     <EventListItemCenter point={"55 Hour Extensive Training"} />
@@ -97,7 +97,7 @@ const Events = () => {
                     <img class="w-16 h-16 inline-block" src="/images/codemate.ico" />
                   </div>
                   <div class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
-                    <h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
+                    <h1 class="text-2xl font-medium uppercase p-3 pb-0 text-center tracking-wide">
                       CodeMate '21
                     </h1>
                     <h2 class="text-sm text-gray-500 text-center pb-6">

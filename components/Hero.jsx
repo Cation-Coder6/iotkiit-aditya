@@ -8,7 +8,7 @@ const Hero = () => {
 
             <h1 className="text-6xl md:text-7xl font-bold text-secondary leading-tight mb-4 md:mb-4">
               <div>
-                <span className="flex h-7 w-7 sm:m-0.5 -m-1.5">
+                <span className="flex h-7 w-7 sm:-ml-0.5 -m-1.5">
                   <span className="animate-ping inline-flex h-full w-full rounded-full bg-primary-default opacity-75" />
                   <span className=" absolute inline-flex rounded-full h-7 w-7 bg-primary-default" />
                 </span>IOT LAB,<br /> KIIT

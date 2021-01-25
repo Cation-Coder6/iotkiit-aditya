@@ -1,6 +1,6 @@
 const AboutUs = () => {
   return (
-    <div id="about-us" className="bg-blue-100 lg:px-24 md:px-24 px-8 mt-28 pb-0">
+    <div id="about-us" className="bg-blue-100 lg:px-24 md:px-24 px-8 mt-28 pb-3">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 md:pr-8 lg:pr-16">

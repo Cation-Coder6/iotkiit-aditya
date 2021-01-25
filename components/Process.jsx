@@ -19,7 +19,7 @@ const Process = () => {
             <p className=" lg:w-full md:w-full sm:w-1/2 px-1 text-center text-secondary-700 leading-relaxed">
               Nature’s full of mysteries.
               We try to find the real-world problem statements and work
-              passively to find their solution
+              passively to find their solution.
             </p>
           </div>
           <div className="flex flex-col items-center md:px-6 py-4 lg:px-12">
