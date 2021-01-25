@@ -1,3 +1,13 @@
 import ContactUs from "../../components/ContactUs";
+import MapFooter from "../../components/MapsFooter";
 
-export default ContactUs;
+const Contact = () =>{
+  return(
+    <div>
+      <ContactUs/>
+      <MapFooter />
+    </div>
+  )
+}
+
+export default Contact;

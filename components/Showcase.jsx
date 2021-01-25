@@ -25,20 +25,7 @@ const Showcase = () => {
               </div>
             </div>
           </div>
-          <div className="absolute inset-y-0 left-0 lg:flex lg:items-center">
-            <button className="mt-24 lg:mt-0 -ml-6 h-12 w-12 rounded-full bg-white p-3 shadow-lg">
-              <svg className="h-full w-full text-indigo-900" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M5.41 11H21a1 1 0 0 1 0 2H5.41l5.3 5.3a1 1 0 0 1-1.42 1.4l-7-7a1 1 0 0 1 0-1.4l7-7a1 1 0 0 1 1.42 1.4L5.4 11z" />
-              </svg>
-            </button>
-          </div>
-          <div className="absolute inset-y-0 right-0 lg:flex lg:items-center">
-            <button className="mt-24 lg:mt-0 -mr-6 h-12 w-12 rounded-full bg-white p-3 shadow-lg">
-              <svg className="h-full w-full text-indigo-900" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z" />
-              </svg>
-            </button>
-          </div>
+          
         </div>
       </div>
     </div>
