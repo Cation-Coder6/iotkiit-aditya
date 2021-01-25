@@ -2,7 +2,7 @@ import { CyanBottom, OrangeBottom, PurpleBottom, } from "../../components/Bottom
 import RightArrow from "../../components/bullets/RightArrow";
 import Tick from "../../components/bullets/Tick";
 import EventExtra from "../../components/EventExtra";
-import Header from "../../components/Header";
+import EventHeader from "../../components/Header";
 
 const EventListItemCenter = ({ point, ...rest }) => {
   return (
@@ -29,11 +29,10 @@ const EventListItem = ({ point, ...rest }) => {
 const Events = () => {
   return (
     <main>
-      <Header />
-      <section>
-        <div class="container max-w-full mx-auto lg:py-0 md:py-0 py-72 px-6 ">
-          <h1 class="text-center text-4xl text-black font-medium leading-snug tracking-wider">
-            Events
+      <EventHeader />
+        <div class="container max-w-full mx-auto lg:py-0 md:py-0 pt-80 mt-4 sm:mt-0 px-6 ">
+          <h1 class="text-center text-4xl text-black font-medium leading-snug uppercase tracking-wider">
+            Our Flagship Events
           </h1>
           <p class="text-center text-lg text-gray-700 mt-2 px-6">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
@@ -120,7 +119,6 @@ const Events = () => {
             </div>
           </div>
         </div>
-      </section>
       <EventExtra />
     </main>
   );

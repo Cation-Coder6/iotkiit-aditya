@@ -1,23 +1,23 @@
-const Header = () => {
+const EventHeader = () => {
   return (
     <div>
       <div className="bg-primary-default md:overflow-hidden py-0">
-        <div className="px-4 py-20 md:pt-0">
+        <div className="px-4 py-12 md:pt-0">
           <div className="md:max-w-6xl md:mx-auto">
             <div className="md:flex md:flex-wrap">
-              <div className="md:w-1/2 text-center md:text-left md:pt-16">
-                <h1 className="font-bold text-white text-4xl md:text-5xl leading-tight mb-4">
-                  Events <br /><div className = "pt-4">&amp; Workshops</div> 
+              <div className="md:w-1/2 text-center md:text-left md:pt-16 md:pl-10 lg:pl-0">
+                <h1 className="font-bold text-white text-6xl md:text-7xl leading-tight mb-4">
+                  Events <br /><div className="pt-2 sm:text-4xl text-3xl">&amp; Workshops</div>
                 </h1>
-                  <div class="xl:w-full lg:w-3/4 mt-4 w-full mx-auto sm:text-left  text-center inline-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-white mb-8" viewBox="0 0 975.036 975.036">
-                      <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                    </svg>
-                    <p class="leading-relaxed text-white text-xl">Tell me and I forget, teach me and I may remember, involve me and I learn.</p>
-                    <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-2 mb-2"></span>
-                    <h2 class="text-white font-medium title-font tracking-wider text-sm">Benjamin Franklin</h2>
-                    <br />
-                  </div>
+                <div class="xl:w-full lg:w-3/4 mt-4  w-full mx-auto md:text-left  text-center inline-block">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-white mb-4" viewBox="0 0 975.036 975.036">
+                    <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                  </svg>
+                  <p class="leading-relaxed font-mono text-white text-xl">Tell me and I forget, teach me and I may remember, involve me and I learn.</p>
+                  <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-2 mb-2"></span>
+                  <h2 class="text-white font-medium title-font tracking-wider text-xl">Benjamin Franklin</h2>
+                  <br />
+                </div>
               </div>
               <div className="md:w-1/2 relative pt-2">
                 <div className="hidden md:block">
@@ -36,7 +36,7 @@ const Header = () => {
                       <div className="w-2 h-2 rounded-full bg-green-800 mx-auto absolute bottom-0 right-0 mr-2 -mb-2 z-10 border-2 border-white" />
                     </div>
                     <div className="text-gray-800 text-center">
-                      Online <br />Services
+                      Modern <br />Frameworks
                 </div>
                   </div>
                   <div className="ml-24 mb-16 absolute left-0 bottom-0 w-40 bg-white rounded-lg shadow-lg px-6 py-8" style={{ transform: 'rotate(-8deg)', zIndex: 2 }}>
@@ -49,11 +49,11 @@ const Header = () => {
                       <div className="w-8 h-8 bg-green-700 border-4 border-white rounded-full -ml-3 -mb-5" />
                     </div>
                     <div className="text-gray-800 text-center">
-                      Banking Services
+                      Minimal Costs
                 </div>
                   </div>
-                  <div className="ml-32 absolute left-0 bottom-0 w-48 bg-white rounded-lg shadow-lg px-10 py-8" style={{ transform: 'rotate(-8deg)', zIndex: 2, marginBottom: '-220px' }}>
-                    <div className="bg-indigo-800 mx-auto rounded-lg pt-4 mb-16 relative">
+                  <div className="ml-32 absolute left-0 bottom-5 w-48 bg-white rounded-lg shadow-lg px-10 py-8 " style={{ transform: 'rotate(-8deg)', zIndex: 2, marginBottom: '-220px' }}>
+                    <div className="bg-indigo-800 mx-auto rounded-lg pt-4 mb-12 relative">
                       <div className="h-4 bg-white" />
                       <div className="text-right my-2 pb-1">
                         <div className="inline-flex w-3 h-3 rounded-full bg-white -mr-2" />
@@ -65,7 +65,7 @@ const Header = () => {
                       </div>
                     </div>
                     <div className="text-gray-800 text-center">
-                      Payment for <br />Internet
+                      Industry Integrations
                 </div>
                   </div>
                   <div className="mt-10 w-full absolute right-0 top-0 flex rounded-lg bg-white overflow-hidden shadow-lg" style={{ transform: 'rotate(-8deg)', marginRight: '-250px', zIndex: 1 }}>
@@ -202,7 +202,7 @@ const Header = () => {
                   </div>
                   <div className="flex-1 px-4 py-8">
                     <h2 className="text-xs text-gray-700 font-bold mb-1">
-                      Popular Payments
+                    Popular Courses
                 </h2>
                     <div className="flex mb-5">
                       <div className="p-2 w-12 rounded-full bg-gray-100 mr-2" />
@@ -234,7 +234,7 @@ const Header = () => {
                       </div>
                     </div>
                     <h2 className="text-xs text-gray-700 font-bold mb-1">
-                      Popular Payments
+                    Hands-On Workshops
                 </h2>
                     <div className="w-full flex flex-wrap justify-between items-center border-b-2 border-gray-100 py-3">
                       <div className="w-1/3">
@@ -276,7 +276,7 @@ const Header = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mr-3 md:hidden absolute right-0 bottom-0 w-40 bg-white rounded-lg shadow-lg px-10 py-6" style={{ zIndex: 2, marginBottom: '-380px' }}>
+                <div className="mr-3 md:hidden absolute right-0 bottom-2 pb-3 w-40 bg-white rounded-lg shadow-lg px-10 py-6" style={{ zIndex: 2, marginBottom: '-380px' }}>
                   <div className="bg-indigo-800 mx-auto rounded-lg px-2 pb-2 relative mb-8">
                     <div className="mb-1">
                       <span className="w-1 h-1 bg-indigo-100 rounded-full inline-block" style={{ marginRight: 1 }} /><span className="w-1 h-1 bg-indigo-100 rounded-full inline-block" style={{ marginRight: 1 }} /><span className="w-1 h-1 bg-indigo-100 rounded-full inline-block" />
@@ -291,8 +291,8 @@ const Header = () => {
                     <div className="w-2 h-2 rounded-full bg-green-800 mx-auto absolute bottom-0 right-0 mr-2 -mb-2 z-10 border-2 border-white" />
                   </div>
                   <div className="text-gray-800 text-center text-sm">
-                    Payment for <br />Internet
-              </div>
+                    Modern<br />Framework
+                  </div>
                 </div>
               </div>
             </div>
@@ -307,4 +307,4 @@ const Header = () => {
   )
 }
 
-export default Header;
+export default EventHeader;

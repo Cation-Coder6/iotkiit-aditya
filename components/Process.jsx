@@ -25,7 +25,7 @@ const Process = () => {
           <div className="flex flex-col items-center md:px-6 py-4 lg:px-12">
             <span className="text-6xl text-primary-default mb-4">2</span>
             <h4 className="font-semibold text-2xl text-secondary mb-2">
-              How are we different?
+              How are we unique?
             </h4>
             <p className="lg:w-full md:w-full sm:w-1/2 px-1 text-center text-secondary-700 leading-relaxed">
               Extensive research and on-field
