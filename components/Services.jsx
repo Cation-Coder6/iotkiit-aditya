@@ -1,5 +1,6 @@
 import AppDevAnimation from "./animations/AppDevAnimation";
 import WebDevAnimation from "./animations/WebDevAnimation";
+import EventManagementAnimation from "./animations/EventManagementAnimation";
 
 const Services = () => {
   return (
@@ -53,7 +54,9 @@ const Services = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row items-center">
-          <img src="/images/service3.svg" className="md:w-1/3" />
+          <div className="md:w-1/3">
+            <EventManagementAnimation />
+          </div>
           <div className="md:ml-16 xl:ml-32">
             <h4 className="text-2xl md:text-3xl font-bold text-secondary-800 mb-4 py-2">
               Event Management
