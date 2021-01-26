@@ -1,28 +1,43 @@
 const TeamMemberCard = ({
   name,
   position,
+  imageUrl,
   githubUrl,
   linkedinUrl,
   instaUrl,
+  ringColor,
   ...rest
 }) => {
+
+  let color = ""
+  switch (ringColor) {
+    case 1:
+      color = "ring-blue-200"
+      break;
+    case 2:
+      color = "ring-purple-400"
+      break;
+    case 3:
+      color = "ring-red-400"
+      break;
+    case 4:
+      color = "ring-gray-300"
+      break;
+    case 5:
+      color = "ring-yellow-300"
+      break;
+    default:
+      color = ""
+  }
   return (
-    <div className="xl:w-1/5 lg:w-1/5 md:w-1/4 sm:w-1/2 w-1/2 relative mt-6 px-3 mb-32 sm:mb-14">
-      <div className="rounded overflow-hidden shadow-md bg-white">
-        <div className="absolute -mt-12 -ml-3 w-full flex justify-center">
-          <div className=" h-28 w-28">
-            <img
-              src="https://cdn.tuk.dev/assets/photo-1564061170517-d3907caa96ea.jfif"
-              alt
-              className="rounded-full object-cover h-full w-full shadow-md border-8 border-indigo-300"
-            />
-          </div>
-        </div>
-        <div className="px-6 mt-16">
-          <div className="font-bold text-xl text-center pb-1">{name}</div>
-          <p className="text-gray-800 text-sm text-center">{position}</p>
-          <div className="w-full flex justify-center pt-5 pb-5">
-            <a href="javascript:void(0)" className="mx-5">
+    <div className="p-2 lg:w-1/3 md:w-1/2 w-full z-1">
+      <div className="h-full flex items-center border-gray-200 border py-6 px-8 rounded-lg">
+        <img alt="team" className={`w-28 h-28 ring-4 ${color} bg-gray-100 object-cover object-center flex-shrink-0 rounded-full ml-0 mr-0`} src={imageUrl} />
+        <div className="flex-grow">
+          <h2 className="text-gray-900 title-font font-medium text-center">{name}</h2>
+          <p className="text-gray-500 text-center">{position}</p>
+          <div className="w-full flex justify-center pt-4 pb-2">
+            <a href={githubUrl} className="mx-2 lg:mx-4">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +55,7 @@ const TeamMemberCard = ({
                 </svg>
               </div>
             </a>
-            <a href="javascript:void(0)" className="mx-5">
+            <a href={linkedinUrl} className="mx-2 lg:mx-4 ">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +85,7 @@ const TeamMemberCard = ({
                 </svg>
               </div>
             </a>
-            <a href="javascript:void(0)" className="mx-5">
+            <a href={instaUrl} className="mx-2 lg:mx-4">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

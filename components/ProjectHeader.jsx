@@ -2,7 +2,7 @@ import ProjectAnimation from "./animations/ProjectAnimation";
 
 const ProjectHeader = () => {
   return (
-    <div className="min-w-full pt-20 flex flex-col justify-center p-10">
+    <div className=" pt-20 flex flex-col justify-center p-10">
       <div className="relative w-full max-w-full lg:max-w-6xl xl:max-w-screen-2xl mx-auto">
         <div className="absolute inset-0 -m-2 bg-gradient-to-r from-red-100 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:rotate-3 rounded-3xl sm:rounded-3xl" />
         <div className="relative bg-white shadow-2xl m-1.5 rounded-3xl sm:rounded-3xl">

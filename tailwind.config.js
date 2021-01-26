@@ -7,7 +7,9 @@ module.exports = {
         "2/5": "40%",
         full: "100%",
       },
-
+      zIndex: {
+         '-1': '-1',
+      },
       colors: {
         primary: {
           default: "#30b8c7",
