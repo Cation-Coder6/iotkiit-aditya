@@ -1,10 +1,15 @@
 import TeamHeader from "../../components/TeamHeader";
 import TeamMemberCard from "../../components/TeamMemberCard";
+import Head from "next/head";
 
 const Team = () => {
   return (
     <div>
-      <TeamHeader/>
+      <Head>
+        <title>Our Team</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <TeamHeader />
       <div className="container flex justify-center mx-auto pt-16">
         <h3 className="text-3xl sm:text-5xl leading-normal font-extrabold tracking-tight text-gray-900 pb-16 -mt-4">
           Our <span className="text-indigo-600"> Mentors</span>
@@ -19,7 +24,8 @@ const Team = () => {
             />
             <TeamMemberCard
               name={"Rohan Kakar"}
-              position={"Domain Lead: App Team"} />
+              position={"Domain Lead: App Team"}
+            />
 
             <TeamMemberCard
               name={"Ronit Kumar Nayak"}
