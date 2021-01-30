@@ -11,7 +11,7 @@ export const PurpleBottom = () => {
           <style
             dangerouslySetInnerHTML={{
               __html:
-                ".color-1{fill:#9C4668;isolation:isolate;}.cls-1{opacity:0.1;}.cls-2{opacity:0.2;}.cls-3{opacity:0.4;}.cls-4{opacity:0.6;}",
+                ".color-1{fill:#E93D84;isolation:isolate;}.cls-1{opacity:0.1;}.cls-2{opacity:0.2;}.cls-3{opacity:0.4;}.cls-4{opacity:0.6;}",
             }}
           />
         </defs>
@@ -120,7 +120,7 @@ export const CyanBottom = () => (
         <style
           dangerouslySetInnerHTML={{
             __html:
-              ".color-3{fill:cyan;isolation:isolate;}.cls-1{opacity:0.1;}.cls-2{opacity:0.2;}.cls-3{opacity:0.4;}.cls-4{opacity:0.6;}",
+              ".color-3{fill:#6FCCDD;isolation:isolate;}.cls-1{opacity:0.1;}.cls-2{opacity:0.2;}.cls-3{opacity:0.4;}.cls-4{opacity:0.6;}",
           }}
         />
       </defs>

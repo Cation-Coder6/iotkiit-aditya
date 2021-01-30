@@ -247,7 +247,7 @@ const Team = () => {
                 </svg>
                 <span className="relative">Meet&nbsp;</span>
               </span>
-          the Web Team
+          the Dream Team
         </h2>
             <p className="text-base text-gray-700 md:text-lg">
               “A mentor is someone who sees more talent and ability within you, than you see in yourself, and helps bring it out of you.” - Bob Proctor

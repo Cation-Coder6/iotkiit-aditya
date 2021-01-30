@@ -26,7 +26,7 @@ const ProjectHeader = () => {
             </bottom>
           </div>
               </div>
-              <div className="md:w-1/3 -mt-16">
+              <div className="md:w-1/3 -mt-32 mb-12">
                 <ProjectAnimation />
               </div>
             </div>
