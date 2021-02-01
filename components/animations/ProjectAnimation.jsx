@@ -11,7 +11,7 @@ const ProjectAnimation = () => {
     },
   };
 
-  return <Lottie options={defaultOptions} height={400} width={370} />;
+  return <Lottie options={defaultOptions}  height={270} width={270} style={{padding:10}}/>
 }
 
 export default ProjectAnimation;
