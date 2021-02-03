@@ -4,7 +4,7 @@ const ProjectHeader = () => {
   return (
     <div className="flex flex-wrap md items-center h-2/3">
       <div className="bg-white w-full md:w-1/2 h-2/3">
-        <div className="mx-32 sm:pl-6 md:mx-12 lg:mx-32">
+        <div className="mx-12 sm:pl-6 md:mx-12 md:pl-0 lg:ml-40 lg:mr-12">
           <h1 className="text-6xl font-bold mt-16">Our Work</h1>
           <div className="flex mt-10 font-light text-gray-500">
             <div className="pr-4">
@@ -37,10 +37,12 @@ const ProjectHeader = () => {
               </div>
               <div className="px-20 py-6 sm:mt-0">
                 <div className="flex flex-col-reverse md:flex-row items-center mx-20">
-                  <div className="md:w-1/3">
-                  <span className="text-xl text-gray-900  mb-1 -ml-10">App Title</span><br />
-                  <span className="text-sm text-gray-600  mb-1 -ml-10">Workflow Lorem</span>
-                    <ProjectAnimation />
+                  <div className="sm:m-1/2 sm:-ml-16 md:-ml-0">
+                  <span className="text-xl text-gray-900  mb-1 sm:-ml-10">App Title</span><br />
+                  <span className="text-sm text-gray-600  mb-1 sm:-ml-10">Workflow Lorem</span>
+                  <div className="sm:-ml-0 md:-ml-28 lg:-ml-0 ">
+                  <ProjectAnimation />
+                  </div>
                     <div class="lg:ml-5 text-left">
                       <bottom type="button" class="flex items-center justify-center w-12 h-12 rounded-full bg-cool-gray-100 text-gray-800 animate-bounce hover:text-gray-900 hover:bg-cool-gray-50 transition duration-300 ease-in-out cursor-pointer">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

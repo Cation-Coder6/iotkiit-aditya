@@ -84,12 +84,12 @@ const Navbar = () => {
                   Team
                 </a>
                 <a
-                  href="/projects"
+                  href="/work"
                   className={`${
-                    path == "/projects" ? "bg-gray-900" : ""
+                    path == "/work" ? "bg-gray-900" : ""
                   } text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium`}
                 >
-                  Projects
+                  Work
                 </a>
                 <a
                   href="/events"
