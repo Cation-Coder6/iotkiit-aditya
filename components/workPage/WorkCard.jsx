@@ -1,4 +1,4 @@
-const ProjectCard = () => {
+const WorkCard = () => {
   return (
     <div className="max-w-sm w-full sm:w-1/2 md:w-1/2 lg:w-1/4 py-6 px-3">
       <div className="bg-white shadow-xl rounded-lg overflow-hidden">
@@ -41,4 +41,4 @@ const ProjectCard = () => {
 }
 
 
-export default ProjectCard;
+export default WorkCard;

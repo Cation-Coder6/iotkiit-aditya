@@ -1,5 +1,5 @@
 import Lottie from "react-lottie";
-import animationData from "./43173-web-development.json";
+import animationData from "./LottieFiles/43173-web-development.json";
 
 const WebDevAnimation = () => {
   const defaultOptions = {

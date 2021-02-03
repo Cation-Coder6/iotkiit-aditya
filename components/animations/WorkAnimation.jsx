@@ -1,7 +1,7 @@
 import Lottie from "react-lottie";
-import animationData from "./22830-page-construction.json";
+import animationData from "./LottieFiles/22830-page-construction.json";
 
-const ProjectAnimation = () => {
+const WorkAnimation = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -14,4 +14,4 @@ const ProjectAnimation = () => {
   return <Lottie options={defaultOptions}  height={270} width={270} style={{padding:10}}/>
 }
 
-export default ProjectAnimation;
+export default WorkAnimation;

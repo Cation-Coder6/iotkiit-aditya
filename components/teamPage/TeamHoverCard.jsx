@@ -1,4 +1,4 @@
-const Hovercard = ({  name,
+const TeamHoverCard = ({  name,
   position,
   email,
   imageUrl,
@@ -29,4 +29,4 @@ const Hovercard = ({  name,
   )
 }
 
-export default Hovercard;
+export default TeamHoverCard;

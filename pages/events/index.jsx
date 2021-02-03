@@ -2,11 +2,11 @@ import {
   CyanBottom,
   OrangeBottom,
   PurpleBottom,
-} from "../../components/BottomCards";
+} from "../../components/eventPage/BottomCards";
 import RightArrow from "../../components/bullets/RightArrow";
 import Tick from "../../components/bullets/Tick";
-import EventExtra from "../../components/EventExtra";
-import EventHeader from "../../components/EventHeader";
+import EventExtra from "../../components/eventPage/EventExtra";
+import EventHeader from "../../components/eventPage/EventHeader";
 import Head from "next/head";
 
 const EventListItemCenter = ({ point, ...rest }) => {

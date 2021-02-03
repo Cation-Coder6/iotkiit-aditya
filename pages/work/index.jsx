@@ -1,5 +1,5 @@
-import ProjectCard from "../../components/ProjectCard";
-import ProjectHeader from "../../components/ProjectHeader";
+import WorkCard from "../../components/workPage/WorkCard";
+import WorkHeader from "../../components/workPage/WorkHeader";
 import Head from "next/head";
 
 const SectionHeader = () => {
@@ -113,20 +113,20 @@ const Points = () => {
   )
 }
 
-const Projects = () => {
+const Works = () => {
   return (
     <div>
       <Head>
-        <title></title>
+        <title>Work</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <ProjectHeader />
+      <WorkHeader />
       <SectionHeader />
       <Points />
       <div className="container px-5 py-12 mx-auto ">
         <div className="flex flex-wrap justify-around">
           {[1, 2, 3, 4, 5, 6].map((_) => (
-            <ProjectCard />
+            <WorkCard />
           ))}
         </div>
       </div>
@@ -134,4 +134,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Works;

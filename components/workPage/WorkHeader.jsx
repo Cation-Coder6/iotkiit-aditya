@@ -1,6 +1,6 @@
-import ProjectAnimation from "./animations/ProjectAnimation";
+import WorkAnimation from "../animations/WorkAnimation";
 
-const ProjectHeader = () => {
+const WorkHeader = () => {
   return (
     <div className="flex flex-wrap md items-center h-2/3">
       <div className="bg-white w-full md:w-1/2 h-2/3">
@@ -41,7 +41,7 @@ const ProjectHeader = () => {
                   <span className="text-xl text-gray-900  mb-1 sm:-ml-10">App Title</span><br />
                   <span className="text-sm text-gray-600  mb-1 sm:-ml-10">Workflow Lorem</span>
                   <div className="sm:-ml-0 md:-ml-28 lg:-ml-0 ">
-                  <ProjectAnimation />
+                  <WorkAnimation />
                   </div>
                     <div class="lg:ml-5 text-left">
                       <bottom type="button" class="flex items-center justify-center w-12 h-12 rounded-full bg-cool-gray-100 text-gray-800 animate-bounce hover:text-gray-900 hover:bg-cool-gray-50 transition duration-300 ease-in-out cursor-pointer">
@@ -63,5 +63,5 @@ const ProjectHeader = () => {
   )
 }
 
-export default ProjectHeader;
+export default WorkHeader;
 

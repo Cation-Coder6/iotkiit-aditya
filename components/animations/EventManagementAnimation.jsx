@@ -1,5 +1,5 @@
 import Lottie from "react-lottie";
-import animationData from "./35684-business-team-discusses-project.json";
+import animationData from "./LottieFiles/35684-business-team-discusses-project.json";
 
 const EventManagementAnimation = () => {
   const defaultOptions = {

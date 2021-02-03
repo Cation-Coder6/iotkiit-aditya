@@ -1,8 +1,8 @@
-import AboutUs from "../components/AboutUs";
-import Hero from "../components/Hero";
-import Process from "../components/Process";
-import Services from "../components/Services";
-import Showcase from "../components/Showcase";
+import AboutUs from "../components/homePage/AboutUs";
+import Hero from "../components/homePage/Hero";
+import Process from "../components/homePage/Process";
+import Services from "../components/homePage/Services";
+import Showcase from "../components/homePage/Showcase";
 import Head from "next/head";
 
 export default function Home() {
