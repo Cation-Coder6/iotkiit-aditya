@@ -5,8 +5,8 @@ const AboutUs = () => {
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 md:pr-8 lg:pr-16">
             <img
-              src="/images/about-us.svg"
-              className="-mt-24 md:mt-0 lg:-mt-24 mb-16 md:mb-0"
+              src="/images/team.svg"
+              className="-mt-24 md:mt-0 lg:-mt-24 mb-0 md:mb-0"
             />
           </div>
           <div className="md:w-1/2">

@@ -25,7 +25,7 @@ const Hero = () => {
             </button> */}
           </div>
           <div className="mt-16 sm:mt-0 flex-1 flex justify-end">
-            <img src="/images/hero.svg" />
+            <img src="/images/hero_2.svg" />
           </div>
         </div>
       </div>

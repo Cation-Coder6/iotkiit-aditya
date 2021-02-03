@@ -1,7 +1,7 @@
 const EventHeader = () => {
   return (
     <div>
-      <div className="bg-primary-default md:overflow-hidden py-0">
+      <div className="bg-primary-900 md:overflow-hidden py-0">
         <div className="px-4 py-12 md:pt-0">
           <div className="md:max-w-6xl md:mx-auto">
             <div className="md:flex md:flex-wrap">
