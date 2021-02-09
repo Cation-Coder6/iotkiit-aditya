@@ -13,7 +13,7 @@ const Process = () => {
           {/* TODO() make this a component */}
           <div className="flex flex-col items-center md:px-6 py-4 lg:px-12">
             <span className="text-6xl text-primary-default mb-4">1</span>
-            <h4 className="font-semibold text-2xl text-secondary mb-2">
+            <h4 className="font-semibold text-2xl text-secondary mb-2 text-center" >
               What do we do?
             </h4>
             <p className=" lg:w-full md:w-full sm:w-1/2 px-1 text-center text-secondary-700 leading-relaxed">
@@ -24,7 +24,7 @@ const Process = () => {
           </div>
           <div className="flex flex-col items-center md:px-6 py-4 lg:px-12">
             <span className="text-6xl text-primary-default mb-4">2</span>
-            <h4 className="font-semibold text-2xl text-secondary mb-2">
+            <h4 className="font-semibold text-2xl text-secondary mb-2 text-center">
               How are we unique?
             </h4>
             <p className="lg:w-full md:w-full sm:w-1/2 px-1 text-center text-secondary-700 leading-relaxed">
@@ -36,7 +36,7 @@ const Process = () => {
           </div>
           <div className="flex flex-col items-center md:px-6 py-4 lg:px-12">
             <span className="text-6xl text-primary-default mb-4">3</span>
-            <h4 className="font-semibold text-2xl text-secondary mb-2">
+            <h4 className="font-semibold text-2xl text-secondary mb-2 text-center">
               How do we do it?
             </h4>
             <p className="lg:w-full md:w-full sm:w-1/2 px-1 text-center text-secondary-700 leading-relaxed">
