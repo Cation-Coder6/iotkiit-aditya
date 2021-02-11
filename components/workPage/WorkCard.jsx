@@ -1,6 +1,6 @@
 const WorkCard = () => {
   return (
-    <div className="max-w-sm  w-full sm:w-1/2 md:w-1/2 lg:w-full py-6 px-3">
+    <div className="max-w-sm min-w-sm w-full lg:w-full py-6 px-3">
       <div className="bg-white shadow-xl rounded-lg overflow-hidden">
         <div
           className="bg-cover bg-center h-44 p-4"

@@ -252,8 +252,17 @@ const Works = () => {
   useEffect(() => {
     console.log("Mounted");
     const glide = new Glide(".glide", {
-      autoplay: 2000,
-      perView: 3,
+      breakpoints:{
+        600: {
+          perView: 1
+        },
+        800:{
+          perView:2
+        },
+        2400:{
+          perView:3
+        }
+      },
       type: "carousel",
     }).mount();
     glide.play();
@@ -274,32 +283,32 @@ const Works = () => {
             <WorkCard />
           ))}
         </div> */}
-        <div className="glide container lg:px-6 lg:bg-gray-500 lg:rounded-xl lg:bg-opacity-50 mx-auto flex items-center lg:space-x-8">
-          <div className="glide__arrows" data-glide-el="controls">
+        <div className="glide container lg:bg-gray-500 px-auto lg:rounded-xl lg:bg-opacity-50 mx-auto flex ">
+          {/* <div className="glide__arrows" data-glide-el="controls">
             <button
               className="glide__arrow glide__arrow--left"
               data-glide-dir="<"
             >
               Prev
             </button>
-          </div>
+          </div> */}
           <div className="glide__track" data-glide-el="track">
             <div className="glide__slides">
               {[1, 2, 3].map((i) => (
-                <div key={`glide_workcard_${i}`} className="glide__slide">
+                <div key={`glide_workcard_${i}`} className="glide__slide justify-center">
                   <WorkCard />
                 </div>
               ))}
             </div>
           </div>
-          <div className="glide__arrows" data-glide-el="controls">
+          {/* <div className="glide__arrows" data-glide-el="controls">
             <button
               className="glide__arrow glide__arrow--right"
               data-glide-dir=">"
             >
               Next
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
