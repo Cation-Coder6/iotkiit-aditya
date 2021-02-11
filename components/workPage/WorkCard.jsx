@@ -10,7 +10,7 @@ const WorkCard = () => {
           }}
         ></div>
         <div className="p-4">
-          <p className="uppercase tracking-wide text-sm font-bold text-gray-700">
+          <p className="uppercase tracking-wide text-xs font-bold text-gray-700">
             Portfolio • Website
           </p>
           <p className="text-3xl text-gray-900">ChaiBar</p>
@@ -36,22 +36,21 @@ const WorkCard = () => {
         </div>
         <div className="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100">
           <div className="text-xs uppercase font-bold text-gray-600 tracking-wide">
-            Developers:
+            Description:
           </div>
           <div className="flex items-center pt-2">
-            <div
+            {/* <div
               className="bg-cover bg-center w-10 h-10 rounded-full mr-3"
               style={{
                 backgroundImage:
                   "url(https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4)",
               }}
-            ></div>
+            ></div> */}
             <div>
-              <p className="font-bold text-gray-900">Sahil Kumar</p>
-              <p className="text-sm text-gray-700">@SahilKr24</p>
+              <p className="text-sm text-gray-700">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
             </div>
           </div>
-          <div className="flex items-center pt-2">
+          {/* <div className="flex items-center pt-2">
             <div
               className="bg-cover bg-center w-10 h-10 rounded-full mr-3"
               style={{
@@ -63,7 +62,7 @@ const WorkCard = () => {
               <p className="font-bold text-gray-900">Rohan Kakar</p>
               <p className="text-sm text-gray-700">@RKRohk</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
