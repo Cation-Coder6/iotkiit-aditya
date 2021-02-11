@@ -1,6 +1,6 @@
 const HandWave = () =>{
     return(
-        <section className="pt-20 pb-0 bg-gray-50">
+        <section className="pt-20 pb-10 bg-gray-50">
         <div className="container items-center max-w-6xl px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
           <div className="flex flex-wrap items-center -mx-3">
             <div className="order-1 w-full px-3 lg:w-1/2 lg:order-0">

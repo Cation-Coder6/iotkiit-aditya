@@ -12,8 +12,8 @@ const Contact = () =>{
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <HandWave />
-      <ContactUs/>
       <Testimonials />
+      <ContactUs/>
       <MapFooter />
     </div>
   )
