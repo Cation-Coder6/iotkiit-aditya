@@ -1,16 +1,15 @@
 const Footer = () => {
   return (
     <footer className="text-gray-600 body-font">
-      <div className="bg-gray-100">
-        <div className="container px-5 pb-6 sm:pt-4 pt-3 mx-auto flex items-center sm:flex-row flex-col">
+      <div className="bg-gray-100 ">
+        <div className="container pb-8 sm:pt-4 pt-4 mx-auto flex items-center sm:flex-row flex-col ">
           <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2021 IOTLAB —
             <a href="" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">@iotlabkiit</a>
           </p>
-          <span className="text-sm justify-center sm:justify-start text-gray-500">
-          <svg height="20" class="inline-flex" aria-label="code" viewBox="0 0 14 16" version="1.1" width="17" role="img"><path d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
-          with ❤ and ☕ by IoT Web Team
-          </span>
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <p className="text-sm mt-3 mx-auto text-gray-500 ">
+          <span className=" text-lg text-black font-extrabold">&lt;&gt;</span> with ❤ and ☕ by IoT Web Team
+          </p>
+          <span className="inline-flex  sm:mt-0 mt-4 justify-center sm:justify-start">
             <a className="text-gray-500">
               <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-5 h-5" viewBox="0 0 24 24">
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
