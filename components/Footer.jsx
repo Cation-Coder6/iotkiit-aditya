@@ -6,8 +6,8 @@ const Footer = () => {
           <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2021 IOTLAB —
             <a href="" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">@iotlabkiit</a>
           </p>
-          <p className="text-sm mt-3 mx-auto text-gray-500 ">
-          <span className=" text-lg text-black font-extrabold">&lt;&gt;</span> with ❤ and ☕ by IoT Web Team
+          <p className="text-base mt-3 mx-auto text-gray-500 ">
+          Coded with ❤ and ☕ by IoT Web Team
           </p>
           <span className="inline-flex  sm:mt-0 mt-4 justify-center sm:justify-start">
             <a className="text-gray-500">

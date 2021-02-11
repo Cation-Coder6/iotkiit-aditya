@@ -24,7 +24,7 @@ const Testimonials = () => {
                 <span className="mt-1 text-xs sm:text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span>
                                     </h3>
                                 </div>
-                                <img className="flex-shrink-0 w-20 h-20 lg:h-24 bg-gray-300 rounded-full xl:w-24 wl:h-24" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt />
+                                <img className="flex-shrink-0 w-20 h-20 bg-gray-300 rounded-full xl:w-20 wl:h-20" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60"/>
                             </blockquote>
                             <blockquote className="flex items-center justify-between w-full col-span-1 p-6 my-4 bg-white rounded-lg shadow">
                                 <div className="flex flex-col pr-8">
@@ -39,7 +39,7 @@ const Testimonials = () => {
                 <span className="mt-1 text-xs sm:text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span>
                                     </h3>
                                 </div>
-                                <img className="flex-shrink-0 w-20 h-20 lg:h-24 bg-gray-300 rounded-full xl:w-24 wl:h-24" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt />
+                                <img className="flex-shrink-0 w-20 h-20 bg-gray-300 rounded-full xl:w-20 wl:h-20" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" />
                             </blockquote>
                             <blockquote className="flex items-center justify-between w-full col-span-1 p-6 my-4 bg-white rounded-lg shadow">
                                 <div className="flex flex-col pr-8">
@@ -54,7 +54,7 @@ const Testimonials = () => {
                 <span className="mt-1 text-xs sm:text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span>
                                     </h3>
                                 </div>
-                                <img className="flex-shrink-0 w-20 h-20 lg:h-24 bg-gray-300 rounded-full xl:w-24 wl:h-24" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt />
+                                <img className="flex-shrink-0 w-20 h-20 bg-gray-300 rounded-full xl:w-20 wl:h-20" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" />
                             </blockquote>
                             
                         </div>
