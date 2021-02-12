@@ -1,15 +1,15 @@
 const Footer = () => {
   return (
     <footer className="text-gray-600 body-font">
-      <div className="bg-gray-100">
-        <div className="container px-5 pb-6 sm:pt-4 pt-3 mx-auto flex items-center sm:flex-row flex-col">
+      <div className="bg-gray-100 ">
+        <div className="container pb-8 sm:pt-4 pt-4 mx-auto flex items-center sm:flex-row flex-col ">
           <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2021 IOTLAB —
-            <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">@iotlabkiit</a>
+            <a href="" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">@iotlabkiit</a>
           </p>
-          <p className="text-sm text-gray-500 sm:ml-48 sm:mt-0 mt-4">
-            Made with ❤ and ☕ by IoT Web Team
+          <p className="text-base my-1 items-center mx-auto text-gray-500 ">
+          Coded with ❤ and ☕ by IoT Web Team
           </p>
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <span className="inline-flex  sm:mt-0 mt-4 justify-center items-center sm:justify-start">
             <a className="text-gray-500">
               <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-5 h-5" viewBox="0 0 24 24">
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
