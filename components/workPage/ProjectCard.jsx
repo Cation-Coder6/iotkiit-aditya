@@ -1,6 +1,6 @@
-const WorkCard = () => {
+const ProjectCard = () => {
   return (
-    <div className="max-w-sm min-w-sm w-full lg:w-full py-6 px-3">
+    <div className="max-w-sm min-w-sm w-full py-6 px-3 mx-auto">
       <div className="bg-white shadow-xl rounded-lg overflow-hidden">
         <div
           className="bg-cover bg-center h-44 p-4"
@@ -69,4 +69,4 @@ const WorkCard = () => {
   );
 };
 
-export default WorkCard;
+export default ProjectCard;

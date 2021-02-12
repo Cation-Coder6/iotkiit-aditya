@@ -1,11 +1,8 @@
-import WorkCard from "../../components/workPage/WorkCard";
+import ProjectCard from "../../components/workPage/ProjectCard";
 import WorkHeader from "../../components/workPage/WorkHeader";
 import Head from "next/head";
-import Glide from "@glidejs/glide";
-// import { Autoplay } from "@glidejs/glide/dist/glide.modular.esm";
-import "@glidejs/glide/dist/css/glide.core.min.css";
-import "@glidejs/glide/dist/css/glide.theme.min.css";
-import { useEffect, useLayoutEffect } from "react";
+import PaperCard from "../../components/workPage/PaperCard";
+import { Blog } from "../../components/workPage/BlogCard";
 
 const SectionHeader = () => {
   return (
@@ -56,129 +53,6 @@ const SectionHeader = () => {
               <span className="title-font font-medium">GitHub</span>
             </span>
           </button>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-const Points = () => {
-  return (
-    <section className="text-gray-600 body-font">
-      <div className="container px-5 py-12 mt-6 mx-auto">
-        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={3}
-                className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                <path d="M22 4L12 14.01l-3-3" />
-              </svg>
-              <span className="title-font font-medium">
-                Authentic Cliche Forage
-              </span>
-            </div>
-          </div>
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={3}
-                className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                <path d="M22 4L12 14.01l-3-3" />
-              </svg>
-              <span className="title-font font-medium">
-                Kinfolk Chips Snackwave
-              </span>
-            </div>
-          </div>
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={3}
-                className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                <path d="M22 4L12 14.01l-3-3" />
-              </svg>
-              <span className="title-font font-medium">
-                Coloring Book Ethical
-              </span>
-            </div>
-          </div>
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={3}
-                className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                <path d="M22 4L12 14.01l-3-3" />
-              </svg>
-              <span className="title-font font-medium">
-                Typewriter Polaroid Cray
-              </span>
-            </div>
-          </div>
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={3}
-                className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                <path d="M22 4L12 14.01l-3-3" />
-              </svg>
-              <span className="title-font font-medium">Pack Truffaut Blue</span>
-            </div>
-          </div>
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={3}
-                className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                <path d="M22 4L12 14.01l-3-3" />
-              </svg>
-              <span className="title-font font-medium">
-                The Catcher In The Rye
-              </span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -249,24 +123,6 @@ const Robbery = () => {
 }
 
 const Works = () => {
-  useEffect(() => {
-    console.log("Mounted");
-    const glide = new Glide(".glide", {
-      breakpoints:{
-        600: {
-          perView: 1
-        },
-        800:{
-          perView:2
-        },
-        2400:{
-          perView:3
-        }
-      },
-      type: "carousel",
-    }).mount();
-    glide.play();
-  }, []);
   return (
     <div>
       <Head>
@@ -275,42 +131,17 @@ const Works = () => {
       </Head>
       <WorkHeader />
       <SectionHeader />
-      {/* <Points /> */}
       <Robbery />
-      <div className="">
-        {/* <div className="flex flex-wrap justify-around">
-          {[1, 2, 3, 4, 5, 6].map((_) => (
-            <WorkCard />
-          ))}
-        </div> */}
-        <div className="glide container lg:bg-gray-500 px-auto lg:rounded-xl lg:bg-opacity-50 mx-auto flex ">
-          {/* <div className="glide__arrows" data-glide-el="controls">
-            <button
-              className="glide__arrow glide__arrow--left"
-              data-glide-dir="<"
-            >
-              Prev
-            </button>
-          </div> */}
-          <div className="glide__track" data-glide-el="track">
-            <div className="glide__slides">
-              {[1, 2, 3].map((i) => (
-                <div key={`glide_workcard_${i}`} className="glide__slide justify-center">
-                  <WorkCard />
-                </div>
-              ))}
-            </div>
-          </div>
-          {/* <div className="glide__arrows" data-glide-el="controls">
-            <button
-              className="glide__arrow glide__arrow--right"
-              data-glide-dir=">"
-            >
-              Next
-            </button>
-          </div> */}
+
+      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+
         </div>
       </div>
+      <Blog />
     </div>
 
   );
