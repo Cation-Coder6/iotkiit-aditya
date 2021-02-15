@@ -2,9 +2,9 @@ import WorkAnimation from "../animations/WorkAnimation";
 
 const WorkHeader = () => {
   return (
-    <div className="flex flex-wrap md items-center h-2/3 lg:w-5/6">
+    <div className="flex flex-wrap mx-auto items-center h-2/3 lg:w-5/6">
       <div className="bg-white w-full sm:w-full md:w-1/3 h-2/3 lg:mx-auto">
-        <div className="mx-12 sm:pl-12 md:mx-0 lg:mx-0 ">
+        <div className="mx-12 sm:pl-10 md:mx-0 lg:mx-0 ">
           <h1 className="text-6xl font-bold mt-16">Our Work</h1>
           <div className="flex mt-10 font-light text-gray-500">
             <div className="pr-4">
@@ -25,7 +25,7 @@ const WorkHeader = () => {
       </div>
         </div>
       </div>
-      <div className="bg-transparent w-full sm:w-full md:w-2/3 h-2/3 max-w-2xl">
+      <div className="bg-transparent w-full sm:w-full md:w-2/3 h-2/3 max-w-2xl mx-auto">
         <div className=" pt-20 flex flex-col justify-center p-10">
           <div className="relative w-full max-w-full lg:max-w-6xl xl:max-w-screen-2xl mx-auto">
             <div className="absolute inset-0 -m-2 bg-gradient-to-r from-red-100 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:rotate-3 rounded-3xl sm:rounded-3xl" />

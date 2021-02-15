@@ -11,7 +11,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay])
 const SectionHeader = () => {
   return (
     <section className="text-gray-600 body-font">
-      <div className="container px-5 lg:pr-28 pt-12 mx-auto flex items-center md:flex-row flex-col">
+      <div className="container px-0  lg:px-28 pt-12 mx-auto flex items-center md:flex-row flex-col">
         <div className="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">
           <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
             ROOF PARTY POLAROID
@@ -136,15 +136,15 @@ const Works = () => {
       <WorkHeader />
       <SectionHeader />
       <Robbery />
-
-      <Swiper spaceBetween={0}
+      <Swiper
         slidesPerView={1}
         autoplay={{ delay: 2500 }}
-        autoHeight={true}
+        pagination={{clickable:true}}
         breakpoints={{
           640: {
             width: 640,
             slidesPerView: 1,
+            spaceBetween:10
           },
           768: {
             width: 768,
@@ -158,7 +158,9 @@ const Works = () => {
           },
         }}
       >
-        
+        <SwiperSlide>
+          <ProjectCard />
+        </SwiperSlide>
         <SwiperSlide>
           <ProjectCard />
         </SwiperSlide>

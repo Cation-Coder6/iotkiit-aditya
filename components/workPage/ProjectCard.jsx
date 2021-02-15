@@ -1,6 +1,6 @@
 const ProjectCard = () => {
   return (
-    <div className="max-w-sm min-w-sm w-full py-6 px-3 mx-auto">
+    <div className="max-w-sm min-w-sm w-full pt-6 pb-20 px-3 mx-auto">
       <div className="bg-white shadow-xl rounded-lg overflow-hidden">
         <div
           className="bg-cover bg-center h-44 p-4"
