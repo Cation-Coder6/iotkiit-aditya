@@ -4,6 +4,10 @@ import Head from "next/head";
 import PaperCard from "../../components/workPage/PaperCard";
 import { Blog } from "../../components/workPage/BlogCard";
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper'
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay])
+
 const SectionHeader = () => {
   return (
     <section className="text-gray-600 body-font">
@@ -133,14 +137,42 @@ const Works = () => {
       <SectionHeader />
       <Robbery />
 
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+      <Swiper spaceBetween={0}
+        slidesPerView={1}
+        autoplay={{ delay: 2500 }}
+        autoHeight={true}
+        breakpoints={{
+          640: {
+            width: 640,
+            slidesPerView: 1,
+          },
+          768: {
+            width: 768,
+            slidesPerView: 2,
+            spaceBetween:30
+          },
+          1200: {
+            width: 1200,
+            slidesPerView: 3,
+            spaceBetween:10
+          },
+        }}
+      >
+        
+        <SwiperSlide>
           <ProjectCard />
+        </SwiperSlide>
+        <SwiperSlide>
           <ProjectCard />
+        </SwiperSlide>
+        <SwiperSlide>
           <ProjectCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProjectCard />
+        </SwiperSlide>
+      </Swiper>
 
-        </div>
-      </div>
       <Blog />
     </div>
 
