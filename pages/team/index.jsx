@@ -22,15 +22,14 @@ const coordinators = [
   {name:"Neelanjan Manna", position:"Technical Coordinator", pictureUrl:"https://iotkiit.in/image/b1551b0c521065b9f6128ffbe62a03a5.jpeg", quote:"DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware."},
   {name:"Amol Jain", position:"Administrative Lead", pictureUrl:"https://iotkiit.in/image/96d1c98ee26e96ae752cd6103d68a1a4.jpg", quote:"DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware."},
   {name:"Sahil Kumar", position:"Administrative Lead", pictureUrl:"https://iotkiit.in/image/98b46a59bbd246204dd42e837adad7b8.jpg", quote:"DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware."}
-
 ]
 
 const members = [
   { name: "Sahil 1", position: "Web Team Lead", ringColor: 1, githubUrl: "https://github.com/SahilKr24", imageUrl: "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" },
-  { name: "Sahil 2", position: "Web Team Lead", ringColor: 1, githubUrl: "https://github.com/SahilKr24", imageUrl: "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" },
-  { name: "Sahil 3", position: "Web Team Lead", ringColor: 1, githubUrl: "https://github.com/SahilKr24", imageUrl: "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" },
-  { name: "Sahil 4", position: "Web Team Lead", ringColor: 1, githubUrl: "https://github.com/SahilKr24", imageUrl: "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" },
-  { name: "Sahil 5", position: "Web Team Lead", ringColor: 1, githubUrl: "https://github.com/SahilKr24", imageUrl: "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" },
+  { name: "Sahil 2", position: "Web Team Lead", ringColor: 2, githubUrl: "https://github.com/SahilKr24", imageUrl: "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" },
+  { name: "Sahil 3", position: "Web Team Lead", ringColor: 5, githubUrl: "https://github.com/SahilKr24", imageUrl: "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" },
+  { name: "Sahil 4", position: "Web Team Lead", ringColor: 4, githubUrl: "https://github.com/SahilKr24", imageUrl: "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" },
+  { name: "Sahil 5", position: "Web Team Lead", ringColor: 5, githubUrl: "https://github.com/SahilKr24", imageUrl: "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" },
 ]
 
 const Coordinators = () => {
@@ -99,7 +98,8 @@ const Team = () => {
         </p>
           </div>
           <div className="flex flex-wrap -m-2">
-            {members.map((member) => (
+            
+            {members.sort((a, b) => parseFloat(b.ringColor) - parseFloat(a.ringColor)).map((member) => (
               <TeamMemberCard name={member.name} position={member.position} ringColor={member.ringColor} githubUrl={member.githubUrl} imageUrl={member.imageUrl} />
             ))}
           </div>
