@@ -38,20 +38,20 @@ const flagship = {
 }
 
 const extraevents = [
-  { imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", type: "Hackathon", name: "HahaLolLmao", desc: "Lorem ipsum Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table." },
-  { imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", type: "Hackathon", name: "HahaLolLmao", desc: "Lorem ipsum Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table." },
-  { imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", type: "Hackathon", name: "HahaLolLmao", desc: "Lorem ipsum Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table." },
-  { imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", type: "Hackathon", name: "HahaLolLmao", desc: "Lorem ipsum Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table." },
-  { imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", type: "Hackathon", name: "HahaLolLmao", desc: "Lorem ipsum Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table." },
-  { imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", type: "Hackathon", name: "HahaLolLmao", desc: "Lorem ipsum Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table." },
-  { imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", type: "Hackathon", name: "HahaLolLmao", desc: "Lorem ipsum Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table." },
-  { imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", type: "Hackathon", name: "HahaLolLmao", desc: "Lorem ipsum Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table." },
+  { imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", type: "Hackathon", name: "HahaLolLmao 1", desc: "Lorem ipsum Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table." },
+  { imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", type: "Hackathon", name: "HahaLolLmao 2", desc: "Lorem ipsum Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table." },
+  { imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", type: "Hackathon", name: "HahaLolLmao 3", desc: "Lorem ipsum Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table." },
+  { imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", type: "Hackathon", name: "HahaLolLmao 4", desc: "Lorem ipsum Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table." },
+  { imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", type: "Hackathon", name: "HahaLolLmao 5", desc: "Lorem ipsum Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table." },
+  { imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", type: "Hackathon", name: "HahaLolLmao 6", desc: "Lorem ipsum Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table." },
+  { imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", type: "Hackathon", name: "HahaLolLmao 7", desc: "Lorem ipsum Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table." },
+  { imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", type: "Hackathon", name: "HahaLolLmao 8", desc: "Lorem ipsum Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table." },
 ]
 
 const upcoming = [
   { title: "Aws Training 1", desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.", imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", date: "24 Jul", year: "2021", link: "https://amazon.in" },
   { title: "Aws Training 2", desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.", imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", date: "24 Jul", year: "2021", link: "https://amazon.in" },
-  { title: "Aws Training 3  ", desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.", imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", date: "24 Jul", year: "2021", link: "https://amazon.in" }
+  { title: "Aws Training 3", desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.", imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", date: "24 Jul", year: "2021", link: "https://amazon.in" }
 ]
 
 const Events = () => {
