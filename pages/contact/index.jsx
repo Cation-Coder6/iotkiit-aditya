@@ -4,8 +4,8 @@ import HandWave from "../../components/contactPage/HandWave";
 import MapFooter from "../../components/contactPage/MapsFooter";
 import Testimonials from "../../components/contactPage/Testimonials";
 
-const Contact = () =>{
-  return(
+const Contact = () => {
+  return (
     <div>
       <Head>
         <title>Contact</title>
@@ -13,10 +13,10 @@ const Contact = () =>{
       </Head>
       <HandWave />
       <Testimonials />
-      <ContactUs/>
+      <ContactUs />
       <MapFooter />
     </div>
-  )
-}
+  );
+};
 
 export default Contact;

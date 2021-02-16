@@ -15,48 +15,7 @@ const Heading = () => {
     </div>
   );
 };
-// const members = [
-//   {
-//     name: "Sahil 1",
-//     position: "Web Team Lead",
-//     ringColor: 1,
-//     githubUrl: "https://github.com/SahilKr24",
-//     imageUrl:
-//       "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4",
-//   },
-//   {
-//     name: "Sahil 2",
-//     position: "Web Team Lead",
-//     ringColor: 2,
-//     githubUrl: "https://github.com/SahilKr24",
-//     imageUrl:
-//       "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4",
-//   },
-//   {
-//     name: "Sahil 3",
-//     position: "Web Team Lead",
-//     ringColor: 5,
-//     githubUrl: "https://github.com/SahilKr24",
-//     imageUrl:
-//       "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4",
-//   },
-//   {
-//     name: "Sahil 4",
-//     position: "Web Team Lead",
-//     ringColor: 4,
-//     githubUrl: "https://github.com/SahilKr24",
-//     imageUrl:
-//       "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4",
-//   },
-//   {
-//     name: "Sahil 5",
-//     position: "Web Team Lead",
-//     ringColor: 5,
-//     githubUrl: "https://github.com/SahilKr24",
-//     imageUrl:
-//       "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4",
-//   },
-// ];
+
 const Coordinators = ({ coordinators }) => {
   return (
     <section className="text-gray-600 body-font">
@@ -219,16 +178,22 @@ export async function getStaticProps(context) {
   );
 
   //Getting Mentors from Server
-  const mentor = {id:"1",name:"Dr. Samresh Mishra",positon:"Director, CSE", email:"director.cse@kiit.ac.in",imageUrl:"https://iotkiit.in/image/886fab2fb2e202badf4d4cd39d6f114a.jpg"}
-  const mentorsData = [mentor]
+  const mentor = {
+    id: "1",
+    name: "Dr. Samresh Mishra",
+    positon: "Director, CSE",
+    email: "director.cse@kiit.ac.in",
+    imageUrl: "https://iotkiit.in/image/886fab2fb2e202badf4d4cd39d6f114a.jpg",
+  };
+  const mentorsData = [mentor];
 
   return {
     props: {
       coordinators: coordinatorsData,
       members: membersData,
-      mentors:mentorsData
+      mentors: mentorsData,
     },
-    revalidate:10
+    revalidate: 10,
   };
 }
 export default Layout;
