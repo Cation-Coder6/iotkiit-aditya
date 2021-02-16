@@ -95,7 +95,7 @@ const TeamMemberCard = ({
               </a>
             ) : null}
             {mailID ? (
-              <a href={`mailto:${mailID}`} className="mx-2 mt-0.5 lg:mx-4">
+              <a href={`mailto:${mailID}`} className="mx-2 mt-1 lg:mx-4">
                 <div>
                   <svg
                     fill="none"

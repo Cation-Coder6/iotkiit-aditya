@@ -21,8 +21,8 @@ const CoordinatorMainCard = ({
           </h2>
           <h3 className="text-gray-500 text-lg mb-3">{position}</h3>
           <p className="mb-4">{quote}</p>
-          <span className="inline-flex">
-            {githubUrl != "" ? (
+          <span className="inline-flex sm:-ml-2.5">
+            {githubUrl ? (
               <a className="text-gray-500 mx-3" href={githubUrl}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
