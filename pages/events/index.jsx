@@ -49,9 +49,9 @@ const extraevents = [
 ]
 
 const upcoming = [
-  { title: "Aws Training", desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.", imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", date: "24 Jul", year: "2021", link: "https://amazon.in" },
-  { title: "Aws Training", desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.", imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", date: "24 Jul", year: "2021", link: "https://amazon.in" },
-  { title: "Aws Training", desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.", imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", date: "24 Jul", year: "2021", link: "https://amazon.in" }
+  { title: "Aws Training 1", desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.", imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", date: "24 Jul", year: "2021", link: "https://amazon.in" },
+  { title: "Aws Training 2", desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.", imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", date: "24 Jul", year: "2021", link: "https://amazon.in" },
+  { title: "Aws Training 3  ", desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.", imgUrl: "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png", date: "24 Jul", year: "2021", link: "https://amazon.in" }
 ]
 
 const Events = () => {
@@ -81,7 +81,6 @@ const Events = () => {
           ))}
         </div>
       </section>}
-      
       <FlagshipEvents main={flagship.main} left={flagship.left} right={flagship.right} />
       <EventExtra extraevents={extraevents} />
     </>

@@ -16,6 +16,23 @@ const Heading = () => {
   )
 }
 
+const coordinators = [
+  {name:"Alok Narayan", position:"Senior Coordinator", pictureUrl:"https://iotkiit.in/image/74c33a5aef0b0f7ff831da134a61bcbe.jpg", quote: "DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware." },
+  {name:"Sambit Majhi", position:"Assistant Coordinator", pictureUrl:"https://iotkiit.in/image/18456ce8fb2842f48cfb4092c1d3ec83.jpeg", quote:"DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware."},
+  {name:"Neelanjan Manna", position:"Technical Coordinator", pictureUrl:"https://iotkiit.in/image/b1551b0c521065b9f6128ffbe62a03a5.jpeg", quote:"DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware."},
+  {name:"Amol Jain", position:"Administrative Lead", pictureUrl:"https://iotkiit.in/image/96d1c98ee26e96ae752cd6103d68a1a4.jpg", quote:"DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware."},
+  {name:"Sahil Kumar", position:"Administrative Lead", pictureUrl:"https://iotkiit.in/image/98b46a59bbd246204dd42e837adad7b8.jpg", quote:"DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware."}
+
+]
+
+const members = [
+  { name: "Sahil 1", position: "Web Team Lead", ringColor: 1, githubUrl: "https://github.com/SahilKr24", imageUrl: "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" },
+  { name: "Sahil 2", position: "Web Team Lead", ringColor: 1, githubUrl: "https://github.com/SahilKr24", imageUrl: "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" },
+  { name: "Sahil 3", position: "Web Team Lead", ringColor: 1, githubUrl: "https://github.com/SahilKr24", imageUrl: "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" },
+  { name: "Sahil 4", position: "Web Team Lead", ringColor: 1, githubUrl: "https://github.com/SahilKr24", imageUrl: "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" },
+  { name: "Sahil 5", position: "Web Team Lead", ringColor: 1, githubUrl: "https://github.com/SahilKr24", imageUrl: "https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" },
+]
+
 const Coordinators = () => {
   return (
     <section className="text-gray-600 body-font">
@@ -40,11 +57,11 @@ const Coordinators = () => {
         </p>
         </div>
         <div className="flex flex-wrap -mt-4">
-          <CoordinatorMainCard name="Alok Narayan" position="Senior Coordinator" pictureUrl="https://iotkiit.in/image/74c33a5aef0b0f7ff831da134a61bcbe.jpg" quote="DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. " />
-          <CoordinatorCard name="Sambit Majhi" position="Assistant Coordinator" pictureUrl="https://iotkiit.in/image/18456ce8fb2842f48cfb4092c1d3ec83.jpeg" quote="DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. " />
-          <CoordinatorCard name="Neelanjan Manna" position="Technical Coordinator" pictureUrl="https://iotkiit.in/image/b1551b0c521065b9f6128ffbe62a03a5.jpeg" quote="DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. " />
-          <CoordinatorCard name="Sahil Kumar" position="Administrative Lead" pictureUrl="https://iotkiit.in/image/98b46a59bbd246204dd42e837adad7b8.jpg" quote="DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. " />
-          <CoordinatorCard name="Amol Jain" position="Administrative Lead" pictureUrl="https://iotkiit.in/image/96d1c98ee26e96ae752cd6103d68a1a4.jpg" quote="DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. " />
+          {coordinators.map((coordinator,index)=>(
+            coordinator.position=='Senior Coordinator'
+            ?<CoordinatorMainCard name={coordinator.name} position={coordinator.position} pictureUrl={coordinator.pictureUrl} quote={coordinator.quote}/>
+            :<CoordinatorCard name={coordinator.name} position={coordinator.position} pictureUrl={coordinator.pictureUrl} quote={coordinator.quote} />
+          ))}
         </div>
       </div>
     </section>
@@ -82,17 +99,9 @@ const Team = () => {
         </p>
           </div>
           <div className="flex flex-wrap -m-2">
-            <TeamMemberCard name="Sahil" position="Web Team Lead" ringColor={1} githubUrl="https://github.com/SahilKr24" imageUrl="https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" />
-            <TeamMemberCard name="Sahil" position="Web Team Lead" ringColor={2} imageUrl="https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" />
-            <TeamMemberCard name="Sahil" position="Web Team Lead" ringColor={3} imageUrl="https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" />
-            <TeamMemberCard name="Sahil" position="Web Team Lead" ringColor={4} imageUrl="https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" />
-            <TeamMemberCard name="Sahil" position="Web Team Lead" ringColor={5} imageUrl="https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" />
-            <TeamMemberCard name="Sahil" position="Web Team Lead" ringColor={5} imageUrl="https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" />
-            <TeamMemberCard name="Sahil" position="Web Team Lead" ringColor={2} imageUrl="https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" />
-            <TeamMemberCard name="Sahil" position="Web Team Lead" ringColor={3} imageUrl="https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" />
-            <TeamMemberCard name="Sahil" position="Web Team Lead" ringColor={4} imageUrl="https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" />
-            <TeamMemberCard name="Sahil" position="Web Team Lead" ringColor={5} imageUrl="https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" />
-            <TeamMemberCard name="Sahil" position="Web Team Lead" ringColor={5} imageUrl="https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4" />
+            {members.map((member) => (
+              <TeamMemberCard name={member.name} position={member.position} ringColor={member.ringColor} githubUrl={member.githubUrl} imageUrl={member.imageUrl} />
+            ))}
           </div>
         </div>
       </section>
