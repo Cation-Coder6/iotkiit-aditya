@@ -15,10 +15,10 @@ const WorkHeader = () => {
               <span className="uppercase">Papers</span>
               <p className="text-2xl text-gray-900 font-semibold pt-2">17</p>
             </div>
-            {/* <div className="pr-4">
-              <span className="uppercase"></span>
-              <p className="text-2xl text-gray-900 font-semibold pt-2"></p>
-            </div> */}
+            <div className="pr-4">
+              <span className="uppercase">Blogs</span>
+              <p className="text-2xl text-gray-900 font-semibold pt-2">5</p>
+            </div>
           </div>
           <div className="description w-full sm:w-full md:w-4/5 mt-12 text-gray-500 text-md">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
