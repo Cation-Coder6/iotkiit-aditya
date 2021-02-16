@@ -62,10 +62,14 @@ const Coordinators = ({ coordinators }) => {
           {coordinators.map((coordinator, index) =>
             coordinator.position == "Senior Coordinator" ? (
               <CoordinatorMainCard
+                key={`coordinator-card-${coordinator.id}`}
                 name={coordinator.name}
                 position={coordinator.position}
                 pictureUrl={coordinator.pictureUrl.url}
                 quote={coordinator.quote}
+                githubUrl={coordinator.githubUrl}
+                linkedinUrl={coordinator.linkedinUrl}
+                mailID={coordinator.mailID}
               />
             ) : (
               <CoordinatorCard
@@ -74,6 +78,9 @@ const Coordinators = ({ coordinators }) => {
                 position={coordinator.position}
                 pictureUrl={coordinator.pictureUrl.url}
                 quote={coordinator.quote}
+                githubUrl={coordinator.githubUrl}
+                linkedinUrl={coordinator.linkedinUrl}
+                mailID={coordinator.mailID}
               />
             )
           )}
@@ -133,11 +140,13 @@ const Team = ({ members }) => {
               .sort((a, b) => parseFloat(b.ringColor) - parseFloat(a.ringColor))
               .map((member) => (
                 <TeamMemberCard
+                  key={`team-member-card-${member.id}`}
                   name={member.name}
                   position={member.position}
                   ringColor={member.ringColor}
                   githubUrl={member.githubUrl}
                   linkedinUrl={member.linkedinUrl}
+                  mailID={member.mailID}
                   imageUrl={member.imageUrl.url}
                 />
               ))}
