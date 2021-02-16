@@ -1,4 +1,4 @@
-const ProjectCard = () => {
+const ProjectCard = ({project}) => {
   return (
     <div className="max-w-sm min-w-sm w-full pt-6 pb-20 px-3 mx-auto">
       <div className="bg-white shadow-xl rounded-lg overflow-hidden">
@@ -6,15 +6,15 @@ const ProjectCard = () => {
           className="bg-cover bg-center h-44 p-4"
           style={{
             backgroundImage:
-              "url(https://chaibarbbsr.com/assets/img/main_bg.jpg)",
+              `url(${project.imgUrl})`,
           }}
         ></div>
         <div className="p-4">
           <p className="uppercase tracking-wide text-xs font-bold text-gray-700">
-            Portfolio • Website
+            {project.type}
           </p>
-          <p className="text-3xl text-gray-900">ChaiBar</p>
-          <p className="text-gray-700"> KIIT Road</p>
+          <p className="text-3xl text-gray-900">{project.name}</p>
+          <p className="text-gray-700">{project.addr}</p>
         </div>
         <div className="flex p-4 border-t border-gray-300 text-gray-700">
           <div className="flex-1 inline-flex items-center px-1">
@@ -29,7 +29,7 @@ const ProjectCard = () => {
             </svg>
             <p>
               <span className="text-gray-900 font-normal px-4 ">
-                <a href="https://chaibarbbsr.com">chaibarbssr.com</a>
+                <a href={project.link}>{project.link}</a>
               </span>
             </p>
           </div>
@@ -47,7 +47,7 @@ const ProjectCard = () => {
               }}
             ></div> */}
             <div>
-              <p className="text-sm text-gray-700">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+              <p className="text-sm text-gray-700">{project.desc}</p>
             </div>
           </div>
           {/* <div className="flex items-center pt-2">

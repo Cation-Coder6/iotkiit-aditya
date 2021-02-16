@@ -4,8 +4,8 @@ import Head from "next/head";
 import UpcomingCard from "../../components/eventPage/UpcomingCard";
 import FlagshipEvents from "../../components/eventPage/FlagshipEvents";
 
-const Flagship = {
-  Main: {
+const flagship = {
+  main: {
     "imgUrl": "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png",
     "name": "AWS CLOUD Training",
     "date": "Oct'20 - Dec'20",
@@ -15,7 +15,7 @@ const Flagship = {
     "point3": "Certification by SCE KIIT",
     "point4": "Internship Opportunity"
   },
-  Left: {
+  left: {
     "imgUrl": "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png",
     "name": "Left Event",
     "date": "Oct'20 - Dec'20",
@@ -25,7 +25,7 @@ const Flagship = {
     "point3": "Certification by SCE KIIT",
     "point4": "Internship Opportunity"
   },
-  Right: {
+  right: {
     "imgUrl": "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png",
     "name": "Right Event",
     "date": "Oct'20 - Dec'20",
@@ -79,7 +79,7 @@ const Events = () => {
           ))}
         </div>
       </section>
-      <FlagshipEvents main={Flagship.Main} left={Flagship.Left} right={Flagship.Right} />
+      <FlagshipEvents main={flagship.main} left={flagship.left} right={flagship.right} />
       <EventExtra extraevents={extraevents} />
     </>
   );
