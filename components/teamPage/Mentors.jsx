@@ -1,6 +1,6 @@
 import TeamHoverCard from "./TeamHoverCard";
 
-const Mentors = () => {
+const Mentors = ({mentors}) => {
   return (
     <div className="px-4 pb-16 pt-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="max-w-xl mb-10 ml-6 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
@@ -28,15 +28,9 @@ const Mentors = () => {
         </p>
       </div>
       <div className="grid gap-5 sm:gap-10 px-5 grid-cols-2 sm:grid-cols-2 lg:grid-cols-4">
-        <TeamHoverCard name="Dr. Samresh Mishra" position="Director, CSE" email="director.cse@kiit.ac.in" imageUrl="https://iotkiit.in/image/886fab2fb2e202badf4d4cd39d6f114a.jpg" />
-        <TeamHoverCard name="Dr. Samresh Mishra" position="Director, CSE" email="director.cse@kiit.ac.in" imageUrl="https://iotkiit.in/image/886fab2fb2e202badf4d4cd39d6f114a.jpg" />
-        <TeamHoverCard name="Dr. Samresh Mishra" position="Director, CSE" email="director.cse@kiit.ac.in" imageUrl="https://iotkiit.in/image/886fab2fb2e202badf4d4cd39d6f114a.jpg" />
-        <TeamHoverCard name="Dr. Samresh Mishra" position="Director, CSE" email="director.cse@kiit.ac.in" imageUrl="https://iotkiit.in/image/886fab2fb2e202badf4d4cd39d6f114a.jpg" />
-        <TeamHoverCard name="Dr. Samresh Mishra" position="Director, CSE" email="director.cse@kiit.ac.in" imageUrl="https://iotkiit.in/image/886fab2fb2e202badf4d4cd39d6f114a.jpg" />
-        <TeamHoverCard name="Dr. Samresh Mishra" position="Director, CSE" email="director.cse@kiit.ac.in" imageUrl="https://iotkiit.in/image/886fab2fb2e202badf4d4cd39d6f114a.jpg" />
-        <TeamHoverCard name="Dr. Samresh Mishra" position="Director, CSE" email="director.cse@kiit.ac.in" imageUrl="https://iotkiit.in/image/886fab2fb2e202badf4d4cd39d6f114a.jpg" />
-        <TeamHoverCard name="Dr. Samresh Mishra" position="Director, CSE" email="director.cse@kiit.ac.in" imageUrl="https://iotkiit.in/image/886fab2fb2e202badf4d4cd39d6f114a.jpg" />
-      </div>
+        {mentors.map( mentor => <TeamHoverCard key={`mentor-id-${mentor.id}`} name={mentor.name} position={mentor.position} email={mentor.email} imageUrl={mentor.imageUrl} />
+)}
+        </div>
     </div>
   )
 }
