@@ -221,13 +221,14 @@ export async function getStaticProps(context) {
   //Getting Mentors from Server
   const mentor = {id:"1",name:"Dr. Samresh Mishra",positon:"Director, CSE", email:"director.cse@kiit.ac.in",imageUrl:"https://iotkiit.in/image/886fab2fb2e202badf4d4cd39d6f114a.jpg"}
   const mentorsData = [mentor]
-  
+
   return {
     props: {
       coordinators: coordinatorsData,
       members: membersData,
       mentors:mentorsData
     },
+    revalidate:10
   };
 }
 export default Layout;
