@@ -62,6 +62,8 @@ const Events = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <EventHeader />
+      {upcoming.length==0?
+      null:
       <section>
         <div className="container max-w-full mx-auto lg:py-0 md:py-0 pt-48 mt-48 sm:mt-4 px-6 ">
           <h1 className="text-center text-4xl text-black font-medium leading-snug uppercase tracking-wider">
@@ -78,7 +80,8 @@ const Events = () => {
             <UpcomingCard index={index+1} title={i.title} desc={i.desc} imgUrl={i.imgUrl} date={i.date} year={i.year} link={i.link} />
           ))}
         </div>
-      </section>
+      </section>}
+      
       <FlagshipEvents main={flagship.main} left={flagship.left} right={flagship.right} />
       <EventExtra extraevents={extraevents} />
     </>
