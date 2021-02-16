@@ -29,7 +29,7 @@ const ProjectCard = ({project}) => {
             </svg>
             <p>
               <span className="text-gray-900 font-normal px-4 ">
-                <a href={project.link}>{project.link}</a>
+                <a href={project.link} target="_blank" >{project.link}</a>
               </span>
             </p>
           </div>
@@ -39,30 +39,10 @@ const ProjectCard = ({project}) => {
             Description:
           </div>
           <div className="flex items-center pt-2">
-            {/* <div
-              className="bg-cover bg-center w-10 h-10 rounded-full mr-3"
-              style={{
-                backgroundImage:
-                  "url(https://avatars.githubusercontent.com/u/55389335?s=460&u=25493fd6332774036935e723c524c4ccbc0e1d0c&v=4)",
-              }}
-            ></div> */}
             <div>
               <p className="text-sm text-gray-700">{project.desc}</p>
             </div>
           </div>
-          {/* <div className="flex items-center pt-2">
-            <div
-              className="bg-cover bg-center w-10 h-10 rounded-full mr-3"
-              style={{
-                backgroundImage:
-                  "url(https://avatars.githubusercontent.com/u/40962760?s=460&u=86bf54499b94442e8891e82b6d87f6f495f2dc8e&v=4)",
-              }}
-            ></div>
-            <div>
-              <p className="font-bold text-gray-900">Rohan Kakar</p>
-              <p className="text-sm text-gray-700">@RKRohk</p>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

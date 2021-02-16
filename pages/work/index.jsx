@@ -9,12 +9,12 @@ import SectionHeader from "../../components/workPage/SectionHeader";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay])
 
 const projects = [
-  {imgUrl:"https://chaibarbbsr.com/assets/img/main_bg.jpg",type:"Portfolio • Website",name:"Chaibar 1",addr:"KIIT Road",link:"chaibarbbsr.com",desc:"A portfolio web for best chai place"},
-  {imgUrl:"https://chaibarbbsr.com/assets/img/main_bg.jpg",type:"Portfolio • Website",name:"Chaibar 2",addr:"KIIT Road",link:"chaibarbbsr.com",desc:"A portfolio web for best chai place"},
-  {imgUrl:"https://chaibarbbsr.com/assets/img/main_bg.jpg",type:"Portfolio • Website",name:"Chaibar 3",addr:"KIIT Road",link:"chaibarbbsr.com",desc:"A portfolio web for best chai place"},
-  {imgUrl:"https://chaibarbbsr.com/assets/img/main_bg.jpg",type:"Portfolio • Website",name:"Chaibar 4",addr:"KIIT Road",link:"chaibarbbsr.com",desc:"A portfolio web for best chai place"},
-  {imgUrl:"https://chaibarbbsr.com/assets/img/main_bg.jpg",type:"Portfolio • Website",name:"Chaibar 5",addr:"KIIT Road",link:"chaibarbbsr.com",desc:"A portfolio web for best chai place"},
-  {imgUrl:"https://chaibarbbsr.com/assets/img/main_bg.jpg",type:"Portfolio • Website",name:"Chaibar 6",addr:"KIIT Road",link:"chaibarbbsr.com",desc:"A portfolio web for best chai place"},
+  {imgUrl:"https://chaibarbbsr.com/assets/img/main_bg.jpg",type:"Portfolio • Website",name:"Chaibar 1",addr:"KIIT Road",link:"https://chaibarbbsr.com",desc:"A portfolio web for best chai place"},
+  {imgUrl:"https://chaibarbbsr.com/assets/img/main_bg.jpg",type:"Portfolio • Website",name:"Chaibar 2",addr:"KIIT Road",link:"https://chaibarbbsr.com",desc:"A portfolio web for best chai place"},
+  {imgUrl:"https://chaibarbbsr.com/assets/img/main_bg.jpg",type:"Portfolio • Website",name:"Chaibar 3",addr:"KIIT Road",link:"https://chaibarbbsr.com",desc:"A portfolio web for best chai place"},
+  {imgUrl:"https://chaibarbbsr.com/assets/img/main_bg.jpg",type:"Portfolio • Website",name:"Chaibar 4",addr:"KIIT Road",link:"https://chaibarbbsr.com",desc:"A portfolio web for best chai place"},
+  {imgUrl:"https://chaibarbbsr.com/assets/img/main_bg.jpg",type:"Portfolio • Website",name:"Chaibar 5",addr:"KIIT Road",link:"https://chaibarbbsr.com",desc:"A portfolio web for best chai place"},
+  {imgUrl:"https://chaibarbbsr.com/assets/img/main_bg.jpg",type:"Portfolio • Website",name:"Chaibar 6",addr:"KIIT Road",link:"https://chaibarbbsr.com",desc:"A portfolio web for best chai place"},
 ]
 
 const blogs = {
