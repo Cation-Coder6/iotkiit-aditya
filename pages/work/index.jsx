@@ -12,42 +12,11 @@ import SwiperCore, {
 } from "swiper";
 import Filler from "../../components/workPage/Filler";
 import SectionHeader from "../../components/workPage/SectionHeader";
+import Meed from "meed";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
-const blogs = {
-  main: {
-    date: "20 Nov 2020",
-    link: "https://www.medium.com",
-    title: "What it means when a man falls from outer space",
-    desc:
-      "Call it magical realism, call it realistic fantasy—call it whatever you want, but Arimahs playfully subversive style is wholly her own.",
-    author: "Susie the cat",
-    authorPic:
-      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260",
-  },
-  top: {
-    date: "20 Nov 2020",
-    link: "https://www.medium.com",
-    title: "What it means when a man falls from outer space",
-    desc:
-      "Call it magical realism, call it realistic fantasy—call it whatever you want, but Arimahs playfully subversive style is wholly her own.",
-    author: "Susie the cat",
-    authorPic:
-      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260",
-  },
-  bottom: {
-    date: "20 Nov 2020",
-    link: "https://www.medium.com",
-    title: "What it means when a man falls from outer space",
-    desc:
-      "Call it magical realism, call it realistic fantasy—call it whatever you want, but Arimahs playfully subversive style is wholly her own.",
-    author: "Susie the cat",
-    authorPic:
-      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260",
-  },
-};
-
 const Works = (props) => {
+  const { blogs } = props;
   return (
     <div>
       <Head>
@@ -100,9 +69,33 @@ export async function getStaticProps(context) {
     (v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.formats.small.url)
   );
 
+  //Getting Feed from Meed
+  const feed = new Meed({ fetch });
+
+  const articles = await feed.user("iot-lab");
+
+  articles.forEach((v, i, arr) => {
+    //Converting date format
+    arr[i].date = v.date.toLocaleDateString("IN");
+
+    //Extracting thumbnail from HTML
+    arr[i].authorPic = v.content.match('<img alt="" src="(.+?)" />')[1];
+
+    //Extract the first <p> tag
+    arr[i].desc = v.content.match("<p>([^<].+?)</p>")[1].substr(0, 150) + "...";
+  });
+
+  //Taking the first 3 articles
+  const [main, top, bottom] = articles;
+
   return {
     props: {
       projects: projectsData,
+      blogs: {
+        main,
+        top,
+        bottom,
+      },
     },
     revalidate: 10,
   };
