@@ -8,7 +8,7 @@ const CoordinatorMainCard = ({
   mailID,
 }) => {
   return (
-    <div className="p-4 lg:w-screen">
+    <div className="p-4 lg:w-screen mx-auto">
       <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
         <img
           alt="team"
