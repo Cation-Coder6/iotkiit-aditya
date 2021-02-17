@@ -80,8 +80,8 @@ const Works = (props) => {
         }}
       >
         {props.projects.map((project) => (
-          <SwiperSlide>
-            <ProjectCard project={project} />
+          <SwiperSlide key={`slide-id-${project.id}`}>
+            <ProjectCard key={`project-id-${project.id}`} project={project} />
           </SwiperSlide>
         ))}
       </Swiper>

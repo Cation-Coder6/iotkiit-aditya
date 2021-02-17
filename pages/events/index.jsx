@@ -41,7 +41,7 @@ const flagship = {
     point3: "Certification by SCE KIIT",
     point4: "Internship Opportunity",
   },
-};  
+};
 
 const Events = (props) => {
   return (
@@ -102,7 +102,7 @@ export async function getStaticProps(context) {
 
   //Getting Extra events from Server
   const extraEventsRes = await fetch(
-    `${SERVER}/extra-events`
+    `${SERVER}/extra-events?_sort=eventDate:ASC`
   );
   const extraEventsData = await extraEventsRes.json();
   extraEventsData.forEach(
