@@ -178,7 +178,8 @@ export async function getStaticProps(context) {
   const coordinatorsRes = await fetch(`${SERVER}/coordinators?_sort=index:ASC`);
   const coordinatorsData = await coordinatorsRes.json();
   coordinatorsData.forEach(
-    (v, i, arr) => (arr[i].pictureUrl.url = SERVER + v.pictureUrl.url)
+    (v, i, arr) =>
+      (arr[i].pictureUrl.url = SERVER + v.pictureUrl.formats.small.url)
   );
 
   //Getting Members from Server

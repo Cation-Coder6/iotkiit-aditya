@@ -97,7 +97,7 @@ export async function getStaticProps(context) {
   const projectsRes = await fetch(`${SERVER}/projects`);
   const projectsData = await projectsRes.json();
   projectsData.forEach(
-    (v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.url)
+    (v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.formats.small.url)
   );
 
   return {
