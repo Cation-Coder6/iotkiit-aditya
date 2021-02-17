@@ -54,16 +54,20 @@ const Navbar = () => {
           </div>
           <div className="flex-1 flex md:grid md:grid-cols-2  items-center  grid-cols-2 justify-center md:justify-items-stretch sm:items-center">
             <div className="flex-shrink-0 flex items-center sm:self-start ">
-              <img
-                className="block lg:hidden h-10 w-auto"
-                src="https://iotkiit.in/images/logo_small.png"
-                alt="Workflow"
-              />
-              <img
-                className="hidden lg:block h-10 w-auto"
-                src="https://iotkiit.in/images/logo_small.png"
-                alt="Workflow"
-              />
+              <a href="/">
+                <img
+                  className="block lg:hidden h-10 w-auto"
+                  src="/images/logo_small.png"
+                  alt="Workflow"
+                />
+              </a>
+              <a href="/">
+                <img
+                  className="hidden lg:block h-10 w-auto"
+                  src="/images/logo_small.png"
+                  alt="Workflow"
+                />
+              </a>
             </div>
             <div className="hidden sm:block sm:ml-6 md:justify-self-end ">
               <div className="flex space-x-4">

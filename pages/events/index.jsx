@@ -63,9 +63,10 @@ const Events = (props) => {
             </p>
             <div className="h-1 mx-auto bg-indigo-200 w-24 opacity-75 mt-4 rounded"></div>
           </div>
-          <div class="container px-5 py-12 mx-auto flex flex-wrap">
+          <div className="container px-5 py-12 mx-auto flex flex-wrap">
             {props.upcomingevents.map((i, index) => (
               <UpcomingCard
+                key={`upcoming-event-${i.id}`}
                 index={index + 1}
                 title={i.title}
                 desc={i.desc}
