@@ -143,7 +143,7 @@ const upcoming = [
   },
 ];
 
-const Events = () => {
+const Events = (props) => {
   return (
     <>
       <Head>
@@ -151,7 +151,7 @@ const Events = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <EventHeader />
-      {upcoming.length == 0 ? null : (
+      {props.upcomingevents.length == 0 ? null : (
         <section>
           <div className="container max-w-full mx-auto lg:py-0 md:py-0 pt-48 mt-48 sm:mt-4 px-6 ">
             <h1 className="text-center text-4xl text-black font-medium leading-snug uppercase tracking-wider">
@@ -164,7 +164,7 @@ const Events = () => {
             <div className="h-1 mx-auto bg-indigo-200 w-24 opacity-75 mt-4 rounded"></div>
           </div>
           <div class="container px-5 py-12 mx-auto flex flex-wrap">
-            {upcoming.map((i, index) => (
+            {props.upcomingevents.map((i, index) => (
               <UpcomingCard
                 index={index + 1}
                 title={i.title}
@@ -187,5 +187,25 @@ const Events = () => {
     </>
   );
 };
+
+export async function getStaticProps(context) {
+  const SERVER = "http://100.24.85.44:1337";
+
+  //Getting upcomingevents from Server
+  const upcomingeventsRes = await fetch(
+    `${SERVER}/upcoming-events?_sort=eventDate:ASC`
+  );
+  const upcomingeventsData = await upcomingeventsRes.json();
+  upcomingeventsData.forEach(
+    (v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.formats.thumbnail.url)
+  );
+
+  return {
+    props: {
+      upcomingevents: upcomingeventsData,
+    },
+    revalidate: 10,
+  };
+}
 
 export default Events;
