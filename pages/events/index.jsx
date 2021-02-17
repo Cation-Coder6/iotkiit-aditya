@@ -110,6 +110,8 @@ export async function getStaticProps(context) {
     (v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.formats.thumbnail.url)
   );
 
+  //Getting Flagship Events from Server
+
   return {
     props: {
       upcomingevents: upcomingeventsData,
