@@ -80,9 +80,9 @@ const Events = (props) => {
         </section>
       )}
       <FlagshipEvents
-        main={flagship.main}
-        left={flagship.left}
-        right={flagship.right}
+        main={props.flagshipevents.main}
+        left={props.flagshipevents.left}
+        right={props.flagshipevents.right}
       />
       <EventExtra extraevents={props.extraevents} />
     </>
@@ -111,11 +111,23 @@ export async function getStaticProps(context) {
   );
 
   //Getting Flagship Events from Server
+  const flagshipEventsRes = await fetch(`${SERVER}/flagship-events`);
+  const flagshipEventsData = await flagshipEventsRes.json();
+  flagshipEventsData.forEach(
+    (v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.url)
+  );
+
+  const [main, left, right] = flagshipEventsData;
 
   return {
     props: {
       upcomingevents: upcomingeventsData,
       extraevents: extraEventsData,
+      flagshipevents: {
+        left: left,
+        main: main,
+        right: right,
+      },
     },
     revalidate: 10,
   };
