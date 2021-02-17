@@ -9,7 +9,7 @@ const CoordinatorCard = ({
   mailID,
 }) => {
   return (
-    <div className="p-4 lg:w-1/2 mx-auto">
+    <div className="p-4 lg:w-1/2 mx-auto sm:mx-0">
       <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
         <img
           alt="team"
@@ -24,7 +24,11 @@ const CoordinatorCard = ({
           <p className="mb-4">{quote}</p>
           <span className="inline-flex sm:-ml-2.5">
             {githubUrl ? (
-              <a className="text-gray-500 mx-3" href={githubUrl}>
+              <a
+                className="text-gray-500 mx-3"
+                target="_blank"
+                href={githubUrl}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={24}
@@ -42,7 +46,11 @@ const CoordinatorCard = ({
               </a>
             ) : null}
             {linkedinUrl ? (
-              <a className="mx-3 text-gray-500" href={linkedinUrl}>
+              <a
+                className="mx-3 text-gray-500"
+                target="_blank"
+                href={linkedinUrl}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -72,7 +80,11 @@ const CoordinatorCard = ({
               </a>
             ) : null}
             {mailID ? (
-              <a className="mx-3 mt-1 text-gray-500" href={`mailto:${mailID}`}>
+              <a
+                className="mx-3 mt-1 text-gray-500"
+                target="_blank"
+                href={`mailto:${mailID}`}
+              >
                 <svg
                   fill="none"
                   stroke="currentColor"

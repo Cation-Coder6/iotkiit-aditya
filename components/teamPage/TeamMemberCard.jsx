@@ -40,7 +40,7 @@ const TeamMemberCard = ({
           <h2 className="text-gray-900 title-font font-medium text-center">
             {name}
           </h2>
-          <p className="text-gray-500 text-center">{position}</p>
+          <p className="text-gray-500 mt-2 text-center">{position}</p>
           <div className="w-full flex justify-center pt-4 pb-2">
             {githubUrl ? (
               <a href={githubUrl} className="mx-2 lg:mx-4">
