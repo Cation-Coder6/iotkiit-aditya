@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps, footerData }) {
 }
 
 MyApp.getInitialProps = async ({ Component, ctx }) => {
-  const SERVER = "http://100.24.85.44:1337";
+  const SERVER = "https://api.iotkiit.in";
 
   //Getting FooterData from Server
   const footerRes = await fetch(`${SERVER}/footer-link`);

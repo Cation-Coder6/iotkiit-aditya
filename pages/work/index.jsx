@@ -60,7 +60,7 @@ const Works = (props) => {
 };
 
 export async function getStaticProps(context) {
-  const SERVER = "http://100.24.85.44:1337";
+  const SERVER = "https://api.iotkiit.in";
 
   //Getting Projects from Server
   const projectsRes = await fetch(`${SERVER}/projects`);

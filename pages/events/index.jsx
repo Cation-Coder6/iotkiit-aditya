@@ -90,7 +90,7 @@ const Events = (props) => {
 };
 
 export async function getStaticProps(context) {
-  const SERVER = "http://100.24.85.44:1337";
+  const SERVER = "https://api.iotkiit.in";
 
   //Getting upcomingevents from Server
   const upcomingeventsRes = await fetch(

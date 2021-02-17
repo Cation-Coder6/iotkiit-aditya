@@ -172,7 +172,7 @@ const Layout = (props) => {
 };
 
 export async function getStaticProps(context) {
-  const SERVER = "http://100.24.85.44:1337";
+  const SERVER = "https://api.iotkiit.in";
 
   //Getting Coordinators from Server
   const coordinatorsRes = await fetch(`${SERVER}/coordinators?_sort=index:ASC`);
