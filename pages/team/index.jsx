@@ -22,7 +22,9 @@ const Coordinators = ({ coordinators }) => {
       <div className="container px-5 py-24 mx-auto">
         <div className="max-w-xl mb-10 ml-6 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <div>
-            <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400"></p>
+            <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+              Management Team
+            </p>
           </div>
           <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
             <span className="relative inline-block">
@@ -52,10 +54,10 @@ const Coordinators = ({ coordinators }) => {
             </span>
             Coordinators
           </h2>
-          <p className="text-base text-gray-700 md:text-lg">
+          <p className="text-base font-light text-gray-700 md:text-lg">
             “Of all the things I’ve done, the most vital is coordinating those
-            who work with me and aiming their efforts at a certain goal.” – Walt
-            Disney, founder of Disney
+            who work with me and aiming their efforts at a certain goal.” <br />
+            – Walt Disney
           </p>
         </div>
         <div className="flex flex-wrap -mt-4">
@@ -129,7 +131,7 @@ const Team = ({ members }) => {
               </span>
               the Dream Team
             </h2>
-            <p className="text-base text-gray-700 md:text-lg">
+            <p className="text-base text-gray-700 md:text-lg font-light ">
               “A mentor is someone who sees more talent and ability within you,
               than you see in yourself, and helps bring it out of you.” - Bob
               Proctor
@@ -173,7 +175,7 @@ export async function getStaticProps(context) {
   const SERVER = "http://100.24.85.44:1337";
 
   //Getting Coordinators from Server
-  const coordinatorsRes = await fetch(`${SERVER}/coordinators`);
+  const coordinatorsRes = await fetch(`${SERVER}/coordinators?_sort=index:ASC`);
   const coordinatorsData = await coordinatorsRes.json();
   coordinatorsData.forEach(
     (v, i, arr) => (arr[i].pictureUrl.url = SERVER + v.pictureUrl.url)
@@ -183,18 +185,15 @@ export async function getStaticProps(context) {
   const membersRes = await fetch(`${SERVER}/members`);
   const membersData = await membersRes.json();
   membersData.forEach(
-    (v, i, arr) => (arr[i].imageUrl.url = SERVER + v.imageUrl.url)
+    (v, i, arr) => (arr[i].imageUrl.url = SERVER + v.imageUrl.formats.small.url)
   );
 
   //Getting Mentors from Server
-  const mentor = {
-    id: "1",
-    name: "Dr. Samresh Mishra",
-    positon: "Director, CSE",
-    email: "director.cse@kiit.ac.in",
-    imageUrl: "https://iotkiit.in/image/886fab2fb2e202badf4d4cd39d6f114a.jpg",
-  };
-  const mentorsData = [mentor];
+  const mentorsRes = await fetch(`${SERVER}/mentors?_sort=index:ASC`);
+  const mentorsData = await mentorsRes.json();
+  mentorsData.forEach(
+    (v, i, arr) => (arr[i].imageUrl.url = SERVER + v.imageUrl.formats.small.url)
+  );
 
   return {
     props: {
