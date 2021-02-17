@@ -14,57 +14,6 @@ import Filler from "../../components/workPage/Filler";
 import SectionHeader from "../../components/workPage/SectionHeader";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
-const projects = [
-  {
-    imgUrl: "https://chaibarbbsr.com/assets/img/main_bg.jpg",
-    type: "Portfolio • Website",
-    name: "Chaibar 1",
-    addr: "KIIT Road",
-    link: "https://chaibarbbsr.com",
-    desc: "A portfolio web for best chai place",
-  },
-  {
-    imgUrl: "https://chaibarbbsr.com/assets/img/main_bg.jpg",
-    type: "Portfolio • Website",
-    name: "Chaibar 2",
-    addr: "KIIT Road",
-    link: "https://chaibarbbsr.com",
-    desc: "A portfolio web for best chai place",
-  },
-  {
-    imgUrl: "https://chaibarbbsr.com/assets/img/main_bg.jpg",
-    type: "Portfolio • Website",
-    name: "Chaibar 3",
-    addr: "KIIT Road",
-    link: "https://chaibarbbsr.com",
-    desc: "A portfolio web for best chai place",
-  },
-  {
-    imgUrl: "https://chaibarbbsr.com/assets/img/main_bg.jpg",
-    type: "Portfolio • Website",
-    name: "Chaibar 4",
-    addr: "KIIT Road",
-    link: "https://chaibarbbsr.com",
-    desc: "A portfolio web for best chai place",
-  },
-  {
-    imgUrl: "https://chaibarbbsr.com/assets/img/main_bg.jpg",
-    type: "Portfolio • Website",
-    name: "Chaibar 5",
-    addr: "KIIT Road",
-    link: "https://chaibarbbsr.com",
-    desc: "A portfolio web for best chai place",
-  },
-  {
-    imgUrl: "https://chaibarbbsr.com/assets/img/main_bg.jpg",
-    type: "Portfolio • Website",
-    name: "Chaibar 6",
-    addr: "KIIT Road",
-    link: "https://chaibarbbsr.com",
-    desc: "A portfolio web for best chai place",
-  },
-];
-
 const blogs = {
   main: {
     date: "20 Nov 2020",
@@ -98,7 +47,7 @@ const blogs = {
   },
 };
 
-const Works = () => {
+const Works = (props) => {
   return (
     <div>
       <Head>
@@ -130,7 +79,7 @@ const Works = () => {
           },
         }}
       >
-        {projects.map((project) => (
+        {props.projects.map((project) => (
           <SwiperSlide>
             <ProjectCard project={project} />
           </SwiperSlide>
@@ -140,5 +89,23 @@ const Works = () => {
     </div>
   );
 };
+
+export async function getStaticProps(context) {
+  const SERVER = "http://100.24.85.44:1337";
+
+  //Getting Projects from Server
+  const projectsRes = await fetch(`${SERVER}/projects`);
+  const projectsData = await projectsRes.json();
+  projectsData.forEach(
+    (v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.url)
+  );
+
+  return {
+    props: {
+      projects: projectsData,
+    },
+    revalidate: 10,
+  };
+}
 
 export default Works;
