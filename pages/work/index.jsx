@@ -23,7 +23,7 @@ const Works = (props) => {
         <title>Work</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <WorkHeader />
+      <WorkHeader numProjects={props.numProjects} numBlogs={props.numBlogs} />
       <SectionHeader />
       <Filler />
       <Swiper
@@ -96,6 +96,8 @@ export async function getStaticProps(context) {
         top,
         bottom,
       },
+      numProjects: projectsData?.length,
+      numBlogs: articles?.length,
     },
     revalidate: 10,
   };
