@@ -24,7 +24,7 @@ MyApp.getInitialProps = async ({ Component, ctx }) => {
   if (Component.getInitialProps) {
     pageProps = await Component.getInitialProps(ctx);
   }
-  return { pageProps, footerData, revalidate: 600 };
+  return { pageProps, footerData, revalidate: 3600 };
 };
 
 export default MyApp;

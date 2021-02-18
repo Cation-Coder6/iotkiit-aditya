@@ -6,6 +6,7 @@ const AboutUs = () => {
           <div className="md:w-1/2 md:pr-8 lg:pr-16">
             <img
               src="/images/team.svg"
+              alt="team_photo"
               className="-mt-24 md:mt-0 lg:-mt-24 mb-0 md:mb-0"
             />
           </div>

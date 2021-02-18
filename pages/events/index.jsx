@@ -120,7 +120,7 @@ export async function getStaticProps(context) {
         right: right,
       },
     },
-    revalidate: 10,
+    revalidate: 3600,
   };
 }
 

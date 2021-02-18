@@ -232,7 +232,7 @@ export async function getStaticProps(context) {
       members: membersData,
       mentors: mentorsData,
     },
-    revalidate: 10,
+    revalidate: 3600,
   };
 }
 export default Layout;
