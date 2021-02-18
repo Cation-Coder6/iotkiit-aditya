@@ -44,8 +44,8 @@ and projects with more end-user interactions."
       <EventHeader />
       {props.upcomingevents.length == 0 ? null : (
         <section>
-          <div className="container max-w-full mx-auto lg:py-0 md:py-0 pt-48 mt-48 sm:mt-4 px-6 ">
-            <h1 className="text-center text-4xl text-black font-medium leading-snug uppercase tracking-wider">
+          <div className="container max-w-full mx-auto lg:py-0 md:pt-0 sm:pt-80 pt-48 mt-48 sm:mt-4 px-6 ">
+            <h1 className="text-center sm:mt-12 text-4xl text-black font-medium leading-snug uppercase tracking-wider">
               Upcoming Events
             </h1>
             <p className="text-center text-lg text-gray-700 mt-2 px-6">
