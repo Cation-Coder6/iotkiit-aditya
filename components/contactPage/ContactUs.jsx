@@ -1022,6 +1022,7 @@ const ContactUs = () => {
             <input
               type="email"
               id="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               name="from_name"
               label="email"
               className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
@@ -1042,32 +1043,13 @@ const ContactUs = () => {
               className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
             />
           </div>
-          {/* <div className="mt-8">
-            <label className="w-36 mx-auto flex flex-col items-center px-4 py-2 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-primary-300 hover:text-white">
-              <svg
-                className="w-8 h-8"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-              >
-                <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
-              </svg>
-              <span className="mt-2 text-xs leading-normal sn:text-base">
-                Select a file
-              </span>
-              <input type="file" className="hidden" />
-            </label>
-          </div> */}
           <div className="mt-8">
             <button
               type="submit"
               className="uppercase text-sm font-bold tracking-wide bg-indigo-900 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
             >
-              Send Message
+              {didSubmit ? didSubmit : "Send Message"}
             </button>
-            <h3 className="sm:pl-12 pl-6 mt-3 text-sm font-medium leading-5 text-gray-800 truncate sm:text-base lg:text-base">
-              {didSubmit}
-            </h3>
           </div>
         </form>
       </div>
