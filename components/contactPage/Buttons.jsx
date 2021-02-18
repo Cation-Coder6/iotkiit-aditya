@@ -1,4 +1,14 @@
-const ContactButtons = () => {
+const ContactButtons = ({ links }) => {
+  const {
+    facebookLink,
+    twitterLink,
+    instagramLink,
+    githubLink,
+    mediumLink,
+    telegramLink,
+    linkedinLink,
+    mailID,
+  } = links;
   return (
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-20 mx-auto">
@@ -34,7 +44,7 @@ const ContactButtons = () => {
                 title="insta-link"
                 rel="noopener noreferrer"
                 target="_blank"
-                href="/"
+                href={instagramLink}
               >
                 <button className="ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
                   Instagram
@@ -59,7 +69,7 @@ const ContactButtons = () => {
                 title="linkedin-link"
                 rel="noopener noreferrer"
                 target="_blank"
-                href="/"
+                href={linkedinLink}
               >
                 <button className=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
                   LinkedIn
@@ -84,7 +94,7 @@ const ContactButtons = () => {
                 title="messenger-link"
                 rel="noopener noreferrer"
                 target="_blank"
-                href="/"
+                href={facebookLink}
               >
                 <button className=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
                   Messenger
@@ -109,7 +119,7 @@ const ContactButtons = () => {
                 title="email-link"
                 rel="noopener noreferrer"
                 target="_blank"
-                href="/"
+                href={`mailto:${mailID}`}
               >
                 <button className=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
                   E-mail

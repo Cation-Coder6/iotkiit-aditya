@@ -5,7 +5,7 @@ import HandWave from "../../components/contactPage/HandWave";
 import MapFooter from "../../components/contactPage/MapsFooter";
 import Testimonials from "../../components/contactPage/Testimonials";
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <div>
       <Head>
@@ -43,12 +43,24 @@ and projects with more end-user interactions."
         <meta property="twitter:image" content="/images/logo_small.webp"></meta>
       </Head>
       <HandWave />
-      <ContactButtons />
+      <ContactButtons links={props.footerData} />
       <Testimonials />
       <ContactUs />
       <MapFooter />
     </div>
   );
 };
+
+export async function getStaticProps(context) {
+  //Getting FooterData from Server
+  const SERVER = "https://api.iotkiit.in";
+  const footerRes = await fetch(`${SERVER}/footer-link`);
+  const footerData = await footerRes.json();
+  return {
+    props: {
+      footerData,
+    },
+  };
+}
 
 export default Contact;
