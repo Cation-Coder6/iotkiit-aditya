@@ -6,8 +6,8 @@ const ContactButtons = () => {
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 uppercase ">
             Don't be shy, Message us.
           </h1>
-          <div class="flex mt-2 justify-center">
-            <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+          <div className="flex mt-2 justify-center">
+            <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
           </div>
           <p className="lg:w-2/3 mx-auto mt-4 leading-relaxed text-base">
             Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
@@ -30,7 +30,7 @@ const ContactButtons = () => {
                 {" "}
                 Drop Us A DM!
               </p>
-              <button class=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
+              <button className=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
                 Button
               </button>
             </div>
@@ -48,7 +48,7 @@ const ContactButtons = () => {
                 {" "}
                 Linked-In-US?
               </p>
-              <button class=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
+              <button className=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
                 Button
               </button>
             </div>
@@ -66,7 +66,7 @@ const ContactButtons = () => {
                 {" "}
                 Chat with us!
               </p>
-              <button class=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
+              <button className=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
                 Button
               </button>
             </div>
@@ -84,7 +84,7 @@ const ContactButtons = () => {
                 {" "}
                 Drop us a Line?
               </p>
-              <button class=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
+              <button className=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
                 Button
               </button>
             </div>

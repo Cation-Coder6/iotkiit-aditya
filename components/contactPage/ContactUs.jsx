@@ -1,4 +1,21 @@
+import { useState } from 'react';
+import emailjs from 'emailjs-com';
+
 const ContactUs = () => {
+
+  const [didSubmit, setDidSubmit] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setDidSubmit("Sending...");
+    emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, e.target, process.env.NEXT_PUBLIC_USER_ID)
+      .then((result) => {
+        setDidSubmit("Submitted");
+      }, (error) => {
+        setDidSubmit("Internal Error. We will resolve it soon!");
+      });
+  }
+
   return (
     <div>
       <div className="max-w-screen-xl mt-20 mb-20 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
@@ -251,22 +268,21 @@ const ContactUs = () => {
             </svg>
           </div>
         </div>
-        <div>
+
+        <form onSubmit={sendEmail}>
           <div>
             <span className="uppercase text-sm text-gray-600 font-bold">Full Name</span>
-            <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text"  />
+            <input type="text" name="name" className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" />
           </div>
           <div className="mt-8">
             <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
-            <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" />
+            <input type="email" name="from_name" className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" />
           </div>
           <div className="mt-8">
             <span className="uppercase text-sm text-gray-600 font-bold">Message</span>
-            <textarea className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" defaultValue={""} />
+            <input type="textarea" name="message" className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" />
           </div>
-          
           <div className="mt-8">
-
             <label className="w-36 mx-auto flex flex-col items-center px-4 py-2 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-primary-300 hover:text-white">
               <svg className="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                 <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
@@ -276,12 +292,14 @@ const ContactUs = () => {
             </label>
           </div>
           <div className="mt-8">
-            <button className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+            <button type="submit" className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
               Send Message
-        </button>
+            </button>
+            <h3 className="sm:pl-12 pl-6 mt-3 text-sm font-medium leading-5 text-gray-800 truncate sm:text-base lg:text-base">
+              {didSubmit}
+            </h3>
           </div>
-
-        </div>
+        </form>
       </div>
     </div>
   )
