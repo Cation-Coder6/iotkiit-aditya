@@ -4,12 +4,12 @@ const UpcomingCard = ({ index, title, desc, link, date, year, imgUrl }) => {
       <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
         <div className="h-full w-1 bg-gray-200 pointer-events-none" />
       </div>
-      <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
+      <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-900 text-white relative z-10 title-font font-medium text-sm">
         {index}
       </div>
       <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-        <div className="flex-shrink-0 w-28 h-28 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-          <img className="w-18 h-14" src={imgUrl} />
+        <div className="flex-shrink-0 w-28 h-28 bg-indigo-100 text-indigo-900 rounded-full inline-flex items-center justify-center">
+          <img className="w-18 h-14" alt="event image" src={imgUrl} />
         </div>
         <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
           <div className="h-full flex items-start">
@@ -27,9 +27,10 @@ const UpcomingCard = ({ index, title, desc, link, date, year, imgUrl }) => {
               </h1>
               <p className="leading-relaxed mb-2">{desc}</p>
               <a
-                className="text-indigo-500 inline-flex items-center"
+                className="text-indigo-900 inline-flex font-semibold items-center"
                 href={link}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Register Now
                 <svg

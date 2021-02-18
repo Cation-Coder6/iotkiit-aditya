@@ -20,13 +20,8 @@ const Works = (props) => {
   return (
     <>
       <Head>
-        <html lang="en" />
         <title>Work</title>
-        <meta
-          name="viewport"
-          content="initial-scale=1.0"
-          width="device-width"
-        />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main>
         <WorkHeader numProjects={props.numProjects} numBlogs={props.numBlogs} />

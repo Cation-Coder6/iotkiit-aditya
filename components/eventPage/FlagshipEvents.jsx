@@ -42,7 +42,11 @@ const FlagshipEvents = ({ main, left, right }) => {
             <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-mr-4">
               <div className="bg-white text-black rounded-lg shadow-inner overflow-hidden">
                 <div className="text-sm object-center leading-none rounded-t-lg bg-white-200 text-black font-semibold uppercase pt-6 text-center tracking-wide">
-                  <img className="w-20 h-16 inline-block" src={left.imgUrl} />
+                  <img
+                    className="w-auto h-16 inline-block"
+                    alt="event image"
+                    src={left.imgUrl}
+                  />
                 </div>
 
                 <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
@@ -68,7 +72,11 @@ const FlagshipEvents = ({ main, left, right }) => {
             <div className="w-full max-w-md sm:w-2/3 lg:w-2/5 sm:my-5 my-8 relative z-10 rounded-lg shadow-lg ">
               <div className="bg-white text-black rounded-lg shadow-inner overflow-hidden">
                 <div className="text-sm object-center leading-none rounded-t-lg bg-white-200 text-black font-semibold uppercase pt-3 text-center tracking-wide">
-                  <img className="w-26 h-24 inline-block" src={main.imgUrl} />
+                  <img
+                    className="w-auto h-24 inline-block"
+                    alt="event image"
+                    src={main.imgUrl}
+                  />
                 </div>
                 <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
                   <h1 className="text-2xl font-medium uppercase p-3 pb-0 text-center tracking-wide">
@@ -94,7 +102,11 @@ const FlagshipEvents = ({ main, left, right }) => {
             <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4">
               <div className="bg-white text-black rounded-lg shadow-inner overflow-hidden">
                 <div className="text-sm object-center leading-none rounded-t-lg bg-white-200 text-black font-semibold uppercase pt-6 text-center tracking-wide">
-                  <img className="w-20 h-16 inline-block" src={right.imgUrl} />
+                  <img
+                    className="w-auto h-16 inline-block"
+                    alt="event image"
+                    src={right.imgUrl}
+                  />
                 </div>
 
                 <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">

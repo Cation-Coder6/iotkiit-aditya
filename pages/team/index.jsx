@@ -9,7 +9,6 @@ const Heading = () => {
   return (
     <div>
       <Head>
-        <html lang="en" />
         <title>Team</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
@@ -75,17 +74,17 @@ const Coordinators = ({ coordinators }) => {
                 mailID={coordinator.mailID}
               />
             ) : (
-                <CoordinatorCard
-                  key={`coordinator-card-${coordinator.id}`}
-                  name={coordinator.name}
-                  position={coordinator.position}
-                  pictureUrl={coordinator.pictureUrl.url}
-                  quote={coordinator.quote}
-                  githubUrl={coordinator.githubUrl}
-                  linkedinUrl={coordinator.linkedinUrl}
-                  mailID={coordinator.mailID}
-                />
-              )
+              <CoordinatorCard
+                key={`coordinator-card-${coordinator.id}`}
+                name={coordinator.name}
+                position={coordinator.position}
+                pictureUrl={coordinator.pictureUrl.url}
+                quote={coordinator.quote}
+                githubUrl={coordinator.githubUrl}
+                linkedinUrl={coordinator.linkedinUrl}
+                mailID={coordinator.mailID}
+              />
+            )
           )}
         </div>
       </div>

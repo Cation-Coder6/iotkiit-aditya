@@ -27,6 +27,8 @@ const CoordinatorCard = ({
               <a
                 className="text-gray-500 mx-3"
                 target="_blank"
+                title="github-link"
+                rel="noopener noreferrer"
                 href={githubUrl}
               >
                 <svg
@@ -49,6 +51,8 @@ const CoordinatorCard = ({
               <a
                 className="mx-3 text-gray-500"
                 target="_blank"
+                title="linkedin-link"
+                rel="noopener noreferrer"
                 href={linkedinUrl}
               >
                 <svg
@@ -83,6 +87,8 @@ const CoordinatorCard = ({
               <a
                 className="mx-3 mt-1 text-gray-500"
                 target="_blank"
+                title="mail-link"
+                rel="noopener noreferrer"
                 href={`mailto:${mailID}`}
               >
                 <svg

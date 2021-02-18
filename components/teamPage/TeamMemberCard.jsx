@@ -43,7 +43,12 @@ const TeamMemberCard = ({
           <p className="text-gray-500 mt-2 text-center">{position}</p>
           <div className="w-full flex justify-center pt-4 pb-2">
             {githubUrl ? (
-              <a href={githubUrl} className="mx-2 lg:mx-4">
+              <a
+                href={githubUrl}
+                title="github-link"
+                rel="noopener noreferrer"
+                className="mx-2 lg:mx-4"
+              >
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +68,12 @@ const TeamMemberCard = ({
               </a>
             ) : null}
             {linkedinUrl ? (
-              <a href={linkedinUrl} className="mx-2 lg:mx-4 ">
+              <a
+                href={linkedinUrl}
+                title="linkedin-link"
+                rel="noopener noreferrer"
+                className="mx-2 lg:mx-4 "
+              >
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +105,12 @@ const TeamMemberCard = ({
               </a>
             ) : null}
             {mailID ? (
-              <a href={`mailto:${mailID}`} className="mx-2 mt-1 lg:mx-4">
+              <a
+                href={`mailto:${mailID}`}
+                title="mail-link"
+                rel="noopener noreferrer"
+                className="mx-2 mt-1 lg:mx-4"
+              >
                 <div>
                   <svg
                     fill="none"

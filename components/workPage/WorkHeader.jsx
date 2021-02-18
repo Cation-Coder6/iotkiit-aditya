@@ -58,7 +58,7 @@ const WorkHeader = ({ numBlogs, numProjects }) => {
                       <WorkAnimation />
                     </div>
                     <div className="lg:ml-5 text-left">
-                      <bottom
+                      <div
                         type="button"
                         className="flex items-center justify-center w-12 h-12 rounded-full bg-cool-gray-100 text-gray-800 animate-bounce hover:text-gray-900 hover:bg-cool-gray-50 transition duration-300 ease-in-out cursor-pointer"
                       >
@@ -76,7 +76,7 @@ const WorkHeader = ({ numBlogs, numProjects }) => {
                             d="M19 14l-7 7m0 0l-7-7m7 7V3"
                           />
                         </svg>
-                      </bottom>
+                      </div>
                     </div>
                   </div>
                 </div>

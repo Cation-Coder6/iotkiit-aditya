@@ -25,11 +25,11 @@ const EventExtra = ({ extraevents }) => {
                   src={i.imgUrl}
                   alt="content"
                 />
-                <h3 className="tracking-widest text-indigo-500 text-xs font-medium mb-1 title-font">
+                <div className="tracking-widest text-indigo-900 text-sm font-medium mb-1 title-font">
                   {i.type}
-                </h3>
+                </div>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-1">
-                  <a target="_blank" href={i.link}>
+                  <a rel="noopener noreferrer" target="_blank" href={i.link}>
                     <span className="text-sm align-middle ">🌐&emsp;</span>
                     {i.name}
                   </a>
