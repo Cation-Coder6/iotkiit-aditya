@@ -111,7 +111,7 @@ export async function getStaticProps(context) {
     arr[i].date = v.date.toLocaleDateString("IN");
 
     //Extracting thumbnail from HTML
-    arr[i].authorPic = v.content.match('<img alt="" src="(.+?)" />')[1];
+    arr[i].authorPic = "/images/logo_small.webp";
 
     //Extract the first <p> tag
     arr[i].desc = v.content.match("<p>([^<].+?)</p>")[1].substr(0, 150) + "...";
