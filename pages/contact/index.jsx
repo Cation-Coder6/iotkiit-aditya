@@ -9,6 +9,7 @@ const Contact = () => {
   return (
     <div>
       <Head>
+        <html lang="en" />
         <title>Contact</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>

@@ -29,7 +29,7 @@ const ProjectCard = ({project}) => {
             </svg>
             <p>
               <span className="text-gray-900 font-normal px-4 ">
-                <a href={project.link} target="_blank" >{project.link}</a>
+                <a href={project.link} target="_blank" rel="noopener noreferrer" >{project.link}</a>
               </span>
             </p>
           </div>

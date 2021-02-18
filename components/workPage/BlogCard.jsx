@@ -8,7 +8,9 @@ export const Blog = ({main,top,bottom}) => {
             </p>
             <div className="mb-3">
               <a
-                href={main.link} target="_blank"
+                href={main.link} 
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Article"
                 className="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
@@ -30,7 +32,6 @@ export const Blog = ({main,top,bottom}) => {
               </a>
               <div>
                 <a
-                  
                   aria-label="Author"
                   className="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400"
                 >
@@ -49,7 +50,9 @@ export const Blog = ({main,top,bottom}) => {
               </p>
               <div className="mb-3">
                 <a
-                  href={top.link} target="_blank"
+                  href={top.link} 
+                  rel="noopener noreferrer"
+                  target="_blank"
                   aria-label="Article"
                   className="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-400"
                 >
@@ -71,7 +74,6 @@ export const Blog = ({main,top,bottom}) => {
                 </a>
                 <div>
                   <a
-                  
                     aria-label="Author"
                     className="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400"
                   >
@@ -89,7 +91,9 @@ export const Blog = ({main,top,bottom}) => {
               </p>
               <div className="mb-3">
                 <a
-                  href={bottom.link} target="_blank"
+                  href={bottom.link} 
+                  rel="noopener noreferrer"
+                  target="_blank"
                   aria-label="Article"
                   className="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-400"
                 >
@@ -111,7 +115,6 @@ export const Blog = ({main,top,bottom}) => {
                 </a>
                 <div>
                   <a
-                
                     aria-label="Author"
                     className="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400"
                   >

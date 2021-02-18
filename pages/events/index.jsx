@@ -4,49 +4,11 @@ import Head from "next/head";
 import UpcomingCard from "../../components/eventPage/UpcomingCard";
 import FlagshipEvents from "../../components/eventPage/FlagshipEvents";
 
-const flagship = {
-  main: {
-    imgUrl:
-      "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png",
-    name: "AWS CLOUD Training",
-    date: "Oct'20 - Dec'20",
-    desc:
-      "An Online course on “AWS Cloud” with hands-on learning experience in the field of cloud computing.",
-    point1: "AWS Certified Trainer",
-    point2: "55 Hour Extensive Training",
-    point3: "Certification by SCE KIIT",
-    point4: "Internship Opportunity",
-  },
-  left: {
-    imgUrl:
-      "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png",
-    name: "Left Event",
-    date: "Oct'20 - Dec'20",
-    desc:
-      "An Online course on “AWS Cloud” with hands-on learning experience in the field of cloud computing.",
-    point1: "AWS Certified Trainer",
-    point2: "55 Hour Extensive Training",
-    point3: "Certification by SCE KIIT",
-    point4: "Internship Opportunity",
-  },
-  right: {
-    imgUrl:
-      "https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png",
-    name: "Right Event",
-    date: "Oct'20 - Dec'20",
-    desc:
-      "An Online course on “AWS Cloud” with hands-on learning experience in the field of cloud computing.",
-    point1: "AWS Certified Trainer",
-    point2: "55 Hour Extensive Training",
-    point3: "Certification by SCE KIIT",
-    point4: "Internship Opportunity",
-  },
-};
-
 const Events = (props) => {
   return (
     <>
       <Head>
+        <html lang="en" />
         <title>Events</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>

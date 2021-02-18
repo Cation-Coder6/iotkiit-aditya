@@ -1,27 +1,29 @@
 const Footer = ({ footerData }) => {
   return (
-    <footer className="text-gray-600 body-font">
+    <footer className="text-black body-font">
       <div className="bg-gray-100 ">
         <div className="container pb-4 sm:pt-4 pt-4 mx-auto flex items-center sm:flex-row flex-col ">
-          <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
+          <p className="text-sm text-black sm:ml-6 sm:mt-0 mt-4">
             © 2021 IOTLAB —
             <a
-              href=""
+              href="/"
               rel="noopener noreferrer"
-              className="text-gray-600 ml-1"
+              className="text-black ml-1"
               target="_blank"
             >
               @iotlabkiit
             </a>
           </p>
-          <p className="text-base my-1 items-center mx-auto text-gray-500 ">
+          <p className="text-base my-1 items-center mx-auto text-black ">
             Coded with ❤ and ☕ by IoT Web Team
           </p>
           <span className="inline-flex  sm:mt-0 mt-2 mb-2 sm:mb-0 justify-center items-center sm:justify-start">
             <a
               target="_blank"
+              title="facebook-link"
+              rel="noopener noreferrer"
               href={footerData.facebookLink}
-              className="text-gray-500"
+              className="text-black"
             >
               <svg
                 fill="currentColor"
@@ -36,8 +38,10 @@ const Footer = ({ footerData }) => {
             </a>
             <a
               target="_blank"
+              title="twitter-link"
+              rel="noopener noreferrer"
               href={footerData.twitterLink}
-              className="ml-3 text-gray-500"
+              className="ml-3 text-black"
             >
               <svg
                 fill="currentColor"
@@ -52,8 +56,10 @@ const Footer = ({ footerData }) => {
             </a>
             <a
               target="_blank"
+              title="instagram-link"
+              rel="noopener noreferrer"
               href={footerData.instagramLink}
-              className="ml-3 text-gray-500"
+              className="ml-3 text-black"
             >
               <svg
                 fill="none"
@@ -70,8 +76,10 @@ const Footer = ({ footerData }) => {
             </a>
             <a
               target="_blank"
+              title="linkedin-link"
+              rel="noopener noreferrer"
               href={footerData.linkedinLink}
-              className="ml-3 text-gray-500"
+              className="ml-3 text-black"
             >
               <svg
                 fill="currentColor"
@@ -91,8 +99,10 @@ const Footer = ({ footerData }) => {
             </a>
             <a
               target="_blank"
+              title="github-link"
+              rel="noopener noreferrer"
               href={footerData.githubLink}
-              className="ml-3 text-gray-500"
+              className="ml-3 text-black"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +110,7 @@ const Footer = ({ footerData }) => {
                 height={24}
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#718096"
+                stroke="#101010"
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -111,8 +121,10 @@ const Footer = ({ footerData }) => {
             </a>
             <a
               target="_blank"
+              title="telegram-link"
+              rel="noopener noreferrer"
               href={footerData.telegramLink}
-              className="ml-3 text-gray-500"
+              className="ml-3 text-black"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +132,7 @@ const Footer = ({ footerData }) => {
                 height={24}
                 viewBox="0 0 24 26"
                 fill="none"
-                stroke="#718096"
+                stroke="#101010"
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -134,8 +146,10 @@ const Footer = ({ footerData }) => {
             </a>
             <a
               target="_blank"
+              title="medium-link"
+              rel="noopener noreferrer"
               href={footerData.mediumLink}
-              className="ml-3 text-gray-500"
+              className="ml-3 text-black"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +157,7 @@ const Footer = ({ footerData }) => {
                 height={24}
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#718096"
+                stroke="#101010"
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -154,8 +168,10 @@ const Footer = ({ footerData }) => {
             </a>
             <a
               target="_blank"
+              title="email-link"
+              rel="noopener noreferrer"
               href={`mailto:${footerData.mailID}`}
-              className="ml-3 text-gray-500"
+              className="ml-3 text-black"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +179,7 @@ const Footer = ({ footerData }) => {
                 height={24}
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#718096"
+                stroke="#101010"
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
