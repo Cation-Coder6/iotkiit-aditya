@@ -7,9 +7,9 @@ const Footer = ({ footerData }) => {
             © 2021 IOTLAB —
             <a
               href="/"
+              title="footer-link"
               rel="noopener noreferrer"
               className="text-black ml-1"
-              target="_blank"
             >
               @iotlabkiit
             </a>

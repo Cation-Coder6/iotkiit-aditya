@@ -30,9 +30,16 @@ const ContactButtons = () => {
                 {" "}
                 Drop Us A DM!
               </p>
-              <button className=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
-                Button
-              </button>
+              <a
+                title="insta-link"
+                rel="noopener noreferrer"
+                target="_blank"
+                href="/"
+              >
+                <button className="ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
+                  Instagram
+                </button>
+              </a>
             </div>
           </div>
           <div className="p-4 md:w-1/4 sm:w-1/2 w-1/2 mb-8 max-w-xs mx-auto">
@@ -48,9 +55,16 @@ const ContactButtons = () => {
                 {" "}
                 Linked-In-US?
               </p>
-              <button className=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
-                Button
-              </button>
+              <a
+                title="linkedin-link"
+                rel="noopener noreferrer"
+                target="_blank"
+                href="/"
+              >
+                <button className=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
+                  LinkedIn
+                </button>
+              </a>
             </div>
           </div>
           <div className="p-4 md:w-1/4 sm:w-1/2 w-1/2 mb-8 max-w-xs mx-auto">
@@ -66,9 +80,16 @@ const ContactButtons = () => {
                 {" "}
                 Chat with us!
               </p>
-              <button className=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
-                Button
-              </button>
+              <a
+                title="messenger-link"
+                rel="noopener noreferrer"
+                target="_blank"
+                href="/"
+              >
+                <button className=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
+                  Messenger
+                </button>
+              </a>
             </div>
           </div>
           <div className="p-4 md:w-1/4 sm:w-1/2 w-1/2 mb-8 max-w-xs mx-auto">
@@ -84,9 +105,16 @@ const ContactButtons = () => {
                 {" "}
                 Drop us a Line?
               </p>
-              <button className=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
-                Button
-              </button>
+              <a
+                title="email-link"
+                rel="noopener noreferrer"
+                target="_blank"
+                href="/"
+              >
+                <button className=" ml-auto text-white bg-primary-default border-0 py-1 mt-2 px-4 focus:outline-none hover:bg-indigo-600 rounded">
+                  E-mail
+                </button>
+              </a>
             </div>
           </div>
         </div>
