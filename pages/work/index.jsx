@@ -18,45 +18,51 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 const Works = (props) => {
   const { blogs } = props;
   return (
-    <div>
+    <>
       <Head>
         <html lang="en" />
         <title>Work</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="viewport"
+          content="initial-scale=1.0"
+          width="device-width"
+        />
       </Head>
-      <WorkHeader numProjects={props.numProjects} numBlogs={props.numBlogs} />
-      <SectionHeader />
-      <Filler />
-      <Swiper
-        slidesPerView={1}
-        autoplay={{ delay: 2500 }}
-        pagination={{ clickable: true }}
-        breakpoints={{
-          640: {
-            width: 640,
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          768: {
-            width: 768,
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-          1200: {
-            width: 1200,
-            slidesPerView: 3,
-            spaceBetween: 10,
-          },
-        }}
-      >
-        {props.projects.map((project) => (
-          <SwiperSlide key={`slide-id-${project.id}`}>
-            <ProjectCard key={`project-id-${project.id}`} project={project} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <Blog main={blogs.main} top={blogs.top} bottom={blogs.bottom} />
-    </div>
+      <main>
+        <WorkHeader numProjects={props.numProjects} numBlogs={props.numBlogs} />
+        <SectionHeader />
+        <Filler />
+        <Swiper
+          slidesPerView={1}
+          autoplay={{ delay: 2500 }}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            640: {
+              width: 640,
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            768: {
+              width: 768,
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1200: {
+              width: 1200,
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+          }}
+        >
+          {props.projects.map((project) => (
+            <SwiperSlide key={`slide-id-${project.id}`}>
+              <ProjectCard key={`project-id-${project.id}`} project={project} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <Blog main={blogs.main} top={blogs.top} bottom={blogs.bottom} />
+      </main>
+    </>
   );
 };
 
