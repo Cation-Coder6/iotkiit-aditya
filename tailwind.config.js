@@ -51,7 +51,7 @@ module.exports = {
         "main-btn-color": "#1D539F",
       },
       fontFamily: {
-        custom: ["Titillium Web"],
+        custom: ['Comfortaa'],
       },
     },
   },
