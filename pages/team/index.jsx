@@ -87,7 +87,7 @@ const Coordinators = ({ coordinators }) => {
           <p className="text-base font-light text-gray-700 md:text-lg">
             “Of all the things I’ve done, the most vital is coordinating those
             who work with me and aiming their efforts at a certain goal.” <br />
-            – Walt Disney
+            <span className="font-bold tracking-wider">– Walt Disney</span>
           </p>
         </div>
         <div className="flex flex-wrap -mt-4">
@@ -163,8 +163,8 @@ const Team = ({ members }) => {
             </h2>
             <p className="text-base text-gray-700 md:text-lg font-light ">
               “A mentor is someone who sees more talent and ability within you,
-              than you see in yourself, and helps bring it out of you.” - Bob
-              Proctor
+              than you see in yourself, and helps bring it out of you.” <br />
+              <span className="font-bold tracking-wider">- Bob Proctor</span>
             </p>
           </div>
           <div className="flex flex-wrap -m-2">

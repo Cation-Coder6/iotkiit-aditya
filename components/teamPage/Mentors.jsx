@@ -41,7 +41,8 @@ const Mentors = ({ mentors }) => {
         <p className="text-base text-gray-700 md:text-lg font-light">
           “A mentor is someone who sees more talent and ability within you, than
           you see in yourself, and helps bring it out of you.”
-          <br /> - Bob Proctor
+          <br />
+          <span className="font-bold tracking-wider"> - Bob Proctor</span>
         </p>
       </div>
       <div className="grid gap-5 sm:gap-10 px-5 grid-cols-2 sm:grid-cols-2 lg:grid-cols-4">
