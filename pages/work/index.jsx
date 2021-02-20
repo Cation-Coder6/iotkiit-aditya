@@ -129,7 +129,7 @@ export async function getStaticProps(context) {
       numProjects: projectsData?.length,
       numBlogs: articles?.length,
     },
-    revalidate: 3600,
+    revalidate: 600,
   };
 }
 
