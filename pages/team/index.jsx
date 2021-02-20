@@ -167,7 +167,7 @@ const Team = ({ members }) => {
               <span className="font-bold tracking-wider">- Bob Proctor</span>
             </p>
           </div>
-          <div className="flex flex-wrap -m-2">
+          <div className="flex flex-wrap -m-2 ">
             {members
               .sort((a, b) => parseFloat(b.ringColor) - parseFloat(a.ringColor))
               .map((member) => (

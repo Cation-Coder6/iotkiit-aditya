@@ -27,9 +27,12 @@ const TeamHeader = () => {
         >
           <div
             className="h-full object-cover mb-20"
-            style={{ backgroundImage: "url(/images/team.svg)" }}
+            style={{ backgroundImage: "url(/images/aboutus.svg)" }}
           >
-            <div className="h-full bg-black opacity-25" />
+            <div
+              className="h-full opacity-20"
+              style={{ backgroundColor: "#b3c3e4" }}
+            />
           </div>
         </div>
       </div>
