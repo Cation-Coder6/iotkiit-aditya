@@ -97,9 +97,7 @@ export async function getStaticProps(context) {
   //Getting Projects from Server
   const projectsRes = await fetch(`${SERVER}/projects`);
   const projectsData = await projectsRes.json();
-  projectsData.forEach(
-    (v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.formats.small.url)
-  );
+  projectsData.forEach((v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.url));
 
   //Getting Feed from Meed
   const feed = new Meed({ fetch });
