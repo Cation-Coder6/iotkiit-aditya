@@ -53,7 +53,7 @@ const FlagshipEvents = ({ main, left, right }) => {
                   <h1 className=" text-2xl font-medium uppercase p-3 pb-0 text-center tracking-wide">
                     {left.name}
                   </h1>
-                  <h2 className="text-sm tracking-widest text-gray-500 text-center pb-6">
+                  <h2 className="text-sm tracking-widest font-medium pt-1 text-gray-500 text-center pb-5">
                     {left.date}
                   </h2>
                   {left.desc}
@@ -82,7 +82,7 @@ const FlagshipEvents = ({ main, left, right }) => {
                   <h1 className="text-2xl font-medium uppercase p-3 pb-0 text-center tracking-wide">
                     {main.name}
                   </h1>
-                  <h2 className="text-sm tracking-widest text-gray-500 text-center pb-6">
+                  <h2 className="text-sm tracking-widest font-medium pt-1 text-gray-500 text-center pb-5">
                     {main.date}
                   </h2>
                   {main.desc}
@@ -113,7 +113,7 @@ const FlagshipEvents = ({ main, left, right }) => {
                   <h1 className="text-2xl font-medium uppercase p-3 pb-0 text-center tracking-wide">
                     {right.name}
                   </h1>
-                  <h2 className="text-sm tracking-widest text-gray-500 text-center pb-6">
+                  <h2 className="text-sm tracking-widest font-medium pt-1 text-gray-500 text-center pb-5">
                     {right.date}
                   </h2>
                   {right.desc}
