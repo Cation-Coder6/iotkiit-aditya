@@ -31,10 +31,12 @@ const EventExtra = ({ extraevents }) => {
                 <h2 className="text-lg text-gray-900 font-semibold title-font mb-1">
                   <a
                     rel="noopener noreferrer"
+                    title={`${i.name}-link`}
                     target="_blank"
                     href={i.link}
-                  ></a>
-                  {i.name}
+                  >
+                    {i.name}
+                  </a>
                 </h2>
                 <h3 className="tracking-wider font-semibold text-indigo-900 text-sm mb-3 title-font">
                   {i.date}
