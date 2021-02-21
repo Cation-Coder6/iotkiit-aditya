@@ -89,16 +89,16 @@ export async function getStaticProps(context) {
   );
   const upcomingeventsData = await upcomingeventsRes.json();
   upcomingeventsData.forEach(
-    (v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.formats.thumbnail.url)
+    (v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.url)
   );
 
   //Getting Extra events from Server
   const extraEventsRes = await fetch(
-    `${SERVER}/extra-events?_sort=eventDate:ASC`
+    `${SERVER}/extra-events?_sort=eventDate:DESC`
   );
   const extraEventsData = await extraEventsRes.json();
   extraEventsData.forEach(
-    (v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.formats.thumbnail.url)
+    (v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.url)
   );
 
   //Getting Flagship Events from Server

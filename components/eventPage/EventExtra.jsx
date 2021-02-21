@@ -21,7 +21,7 @@ const EventExtra = ({ extraevents }) => {
             <div key={i.id} className="xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img
-                  className="h-40 rounded w-full object-cover object-center mb-6"
+                  className="h-80 md:h-64 rounded w-full object-cover object-center mb-6"
                   src={i.imgUrl}
                   alt="content"
                 />
@@ -29,13 +29,10 @@ const EventExtra = ({ extraevents }) => {
                   {i.type}
                 </div>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-1">
-                  <a rel="noopener noreferrer" target="_blank" href={i.link}>
-                    <span className="text-sm align-middle ">🌐&emsp;</span>
-                    {i.name}
-                  </a>
+                  {i.name}
                 </h2>
-                <h3 className="tracking-normal text-indigo-900 text-sm font-medium mb-3 title-font">
-                  📅&emsp;{i.date}
+                <h3 className="tracking-wider text-indigo-900 text-sm font-medium mb-3 title-font">
+                  {i.date}
                 </h3>
                 <p className="leading-relaxed text-base">{i.desc}</p>
               </div>
