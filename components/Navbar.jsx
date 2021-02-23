@@ -54,7 +54,7 @@ const Navbar = () => {
           </div>
           <div className="flex-1 flex md:grid md:grid-cols-2  items-center  grid-cols-2 justify-center md:justify-items-stretch sm:items-center">
             <div className="flex-shrink-0 flex items-center sm:self-start ">
-              <a href="/">
+              <a href="/" title="homepage-link" rel="noopener noreferrer">
                 <img
                   className="block lg:hidden h-10 w-auto"
                   src="/images/logo_small.webp"

@@ -7,6 +7,7 @@ const Services = () => {
     <div id="services" className="relative lg:px-32 md:px-32 px-4 pb-14 ">
       <img
         src="/images/circle.svg"
+        alt="side_image"
         className="absolute top-0 right-0 mt-64 hidden md:block"
       />
       <div className="container mx-auto px-6 pt-32 sm:pt-24 relative">

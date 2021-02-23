@@ -3,6 +3,7 @@ const Process = () => {
     <div id="our-process" className="relative">
       <img
         src="/images/circle2.svg"
+        alt="side_image"
         className="hidden sm:block absolute top-0 left-0 -mx-32"
       />
       <div className="container mx-auto px-6 pt-0 pb-8 relative">
