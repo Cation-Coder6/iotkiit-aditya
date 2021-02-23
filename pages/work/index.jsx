@@ -12,7 +12,10 @@ import SwiperCore, {
 } from "swiper";
 import Filler from "../../components/workPage/Filler";
 import SectionHeader from "../../components/workPage/SectionHeader";
-import Meed from "meed";
+
+let Parser = require("rss-parser");
+let parser = new Parser();
+
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 const Works = (props) => {
@@ -99,24 +102,27 @@ export async function getStaticProps(context) {
   const projectsData = await projectsRes.json();
   projectsData.forEach((v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.url));
 
-  //Getting Feed from Meed
-  const feed = new Meed({ fetch });
+  //Getting Feed from Medium
+  let feed = await parser.parseURL("https://medium.com/feed/iot-lab-kiit");
+  const articles_items = feed.items;
 
-  const articles = await feed.user("iot-lab");
-
-  articles.forEach((v, i, arr) => {
+  articles_items.forEach((v, i, arr) => {
     //Converting date format
-    arr[i].date = v.date.toLocaleDateString("IN");
+    arr[i].date = v.pubDate.substr(0, 17);
+
+    //Assigning author to each post
+    arr[i].author = v.creator;
 
     //Extracting thumbnail from HTML
     arr[i].authorPic = "/images/logo_small.webp";
 
     //Extract the first <p> tag
-    arr[i].desc = v.content.match("<p>([^<].+?)</p>")[1].substr(0, 150) + "...";
+    arr[i].desc =
+      v["content:encoded"].match("<p>([^<].+?)</p>")[1].substr(0, 150) + "...";
   });
 
   //Taking the first 3 articles
-  const [main, top, bottom] = articles;
+  const [main, top, bottom] = articles_items;
 
   return {
     props: {
@@ -127,7 +133,7 @@ export async function getStaticProps(context) {
         bottom,
       },
       numProjects: projectsData?.length,
-      numBlogs: articles?.length,
+      numBlogs: articles_items?.length,
     },
     revalidate: 600,
   };
