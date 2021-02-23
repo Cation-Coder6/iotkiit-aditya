@@ -2,7 +2,7 @@ const AboutUs = () => {
   return (
     <div
       id="about-us"
-      className="bg-blue-100 lg:px-24 md:px-24 px-8 mt-28 pb-3"
+      className="bg-blue-100 lg:px-24 md:px-24 px-8 mt-28 pb-6"
     >
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row">
@@ -20,11 +20,14 @@ const AboutUs = () => {
             </h3>
             <p className="text-lg text-secondary-700 mb-4">
               A group of dedicated students and faculties who are keenly focused
-              on working towards the betterment of society through technology.
+              on working towards the betterment of society through technology
+              believing that small steps gradually contribute to bigger and
+              better changes.
             </p>
             <p className="text-lg text-secondary-700">
-              Aliquam eget semper mi. Mauris magna risus, viverra in nulla id,
-              placerat fermentum tellus. Aliquam non.
+              Even though we are a research lab, we harbour all domains,
+              technical and non-technical for a complete in-house holistic
+              appraoch towards everything.
             </p>
           </div>
         </div>

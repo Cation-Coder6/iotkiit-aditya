@@ -4,14 +4,15 @@ import EventManagementAnimation from "../animations/EventManagementAnimation";
 
 const Services = () => {
   return (
-    <div id="services" className="relative lg:px-32 md:px-32 px-4 ">
+    <div id="services" className="relative lg:px-32 md:px-32 px-4 pb-14 ">
       <img
         src="/images/circle.svg"
         className="absolute top-0 right-0 mt-64 hidden md:block"
       />
       <div className="container mx-auto px-6 pt-32 sm:pt-24 relative">
         <h3 className="flex flex-col items-center text-4xl pb-8 text-secondary font-bold">
-          Services we offer <span className="bg-primary-default h-1 w-20 block mt-4" />
+          Services we offer{" "}
+          <span className="bg-primary-default h-1 w-20 block mt-4" />
         </h3>
         <div className="flex flex-col md:flex-row items-center mb-24 md:mb-16 xl:mb-8 mt-16 md:mt-0 lg:mt-0">
           <div className="md:w-1/3">
@@ -22,14 +23,16 @@ const Services = () => {
               App Development
             </h4>
             <p className="text-secondary-700 text-lg mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              imperdiet est tellus, et consequat sem sodales id. Quisque
-              molestie et mauris efficitur lacinia.
+              Our next-gen app development ideologies simplifies the business
+              complexities for you as we aim at spending more time at the
+              drwaing board in order to get a better understanding of your needs
+              and interests.
             </p>
             <p className="text-secondary-700 text-lg">
-              Aliquam eget semper mi. Mauris magna risus, viverra in nulla id,
-              placerat fermentum tellus. Aliquam non felis eu dui fermentum
-              auctor. Aenean sed ante congue, facilisis ipsum eu, gravida lacus.
+              Binding technology with solutions to real world problems, is
+              exactly what we provide to your business. We come up with
+              innovative features that extends the domians of e-commerce by
+              putting you in the driver's seat.
             </p>
           </div>
         </div>
@@ -39,14 +42,15 @@ const Services = () => {
               Web Solutions
             </h4>
             <p className="text-secondary-700 text-lg mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              imperdiet est tellus, et consequat sem sodales id. Quisque
-              molestie et mauris efficitur lacinia.
+              In the era of internet, take your business up a notch with
+              portfolios and e-commerce websites. With digitization in every
+              sector, we strive to develop e-commerce websites that adds
+              innovation to your businesses.
             </p>
             <p className="text-secondary-700 text-lg">
-              Aliquam eget semper mi. Mauris magna risus, viverra in nulla id,
-              placerat fermentum tellus. Aliquam non felis eu dui fermentum
-              auctor. Aenean sed ante congue, facilisis ipsum eu, gravida lacus.
+              We also offer portfolio websites that present your business ideas
+              to the global audience. From Cloud Server Management to Online
+              Storage to Databases, we have all the tricks up our sleeve.
             </p>
           </div>
           <div className="md:w-1/3">
@@ -62,14 +66,15 @@ const Services = () => {
               Event Management
             </h4>
             <p className="text-secondary-700 text-lg mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              imperdiet est tellus, et consequat sem sodales id. Quisque
-              molestie et mauris efficitur lacinia.
+              We soulfully extend our hands in organizing and managing events.
+              We are always working in the background, ensuring all pieces are
+              working in conjunction so that you can focus on providing value.
             </p>
             <p className="text-secondary-700 text-lg">
-              Aliquam eget semper mi. Mauris magna risus, viverra in nulla id,
-              placerat fermentum tellus. Aliquam non felis eu dui fermentum
-              auctor. Aenean sed ante congue, facilisis ipsum eu, gravida lacus.
+              We work with you from the beginning stages of planning the event
+              to the live event and post-event reconciliation. Be it a small
+              hackathon, or an international innovation drive, we have been a
+              part of everything.
             </p>
           </div>
         </div>
