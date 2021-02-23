@@ -25,7 +25,7 @@ const Services = () => {
             <p className="text-secondary-700 text-lg mb-4">
               Our next-gen app development ideologies simplifies the business
               complexities for you as we aim at spending more time at the
-              drwaing board in order to get a better understanding of your needs
+              drawing board in order to get a better understanding of your needs
               and interests.
             </p>
             <p className="text-secondary-700 text-lg">
@@ -44,7 +44,7 @@ const Services = () => {
             <p className="text-secondary-700 text-lg mb-4">
               In the era of internet, take your business up a notch with
               portfolios and e-commerce websites. With digitization in every
-              sector, we strive to develop e-commerce websites that adds
+              sector, we strive to develop e-commerce websites that add
               innovation to your businesses.
             </p>
             <p className="text-secondary-700 text-lg">
