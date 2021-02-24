@@ -5,13 +5,19 @@ const HandWave = () => {
         <div className="flex flex-wrap items-center -mx-3">
           <div className="order-1 w-full px-3 lg:w-1/2 lg:order-0">
             <div className="w-full lg:max-w-md">
-              <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-heading">
+              <h2 className="mb-4 text-2xl font-bold leading-tight tracking-tight sm:text-3xl font-heading">
                 Jam-packed with all the tools you need to succeed!
               </h2>
-              <p className="mb-4 font-medium tracking-tight text-gray-500 xl:mb-6">
-                It's never been easier to build a business of your own. Our
-                tools will help you with the following:
-              </p>
+              <div className="mb-4 leading-normal font-semibold tracking-tight text-gray-500 ">
+                “You don’t have to see the whole staircase, just take the first
+                step.”
+                <br />
+                <span className="float-right">-Martin Luther King,Jr.</span>
+                <br />
+                <div className="mt-5 font-normal">
+                  Our tools will help you with the following :
+                </div>
+              </div>
               <ul>
                 <li className="flex items-center py-2 space-x-4 xl:py-3">
                   <svg
@@ -29,7 +35,7 @@ const HandWave = () => {
                     />
                   </svg>
                   <span className="font-medium text-gray-500">
-                    Faster Processing and Delivery
+                    Faster Planning and Delivery
                   </span>
                 </li>
                 <li className="flex items-center py-2 space-x-4 xl:py-3">
@@ -48,7 +54,7 @@ const HandWave = () => {
                     />
                   </svg>
                   <span className="font-medium text-gray-500">
-                    Out of the Box Tracking and Monitoring
+                    Out of the Box Thinking
                   </span>
                 </li>
                 <li className="flex items-center py-2 space-x-4 xl:py-3">
@@ -67,7 +73,7 @@ const HandWave = () => {
                     />
                   </svg>
                   <span className="font-medium text-gray-500">
-                    100% Protection and Security for Your App
+                    100% Protected and Secure Apps
                   </span>
                 </li>
               </ul>
@@ -76,7 +82,7 @@ const HandWave = () => {
           <div className="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0">
             <img
               className="mx-auto sm:max-w-sm lg:max-w-full"
-              src="https://cdn.devdojo.com/images/november2020/feature-graphic.png"
+              src="/images/hand-wave.webp"
               alt="feature image"
             />
           </div>

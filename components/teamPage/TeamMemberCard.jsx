@@ -46,6 +46,7 @@ const TeamMemberCard = ({
               <a
                 href={githubUrl}
                 title="github-link"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="mx-2 lg:mx-4"
               >
@@ -72,6 +73,7 @@ const TeamMemberCard = ({
                 href={linkedinUrl}
                 title="linkedin-link"
                 rel="noopener noreferrer"
+                target="_blank"
                 className="mx-2 lg:mx-4 "
               >
                 <div>
@@ -108,6 +110,7 @@ const TeamMemberCard = ({
               <a
                 href={`mailto:${mailID}`}
                 title="mail-link"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="mx-2 mt-1 lg:mx-4"
               >

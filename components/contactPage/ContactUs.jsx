@@ -998,7 +998,6 @@ const ContactUs = () => {
         <form onSubmit={sendEmail}>
           <div>
             <label for="name">
-              {" "}
               <span className="uppercase text-sm text-gray-600 font-bold">
                 Full Name
               </span>

@@ -14,16 +14,13 @@ const ContactButtons = ({ links }) => {
       <div className="container px-5 py-20 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 uppercase ">
-            Don't be shy, Message us.
+            Don’t be shy, let’s talk about everything.
           </h1>
           <div className="flex mt-2 justify-center">
-            <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+            <div className="w-16 h-3 rounded-full bg-indigo-500 inline-flex"></div>
           </div>
-          <p className="lg:w-2/3 mx-auto mt-4 leading-relaxed text-base">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-            gentrify, subway tile poke farm-to-table. Franzen you probably
-            haven't heard of them man bun deep jianbing selfies heirloom prism
-            food truck ugh squid celiac humblebrag.
+          <p className="lg:w-2/3 mx-auto mt-4 leading-relaxed tracking-widest text-lg">
+            Monday - Friday : 11:00am - 5:00pm (IST)
           </p>
         </div>
         <div className="flex flex-wrap -m-4 text-center mx-auto">
