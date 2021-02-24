@@ -214,16 +214,21 @@ export async function getStaticProps(context) {
 
   //Getting Members from Server
   const membersRes = await fetch(`${SERVER}/members`);
-  const membersData = await membersRes.json();
+  let membersData = await membersRes.json();
+  membersData = membersData.sort(() => Math.random() - 0.5);
   membersData.forEach(
-    (v, i, arr) => (arr[i].imageUrl.url = SERVER + v.imageUrl.formats.small.url)
+    (v, i, arr) =>
+      (arr[i].imageUrl.url =
+        SERVER + (v.imageUrl?.formats?.small?.url ?? v.imageUrl?.url))
   );
 
   //Getting Mentors from Server
   const mentorsRes = await fetch(`${SERVER}/mentors?_sort=index:ASC`);
   const mentorsData = await mentorsRes.json();
   mentorsData.forEach(
-    (v, i, arr) => (arr[i].imageUrl.url = SERVER + v.imageUrl.formats.small.url)
+    (v, i, arr) =>
+      (arr[i].imageUrl.url =
+        SERVER + (v.imageUrl?.formats?.small?.url ?? v.imageUrl?.url))
   );
 
   return {

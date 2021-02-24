@@ -1,0 +1,25 @@
+version: "3"
+services:
+  strapi:
+    image: strapi/strapi
+    container_name: backend
+    volumes:
+      - ./app:/srv/app
+    ports:
+      - "1337:1337"
+  #   expose:
+  #     - 1337
+  # frontend:
+  #   image: sahilkr24/frontend
+  #   container_name: frontend
+  #   ports:
+  #     - "3000:3000"
+
+  caddy:
+    image: caddy:latest
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
