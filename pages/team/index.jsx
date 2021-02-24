@@ -213,7 +213,7 @@ export async function getStaticProps(context) {
   );
 
   //Getting Members from Server
-  const membersRes = await fetch(`${SERVER}/members`);
+  const membersRes = await fetch(`${SERVER}/members?_limit=-1`);
   let membersData = await membersRes.json();
   membersData = membersData.sort(() => Math.random() - 0.5);
   membersData.forEach(
