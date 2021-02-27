@@ -1,4 +1,5 @@
 import TeamHoverCard from "./TeamHoverCard";
+import TopTeamHoverCard from "./TopTeamHoverCard";
 
 const Mentors = ({ mentors }) => {
   return (
@@ -45,7 +46,18 @@ const Mentors = ({ mentors }) => {
           <span className="font-bold tracking-wider"> - Bob Proctor</span>
         </p>
       </div>
-      <div className="grid gap-5 sm:gap-10 px-5 grid-cols-2 sm:grid-cols-2 lg:grid-cols-4">
+      <div className=" py-6 grid gap-5 sm:gap-10 px-5 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
+        {mentors?.map((mentor, index) => (
+          <TopTeamHoverCard
+            key={`mentor-id-${mentor.id}`}
+            name={mentor.name}
+            position={mentor.position}
+            email={mentor.email}
+            imageUrl={mentor.imageUrl.url}
+          />
+        ))}
+      </div>
+      <div className=" pt-6 grid gap-5 sm:gap-10 px-5 grid-cols-2 sm:grid-cols-2 lg:grid-cols-4">
         {mentors?.map((mentor) => (
           <TeamHoverCard
             key={`mentor-id-${mentor.id}`}
