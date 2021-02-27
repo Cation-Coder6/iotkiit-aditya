@@ -47,7 +47,7 @@ const Mentors = ({ mentors }) => {
         </p>
       </div>
       <div className=" py-6 grid gap-5 sm:gap-10 px-5 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
-        {mentors?.map((mentor, index) => (
+        {mentors?.slice(0, 2)?.map((mentor, index) => (
           <TopTeamHoverCard
             key={`mentor-id-${mentor.id}`}
             name={mentor.name}
@@ -58,7 +58,7 @@ const Mentors = ({ mentors }) => {
         ))}
       </div>
       <div className=" pt-6 grid gap-5 sm:gap-10 px-5 grid-cols-2 sm:grid-cols-2 lg:grid-cols-4">
-        {mentors?.map((mentor) => (
+        {mentors?.slice(2)?.map((mentor) => (
           <TeamHoverCard
             key={`mentor-id-${mentor.id}`}
             name={mentor.name}
