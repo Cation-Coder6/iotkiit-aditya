@@ -19,6 +19,7 @@ const ContactUs = () => {
           setDidSubmit("Submitted");
         },
         (error) => {
+          console.error(error);
           setDidSubmit("Internal Error. We will resolve it soon!");
         }
       );
