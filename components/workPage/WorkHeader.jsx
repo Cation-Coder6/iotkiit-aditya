@@ -25,12 +25,9 @@ const WorkHeader = ({ numBlogs, numProjects }) => {
             </div>
           </div>
           <div className="description w-full sm:w-full md:w-4/5 mt-12 text-gray-500 text-md">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
+            "A new idea emerges from a great thinking and success comes from
+            hard work. Hard work does not necessarily guarantee success, but no
+            success is possible without hard work.”
           </div>
         </div>
       </div>
@@ -48,11 +45,11 @@ const WorkHeader = ({ numBlogs, numProjects }) => {
                 <div className="flex flex-col-reverse md:flex-row items-center mx-20">
                   <div className="sm:m-1/2 sm:-ml-16 md:-ml-0">
                     <span className="text-xl text-gray-900  mb-1 sm:-ml-10">
-                      App Title
+                      E-Commerce App
                     </span>
                     <br />
                     <span className="text-sm text-gray-600  mb-1 sm:-ml-10">
-                      Workflow Lorem
+                      Monthly Stats
                     </span>
                     <div className="sm:-ml-0 md:-ml-28 lg:-ml-0 ">
                       <WorkAnimation />
