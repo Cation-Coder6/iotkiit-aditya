@@ -63,7 +63,7 @@ and projects with more end-user interactions."
                 Certificate Validation
               </h2>
               <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">
-                IoT Lab, KIIT verifies the authencity of this certificate.
+                IoT Lab, KIIT verifies the authenticity of this certificate.
               </h1>
               <br />
               <p className="leading-relaxed"></p>
