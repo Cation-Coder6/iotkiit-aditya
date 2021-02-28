@@ -10,7 +10,8 @@ export default function Home() {
     <div>
       <Head>
         <title>IoT Lab KiiT</title>
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="description"
