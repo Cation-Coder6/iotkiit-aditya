@@ -8,7 +8,7 @@ const Showcase = () => {
               <img
                 className="absolute h-full w-full object-cover"
                 alt="bottom_photo"
-                src="https://stripe.com/img/v3/payments/overview/photos/slack.jpg"
+                src="/images/lab.webp"
               />
               <div className="absolute inset-0 bg-indigo-900 opacity-75" />
               <div className="relative font-bold text-white text-5xl">

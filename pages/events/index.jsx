@@ -49,8 +49,8 @@ and projects with more end-user interactions."
               Upcoming Events
             </h1>
             <p className="text-center text-lg text-gray-700 mt-2 px-6">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.
+              Be up-to-date with the new and exciting stuff that is always
+              happening at IoT lab.
             </p>
             <div className="h-1 mx-auto bg-indigo-200 w-24 opacity-75 mt-4 rounded"></div>
           </div>

@@ -4,16 +4,16 @@ const EventExtra = ({ extraevents }) => {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap w-full mb-20">
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-              Extra Events
+            <h1 className="sm:text-3xl text-2xl uppercase font-medium title-font mb-2 text-gray-900">
+              We have also been involed in...
             </h1>
             <div className="h-1 w-20 bg-indigo-500 rounded" />
           </div>
           <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-            gentrify, subway tile poke farm-to-table. Franzen you probably
-            haven't heard of them man bun deep jianbing selfies heirloom prism
-            food truck ugh squid celiac humblebrag.
+            Collaborations, Interships, Recruitment Drives, and everything else.
+            In case, you have missed any these, we'd suggest keeping up with the
+            <b> Upcoming Events</b> sections and our <b>Social Media</b> ,
+            because it sucks to know about these after they are over :(
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
