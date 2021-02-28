@@ -25,6 +25,8 @@ const Works = (props) => {
       <Head>
         <title>Work</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+        <link rel="icon" href="/favicon.png" type="image/x-icon" />
         <meta
           name="description"
           content="IoT Lab, KIIT is a team of dedicated students working under a team of competent and
