@@ -66,14 +66,7 @@ and projects with more end-user interactions."
                 IoT Lab, KIIT verifies the authencity of this certificate.
               </h1>
               <br />
-              <p className="leading-relaxed">
-                Fam locavore kickstarter distillery. Mixtape chillwave tumeric
-                sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo
-                juiceramps cornhole raw denim forage brooklyn. Everyday carry +1
-                seitan poutine tumeric. Gastropub blue bottle austin listicle
-                pour-over, neutra jean shorts keytar banjo tattooed umami
-                cardigan.
-              </p>
+              <p className="leading-relaxed"></p>
               <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5" />
             </div>
           </div>
