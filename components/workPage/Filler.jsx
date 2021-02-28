@@ -15,8 +15,8 @@ const Filler = () => {
               Business Boost V1.0
             </h2>
             <p className="pt-4 pb-6 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
-              We aimed for providing business, that we hit hard by the pandemic,
-              an online platform to showcase themselves
+              We aimed for providing business, that were hit hard by the
+              pandemic, an online platform to showcase themselves
             </p>
             <ul className="p-0 m-0 leading-6 border-0 border-gray-300">
               <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">

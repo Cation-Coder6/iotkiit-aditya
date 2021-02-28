@@ -10,7 +10,7 @@ const Showcase = () => {
                 alt="bottom_photo"
                 src="/images/lab.webp"
               />
-              <div className="absolute inset-0 bg-indigo-900 opacity-75" />
+              <div className="absolute inset-0 bg-indigo-900 opacity-60" />
               <div className="relative font-bold text-white text-5xl">
                 DL - 5
               </div>
