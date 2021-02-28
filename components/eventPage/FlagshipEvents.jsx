@@ -31,10 +31,7 @@ const FlagshipEvents = ({ main, left, right }) => {
         <h1 className="text-center text-4xl text-black font-medium leading-snug uppercase tracking-wider">
           Our Flagship Events
         </h1>
-        <p className="text-center text-lg text-gray-700 mt-2 px-6">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam.
-        </p>
+        <p className="text-center text-lg text-gray-700 mt-2 px-6"></p>
         <div className="h-1 mx-auto bg-indigo-200 w-24 opacity-75 mt-4 rounded"></div>
 
         <div className="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">

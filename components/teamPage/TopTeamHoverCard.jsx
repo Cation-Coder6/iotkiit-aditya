@@ -1,6 +1,6 @@
 const TopTeamHoverCard = ({ name, position, email, imageUrl }) => {
   return (
-    <div className="mx-auto lg:px-40 md:px-8">
+    <div className="mx-auto">
       <div className="relative max-w-sm overflow-hidden transition duration-300 transform rounded-lg shadow-lg mx-3 md:mx-0 lg:hover:-translate-y-2  hover:shadow-2xl">
         <img
           className="object-cover w-full h-40 md:h-60 xl:h-60 "
@@ -12,7 +12,7 @@ const TopTeamHoverCard = ({ name, position, email, imageUrl }) => {
             {name}
           </p>
           <p className="mb-4 text-xs sm:text-lg text-gray-100">{position}</p>
-          <p className="mb-4 text-xs sm:text-lg tracking-wide text-gray-400">
+          <p className=" mb-4 text-xs sm:text-base tracking-tighter text-gray-400">
             {email}
           </p>
           {/* <div className="flex items-center justify-center space-x-3">

@@ -12,7 +12,7 @@ const TeamHoverCard = ({ name, position, email, imageUrl }) => {
             {name}
           </p>
           <p className="mb-4 text-xs sm:text-lg text-gray-100">{position}</p>
-          <p className="mb-4 text-xs sm:text-lg tracking-wide text-gray-400">
+          <p className="break-all  mb-4 text-xs sm:text-base tracking-tighter  text-gray-400">
             {email}
           </p>
         </div>

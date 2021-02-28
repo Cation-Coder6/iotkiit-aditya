@@ -13,7 +13,7 @@ const UpcomingCard = ({ index, title, desc, link, date, year, imgUrl }) => {
         </div>
         <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
           <div className="h-full flex items-start">
-            <div className="w-12 flex-shrink-0 mt-1 flex flex-col text-center leading-none">
+            <div className="w-20 flex-shrink-0 mt-1 flex flex-col text-center leading-none">
               <span className="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">
                 {date}
               </span>

@@ -15,7 +15,7 @@ const HandWave = () => {
                 <span className="float-right">-Martin Luther King,Jr.</span>
                 <br />
                 <div className="mt-5 font-normal">
-                  Our tools will help you with the following :
+                  Our expertise will help you with the following :
                 </div>
               </div>
               <ul>
