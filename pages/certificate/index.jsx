@@ -11,6 +11,7 @@ function Certificate() {
       <Head>
         <title>Certificate Validation</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <meta
           name="description"
           content="IoT Lab, KIIT is a team of dedicated students working under a team of competent and
