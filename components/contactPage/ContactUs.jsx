@@ -9,10 +9,10 @@ const ContactUs = () => {
     setDidSubmit("Sending...");
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_SERVICE_ID,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        service_9r26e08,
+        template_g8e53f1,
         e.target,
-        process.env.NEXT_PUBLIC_USER_ID
+        user_cHobJq2ujAScEcDuHSCNs
       )
       .then(
         (result) => {
