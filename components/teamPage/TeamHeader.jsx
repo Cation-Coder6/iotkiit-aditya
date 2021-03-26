@@ -4,7 +4,7 @@ const TeamHeader = () => {
       <img
         src="/images/flower.svg"
         alt="flower"
-        className="absolute lg:top-3/5 -z-1 top-1/2  right-5 lg:-mt-5 lg:left-14 lg:w-52 "
+        className="absolute lg:top-3/5 -z-1 top-1/2  right-5 lg:-mt-5 lg:left-14 lg:w-52 bg-no-repeat "
       />
       <div className="flex bg-transparent">
         <div className="flex items-center text-center lg:text-left px-18 md:px-12 py-12 lg:w-1/2">
