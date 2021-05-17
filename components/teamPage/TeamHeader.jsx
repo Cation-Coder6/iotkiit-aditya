@@ -26,7 +26,7 @@ const TeamHeader = () => {
           style={{ clipPath: "polygon(10% 0, 100% 0%, 100% 100%, 0 100%)" }}
         >
           <div
-            className="h-full object-cover mb-20"
+            className="h-full bg-no-repeat"
             style={{ backgroundImage: "url(/images/aboutus.svg)" }}
           >
             <div
