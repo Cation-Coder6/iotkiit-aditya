@@ -1,34 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# IoT Lab KIIT Official Website
+
+---
 
 ## Getting Started
 
-First, run the development server:
+For safety, clone only the `develop` branch using
 
 ```bash
+git clone -b develop --single-branch https://github.com/iot-lab-kiit/iotkiit.git
+```
+
+Then, run the development server:
+
+```bash
+npm install
 npm run dev
 # or
+yarn install
 yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Tech Stack
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+This website follows the `JAMstack` ideology and is built using
 
-## Learn More
+> Next.JS (JavaScript)
+> 
+> Tailwind CSS (Utility-First CSS Framework)
+>
+> Strapi (Headless CMS)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The website is deployed at [https://iotkiit.in](https://iotkiit.in) via a dockerised image served through `dockerhub` on a virtual server with _Strapi_ for **CMS** and _Caddy_ for **Reverse Proxy**.
 
-## Deploy on Vercel
+DNS services are handled through `Cloudflare`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The staging website is deployed on _Netlify_ which also build **branch preview** for `develop` branch and **deploy previews** for any _Pull Requests_ against `develop` and `staging` branches.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> `staging branch` can be accessed via [this link](https://staging.iotkiit.in).
+
+> `deploy previews` can be accessed via links added as comments in the PR raised.
+
+---
+
+## Working with the repository
+
+Adding any changes to the code will require checking out a `feature-branch` from `develop` and then raising a **Pull Request** with [@RKRohk](https://github.com/Rkrohk) and [@SahilKr24](https://github.com/SahilKr24) added as **reviewers**.
+
+Upon passing all the required checks and verifying changes via the _deploy preview_ url, the PR will be `squashed and merged` into the `develop` branch and then deleted.
+
+>**NOTE** : PRs WILL REQUIRE ATLEAST ONE CODE REVIEW APPROVAL AND SHOULD NOT BE MERGED BY THE CONTRIBUTOR THEMSELVES.
+
+We will follow the following flow of commits:
+
+**`feature-branch`** →  _squash and merge_ → **`develop`** → _cherry-pick_ → **`staging`** → _fast-forward merge_ → **`main`**
+
+All pushes to the `staging` branch will be verified and tested during the `staging` phase, and if no bugs/issues are found, then only the changes will be propogated to the `main` branch.
+
+Once the commits are on the `main` branch, GitHub actions will push the code into the CI/CD pipeline, after which the changes will propogate to the main URL. 
+
+Any push to the `main` branch will trigger a deploy resulting in updates directly on the main URL.
+
+>**NOTE** : NO DIRECT PUSH TO THE MAIN BRANCH. IN CASE OF EMERGENCY REACH OUT TO
+
+- [@RKRohk](https://github.com/Rkrohk)
+- [@SahilKr24](https://github.com/SahilKr24)
+
