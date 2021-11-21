@@ -113,6 +113,14 @@ const Navbar = () => {
                 >
                   Contact
                 </a>
+                <a
+                  href="/webinar"
+                  className={`${
+                    path == "/webinar" ? "bg-gray-900" : ""
+                  } text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium`}
+                >
+                  Webinar
+                </a>
               </div>
             </div>
           </div>
@@ -161,6 +169,14 @@ const Navbar = () => {
               } text-white hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium`}
             >
               Contact
+            </a>
+            <a
+              href="/webinar"
+              className={`${
+                path == "/webinar" ? "bg-gray-900" : ""
+              } text-white hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium`}
+            >
+              Webinar
             </a>
           </div>
         </div>
