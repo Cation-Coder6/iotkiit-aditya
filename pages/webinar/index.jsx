@@ -41,26 +41,26 @@ and projects with more end-user interactions."
         ></meta>
         <meta property="twitter:image" content="/images/logo_small.webp"></meta>
       </Head>
-      <HeroComponent/>
+      {/* <HeroComponent/>
       <FormComponent/>
-      <SpeakerComponent  data={speakers} description={eventDescription[0].description}/>
+      <SpeakerComponent  data={speakers} description={eventDescription[0].description}/> */}
     </div>  
   );
 };
-export async function getStaticProps() {
-  const response = await fetch(`https://api.iotkiit.in/speakers`)
-  const speakerData= await response.json();
+// export async function getStaticProps() {
+//   const response = await fetch(`https://api.iotkiit.in/speakers`)
+//   const speakerData= await response.json();
 
-  const event = await fetch(`https://api.iotkiit.in/webinars`);
-  const description= await event.json();
-  return {
-    props:{
-      speakers:speakerData,
-      eventDescription:description
-    },
-    revalidate:600
-  }
-}
+//   const event = await fetch(`https://api.iotkiit.in/webinars`);
+//   const description= await event.json();
+//   return {
+//     props:{
+//       speakers:speakerData,
+//       eventDescription:description
+//     },
+//     revalidate:600
+//   }
+// }
 
 
 export default Webinar;

@@ -180,7 +180,7 @@ const Team = ({ members }) => {
                   githubUrl={member.githubUrl}
                   linkedinUrl={member.linkedinUrl}
                   mailID={member.mailID}
-                  imageUrl={member.imageUrl.url}
+                  imageUrl={member.imageUrl?.url}
                 />
               ))}
           </div>
@@ -219,7 +219,7 @@ export async function getStaticProps(context) {
   membersData = membersData.sort(() => Math.random() - 0.5);
   membersData.forEach(
     (v, i, arr) =>
-      (arr[i].imageUrl.url =
+      (arr[i].imageUrl?.url =
         SERVER + (v.imageUrl?.formats?.small?.url ?? v.imageUrl?.url))
   );
 
