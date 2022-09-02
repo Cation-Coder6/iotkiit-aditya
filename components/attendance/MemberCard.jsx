@@ -10,7 +10,7 @@ const MemberCard = ({ membersData }) => {
     const router = useRouter();
 
     const handleClick = (e,id) => {
-        router.push(`/attendance/${id}`);
+        router.push(`/attendance${id}`);
     }
 
     return (
