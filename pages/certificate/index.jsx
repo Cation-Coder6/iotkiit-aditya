@@ -48,7 +48,7 @@ and projects with more end-user interactions."
           <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-center  relative">
             <div className="mx-auto">
               <Image
-                src={`https://api.iotkiit.in/certificates/${id}.jpg`}
+                src={`http://13.232.181.16/certificates/${id}.jpg`}
                 alt="Sorry, this certificate doesn't exist."
                 width={770}
                 height={560}

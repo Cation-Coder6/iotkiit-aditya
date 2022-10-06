@@ -54,7 +54,7 @@ and projects with more end-user interactions."
 
 export async function getStaticProps(context) {
   //Getting FooterData from Server
-  const SERVER = "https://api.iotkiit.in";
+  const SERVER = "http://13.232.181.16";
   const footerRes = await fetch(`${SERVER}/footer-link`);
   const footerData = await footerRes.json();
   return {

@@ -1,5 +1,5 @@
 const SpeakerCard = ({ image, name, title, linkedin }) => {
-  let imageUrl = `https://api.iotkiit.in${image}`;
+  let imageUrl = `http://13.232.181.16${image}`;
   return (
     <>
       <div className="max-w-xs mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 my-6">

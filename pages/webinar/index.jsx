@@ -48,10 +48,10 @@ and projects with more end-user interactions."
   );
 };
 // export async function getStaticProps() {
-//   const response = await fetch(`https://api.iotkiit.in/speakers`)
+//   const response = await fetch(`http://13.232.181.16/speakers`)
 //   const speakerData= await response.json();
 
-//   const event = await fetch(`https://api.iotkiit.in/webinars`);
+//   const event = await fetch(`http://13.232.181.16/webinars`);
 //   const description= await event.json();
 //   return {
 //     props:{

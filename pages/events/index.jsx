@@ -82,7 +82,7 @@ and projects with more end-user interactions."
 };
 
 export async function getStaticProps(context) {
-  const SERVER = "https://api.iotkiit.in";
+  const SERVER = "http://13.232.181.16";
 
   //Getting upcomingevents from Server
   const upcomingeventsRes = await fetch(

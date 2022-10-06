@@ -3,7 +3,7 @@
 export default async (req, res) => {
   console.log(req);
   res.statusCode = 200;
-  const website = await fetch("https://api.iotkiit.in/certificates/meh.txt");
+  const website = await fetch("http://13.232.181.16/certificates/meh.txt");
   console.log(website.body);
   res.send(website.body);
 };
