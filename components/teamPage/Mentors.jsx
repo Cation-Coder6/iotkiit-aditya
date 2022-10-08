@@ -53,7 +53,7 @@ const Mentors = ({ mentors }) => {
             name={mentor.name}
             position={mentor.position}
             email={mentor.email}
-            imageUrl={mentor.imageUrl.url}
+            // imageUrl={mentor.imageUrl.url}
           />
         ))}
       </div>
@@ -64,7 +64,7 @@ const Mentors = ({ mentors }) => {
             name={mentor.name}
             position={mentor.position}
             email={mentor.email}
-            imageUrl={mentor.imageUrl.url}
+            // imageUrl={mentor.imageUrl.url}
           />
         ))}
       </div>

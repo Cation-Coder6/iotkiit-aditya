@@ -85,31 +85,19 @@ export async function getStaticProps(context) {
   const SERVER = "http://13.232.181.16";
 
   //Getting upcomingevents from Server
-  const upcomingeventsRes = await fetch(
-    `${SERVER}/upcoming-events?_sort=eventDate:ASC`
-  );
-  const upcomingeventsData = await upcomingeventsRes.json();
-  upcomingeventsData.forEach(
-    (v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.url)
-  );
 
   //Getting Extra events from Server
-  const extraEventsRes = await fetch(
-    `${SERVER}/extra-events?_sort=eventDate:DESC`
-  );
-  const extraEventsData = await extraEventsRes.json();
-  extraEventsData.forEach(
-    (v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.url)
-  );
+  const totalEventRes = await (await fetch(`${SERVER}/items/events`)).json()
+  const totalEventsData = totalEventRes.data;
 
+  const extraEventsData = totalEventsData.filter((event) => event.type == "extraEvent");
   //Getting Flagship Events from Server
-  const flagshipEventsRes = await fetch(`${SERVER}/flagship-events`);
-  const flagshipEventsData = await flagshipEventsRes.json();
-  flagshipEventsData.forEach(
-    (v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.url)
-  );
-
-  const [main, left, right] = flagshipEventsData;
+  const flagshipEventsRes = await (await fetch(`${SERVER}/items/flagshipevents`)).json()
+  const flagshipEventsData = flagshipEventsRes.data;
+  const upcomingeventsData = totalEventsData.filter(event => event.type === 'upcomingEvent');
+  const left = flagshipEventsData.filter(event => event.position === 'left');
+  const right = flagshipEventsData.filter(event => event.position === 'right');
+  const main = flagshipEventsData.filter(event => event.position === 'main');
 
   return {
     props: {
@@ -121,7 +109,7 @@ export async function getStaticProps(context) {
         right: right,
       },
     },
-    revalidate: 600,
+    revalidate: 600,  
   };
 }
 

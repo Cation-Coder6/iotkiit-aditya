@@ -95,49 +95,49 @@ and projects with more end-user interactions."
   );
 };
 
-export async function getStaticProps(context) {
-  const SERVER = "http://13.232.181.16";
+// export async function getStaticProps(context) {
+//   const SERVER = "http://13.232.181.16";
 
-  //Getting Projects from Server
-  const projectsRes = await fetch(`${SERVER}/projects`);
-  const projectsData = await projectsRes.json();
-  projectsData.forEach((v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.url));
+//   //Getting Projects from Server
+//   const projectsRes = await fetch(`${SERVER}/projects`);
+//   const projectsData = await projectsRes.json();
+//   projectsData.forEach((v, i, arr) => (arr[i].imgUrl = SERVER + v.imgUrl.url));
 
-  //Getting Feed from Medium
-  let feed = await parser.parseURL("https://medium.com/feed/iot-lab-kiit");
-  const articles_items = feed.items;
+//   //Getting Feed from Medium
+//   let feed = await parser.parseURL("https://medium.com/feed/iot-lab-kiit");
+//   const articles_items = feed.items;
 
-  articles_items.forEach((v, i, arr) => {
-    //Converting date format
-    arr[i].date = v.pubDate.substr(0, 17);
+//   articles_items.forEach((v, i, arr) => {
+//     //Converting date format
+//     arr[i].date = v.pubDate.substr(0, 17);
 
-    //Assigning author to each post
-    arr[i].author = v.creator;
+//     //Assigning author to each post
+//     arr[i].author = v.creator;
 
-    //Extracting thumbnail from HTML
-    arr[i].authorPic = "/images/logo_small.webp";
+//     //Extracting thumbnail from HTML
+//     arr[i].authorPic = "/images/logo_small.webp";
 
-    //Extract the first <p> tag
-    arr[i].desc =
-      v["content:encoded"].match("<p>([^<].+?)</p>")[1].substr(0, 150) + "...";
-  });
+//     //Extract the first <p> tag
+//     arr[i].desc =
+//       v["content:encoded"].match("<p>([^<].+?)</p>")[1].substr(0, 150) + "...";
+//   });
 
-  //Taking the first 3 articles
-  const [main, top, bottom] = articles_items;
+//   //Taking the first 3 articles
+//   const [main, top, bottom] = articles_items;
 
-  return {
-    props: {
-      projects: projectsData,
-      blogs: {
-        main,
-        top,
-        bottom,
-      },
-      numProjects: projectsData?.length,
-      numBlogs: articles_items?.length,
-    },
-    revalidate: 600,
-  };
-}
+//   return {
+//     props: {
+//       projects: projectsData,
+//       blogs: {
+//         main,
+//         top,
+//         bottom,
+//       },
+//       numProjects: projectsData?.length,
+//       numBlogs: articles_items?.length,
+//     },
+//     revalidate: 600,
+//   };
+// }
 
 export default Works;

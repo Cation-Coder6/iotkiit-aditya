@@ -25,6 +25,11 @@ const EventListItem = ({ point, ...rest }) => {
 };
 
 const FlagshipEvents = ({ main, left, right }) => {
+
+  main = main[0];
+  left = left[0];
+  right = right[0];
+
   return (
     <section>
       <div className="container max-w-full mx-auto lg:py-0 md:py-0 pt-12 mt-4 sm:mt-4 px-6 ">
@@ -48,7 +53,7 @@ const FlagshipEvents = ({ main, left, right }) => {
 
                 <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
                   <h1 className=" text-2xl font-medium uppercase p-3 pb-0 text-center tracking-wide">
-                    {left.name}
+                    {left.title}
                   </h1>
                   <h2 className="text-sm tracking-widest font-medium pt-1 text-gray-500 text-center pb-5">
                     {left.date}
@@ -72,12 +77,12 @@ const FlagshipEvents = ({ main, left, right }) => {
                   <img
                     className="w-auto h-24 inline-block"
                     alt="event image"
-                    src={main.imgUrl}
+                    src={main?.imgUrl}
                   />
                 </div>
                 <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
                   <h1 className="text-2xl font-medium uppercase p-3 pb-0 text-center tracking-wide">
-                    {main.name}
+                    {main.title}
                   </h1>
                   <h2 className="text-sm tracking-widest font-medium pt-1 text-gray-500 text-center pb-5">
                     {main.date}
@@ -89,7 +94,7 @@ const FlagshipEvents = ({ main, left, right }) => {
                     <EventListItemCenter point={main.point1} />
                     <EventListItemCenter point={main.point2} />
                     <EventListItemCenter point={main.point3} />
-                    <EventListItemCenter point={main.point4} />
+                    {/* <EventListItemCenter point={main.point4} /> */}
                   </ul>
                 </div>
                 <OrangeBottom />
@@ -102,13 +107,13 @@ const FlagshipEvents = ({ main, left, right }) => {
                   <img
                     className="w-auto h-16 inline-block"
                     alt="event image"
-                    src={right.imgUrl}
+                    src={right?.imgUrl}
                   />
                 </div>
 
                 <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
                   <h1 className="text-2xl font-medium uppercase p-3 pb-0 text-center tracking-wide">
-                    {right.name}
+                    {right.title}
                   </h1>
                   <h2 className="text-sm tracking-widest font-medium pt-1 text-gray-500 text-center pb-5">
                     {right.date}

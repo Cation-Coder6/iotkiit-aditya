@@ -98,7 +98,7 @@ const Coordinators = ({ coordinators }) => {
                 key={`coordinator-card-${coordinator.id}`}
                 name={coordinator.name}
                 position={coordinator.position}
-                pictureUrl={coordinator.pictureUrl.url}
+                // pictureUrl={coordinator.pictureUrl.url}
                 quote={coordinator.quote}
                 githubUrl={coordinator.githubUrl}
                 linkedinUrl={coordinator.linkedinUrl}
@@ -109,7 +109,7 @@ const Coordinators = ({ coordinators }) => {
                 key={`coordinator-card-${coordinator.id}`}
                 name={coordinator.name}
                 position={coordinator.position}
-                pictureUrl={coordinator.pictureUrl.url}
+                // pictureUrl={coordinator.pictureUrl.url}
                 quote={coordinator.quote}
                 githubUrl={coordinator.githubUrl}
                 linkedinUrl={coordinator.linkedinUrl}
@@ -169,20 +169,18 @@ const Team = ({ members }) => {
             </p>
           </div>
           <div className="flex flex-wrap -m-2 ">
-            {members
-              .sort((a, b) => parseFloat(b.ringColor) - parseFloat(a.ringColor))
-              .map((member) => (
-                <TeamMemberCard
-                  key={`team-member-card-${member.id}`}
-                  name={member.name}
-                  position={member.position}
-                  ringColor={member.ringColor}
-                  githubUrl={member.githubUrl}
-                  linkedinUrl={member.linkedinUrl}
-                  mailID={member.mailID}
-                  imageUrl={member.imageUrl?.url}
-                />
-              ))}
+            {members.map((member) => (
+              <TeamMemberCard
+                key={`team-member-card-${member.id}`}
+                name={member.name}
+                position={member.position}
+                ringColor={member.ringColor}
+                githubUrl={member.githubUrl}
+                linkedinUrl={member.linkedinUrl}
+                mailID={member.mailID}
+              // imageUrl={member.imageUrl?.url}
+              />
+            ))}
           </div>
         </div>
       </section>
@@ -205,32 +203,16 @@ const Layout = (props) => {
 export async function getStaticProps(context) {
   const SERVER = "http://13.232.181.16";
 
-  //Getting Coordinators from Server
-  const coordinatorsRes = await fetch(`${SERVER}/coordinators?_sort=index:ASC`);
-  const coordinatorsData = await coordinatorsRes.json();
-  coordinatorsData.forEach(
-    (v, i, arr) =>
-      (arr[i].pictureUrl.url = SERVER + v.pictureUrl.formats.small.url)
-  );
-
   //Getting Members from Server
-  const membersRes = await fetch(`${SERVER}/members?_limit=-1`);
-  let membersData = await membersRes.json();
-  membersData = membersData.sort(() => Math.random() - 0.5);
-  membersData.forEach(
-    (v, i, arr) =>
-      (arr[i].imageUrl?.url =
-        SERVER + (v.imageUrl?.formats?.small?.url ?? v.imageUrl?.url))
-  );
-
+  const totalData = await (await fetch(`${SERVER}/items/members`)).json();
+  // const totalDataArray = Object.keys(totalData).map(key => totalData[key]);
+  const totalDataArray = totalData.data;
+  // Getting Members 
+  const membersData = totalDataArray.filter((member) => member.position == "Member");
   //Getting Mentors from Server
-  const mentorsRes = await fetch(`${SERVER}/mentors?_sort=index:ASC`);
-  const mentorsData = await mentorsRes.json();
-  mentorsData.forEach(
-    (v, i, arr) =>
-      (arr[i].imageUrl.url =
-        SERVER + (v.imageUrl?.formats?.small?.url ?? v.imageUrl?.url))
-  );
+  const mentorsData = totalDataArray.filter(member => member.position === "Mentor");
+  //Getting Coordinators from Server
+  const coordinatorsData = totalDataArray.filter(member => member.position === "Coordinator" || member.position == "Asst. Coordinator");
 
   return {
     props: {
