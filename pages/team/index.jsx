@@ -200,27 +200,27 @@ const Layout = (props) => {
   );
 };
 
-export async function getStaticProps(context) {
-  const SERVER = "http://13.232.181.16";
+// export async function getStaticProps(context) {
+//   const SERVER = "http://13.232.181.16";
 
-  //Getting Members from Server
-  const totalData = await (await fetch(`${SERVER}/items/members`)).json();
-  // const totalDataArray = Object.keys(totalData).map(key => totalData[key]);
-  const totalDataArray = totalData.data;
-  // Getting Members 
-  const membersData = totalDataArray.filter((member) => member.position == "Member");
-  //Getting Mentors from Server
-  const mentorsData = totalDataArray.filter(member => member.position === "Mentor");
-  //Getting Coordinators from Server
-  const coordinatorsData = totalDataArray.filter(member => member.position === "Coordinator" || member.position == "Asst. Coordinator");
+//   //Getting Members from Server
+//   const totalData = await (await fetch(`${SERVER}/items/members`)).json();
+//   // const totalDataArray = Object.keys(totalData).map(key => totalData[key]);
+//   const totalDataArray = totalData.data;
+//   // Getting Members 
+//   const membersData = totalDataArray.filter((member) => member.position == "Member");
+//   //Getting Mentors from Server
+//   const mentorsData = totalDataArray.filter(member => member.position === "Mentor");
+//   //Getting Coordinators from Server
+//   const coordinatorsData = totalDataArray.filter(member => member.position === "Coordinator" || member.position == "Asst. Coordinator");
 
-  return {
-    props: {
-      coordinators: coordinatorsData,
-      members: membersData,
-      mentors: mentorsData,
-    },
-    revalidate: 600,
-  };
-}
+//   return {
+//     props: {
+//       coordinators: coordinatorsData,
+//       members: membersData,
+//       mentors: mentorsData,
+//     },
+//     revalidate: 600,
+//   };
+// }
 export default Layout;

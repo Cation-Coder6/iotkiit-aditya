@@ -81,36 +81,36 @@ and projects with more end-user interactions."
   );
 };
 
-export async function getStaticProps(context) {
-  const SERVER = "http://13.232.181.16";
+// export async function getStaticProps(context) {
+//   const SERVER = "http://13.232.181.16";
 
-  //Getting upcomingevents from Server
+//   //Getting upcomingevents from Server
 
-  //Getting Extra events from Server
-  const totalEventRes = await (await fetch(`${SERVER}/items/events`)).json()
-  const totalEventsData = totalEventRes.data;
+//   //Getting Extra events from Server
+//   const totalEventRes = await (await fetch(`${SERVER}/items/events`)).json()
+//   const totalEventsData = totalEventRes.data;
 
-  const extraEventsData = totalEventsData.filter((event) => event.type == "extraEvent");
-  //Getting Flagship Events from Server
-  const flagshipEventsRes = await (await fetch(`${SERVER}/items/flagshipevents`)).json()
-  const flagshipEventsData = flagshipEventsRes.data;
-  const upcomingeventsData = totalEventsData.filter(event => event.type === 'upcomingEvent');
-  const left = flagshipEventsData.filter(event => event.position === 'left');
-  const right = flagshipEventsData.filter(event => event.position === 'right');
-  const main = flagshipEventsData.filter(event => event.position === 'main');
+//   const extraEventsData = totalEventsData.filter((event) => event.type == "extraEvent");
+//   //Getting Flagship Events from Server
+//   const flagshipEventsRes = await (await fetch(`${SERVER}/items/flagshipevents`)).json()
+//   const flagshipEventsData = flagshipEventsRes.data;
+//   const upcomingeventsData = totalEventsData.filter(event => event.type === 'upcomingEvent');
+//   const left = flagshipEventsData.filter(event => event.position === 'left');
+//   const right = flagshipEventsData.filter(event => event.position === 'right');
+//   const main = flagshipEventsData.filter(event => event.position === 'main');
 
-  return {
-    props: {
-      upcomingevents: upcomingeventsData,
-      extraevents: extraEventsData,
-      flagshipevents: {
-        left: left,
-        main: main,
-        right: right,
-      },
-    },
-    revalidate: 600,  
-  };
-}
+//   return {
+//     props: {
+//       upcomingevents: upcomingeventsData,
+//       extraevents: extraEventsData,
+//       flagshipevents: {
+//         left: left,
+//         main: main,
+//         right: right,
+//       },
+//     },
+//     revalidate: 600,  
+//   };
+// }
 
 export default Events;
