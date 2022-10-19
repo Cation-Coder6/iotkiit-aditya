@@ -80,13 +80,13 @@ const Navbar = () => {
                 >
                   Home
                 </a>
-                <a
+                {/* <a
                   href="/team"
                   className={`${path == "/team" ? "bg-gray-900" : ""
                     } text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium`}
                 >
                   Team
-                </a>
+                </a> */}
                 {/* <a
                   href="/work"
                   className={`${path == "/work" ? "bg-gray-900" : ""
@@ -94,13 +94,13 @@ const Navbar = () => {
                 >
                   Work
                 </a> */}
-                <a
+                {/* <a
                   href="/events"
                   className={`${path == "/events" ? "bg-gray-900" : ""
                     } text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium`}
                 >
                   Events
-                </a>
+                </a> */}
                 {/* <a
                   href="/attendance"
                   className={`${path == "/attendance" ? "bg-gray-900" : ""
@@ -139,13 +139,13 @@ const Navbar = () => {
             >
               Home
             </a>
-            <a
+            {/* <a
               href="/team"
               className={`${path == "/team" ? "bg-gray-900" : ""
                 } text-white hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium`}
             >
               Team
-            </a>
+            </a> */}
             <a
               href="/work"
               className={`${path == "/work" ? "bg-gray-900" : ""
